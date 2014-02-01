@@ -1,0 +1,44 @@
+<!-- View for login page -->
+<!-- author - Harshit Mehrotra -->
+<!-- date Feb 1, 2014 -->
+
+@import helper._
+
+@main("Hubble"){
+    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/loginPage.css")">
+    <div style = "float:right;"><a href = "">Register</a>&nbsp;&nbsp;</div>
+
+    <div class = "center-div">
+        <center>
+            <h1>Hubble</h1>
+            <h2>Explore a business ecosystem</h2>
+        </center>
+        <form class = "login-form">
+                <img class = "login-page-hubble-image" src="http://www.shoutot.com/stockimage/firefox-nebula-vs-hubble-fo.jpg"></img>
+                <center>
+                    <table class = "login-table">
+                        <tr>
+                            <td>User Name</td>
+                            <td><input class = 'input' type = "text"/></td>
+                        </tr>
+                        <tr>
+                            <td>Password</td>
+                            <td><input class = 'input'  type = "password"/></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" >
+                                <center>
+                                    <div class = "button-row">
+                                        <input class = "action-button" type = "button" value = "Forgot Password"/>
+                                        <input class = "action-button" type = "button" value = "Login"/>
+                                    </div>
+                                </center>
+                            </td>
+                        </tr>
+                    </table>
+                </center>
+        </form>
+    </div>
+
+}
+
