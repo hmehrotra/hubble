@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.hubble.content.h2.bean">
+    <class name="_ArchiveDump" table="ARCHIVE_DUMP">
+        <id name="archiveDumpId" column="ARCHIVE_DUMP_ID">
+            <generator class="native" />
+        </id>
+        <property name="dateAllianceTerminated" type="string" column="DATE_ALLIANCE_TERMINATED"/>
+        <property name="dateExpired" type="string" column="DATE_EXPIRED"/>
+        <property name="dateEffective" type="string" column="DATE_EFFECTIVE"/>
+        <property name="dateAnnounced" type="string" column="DATE_ANNOUNCED"/>
+
+        <property name="participantName" type="string" column="PARTICIPANT_NAME"/>
+        <property name="participantBusinessDescription" type="string" column="PARTICIPANT_BUSINESS_DESCRIPTION"/>
+        <property name="participantPrimarySicCode" type="string" column="PARTICIPANT_PRIMARY_SIC_CODE"/>
+        <property name="participantStateCode" type="string" column="PARTICIPANT_STATE_CODE"/>
+        <property name="participantCity" type="string" column="PARTICIPANT_CITY"/>
+        <property name="participantCusip" type="string" column="PARTICIPANT_CUSIP"/>
+        <property name="participantStockExchange" type="string" column="PARTICIPANT_STOCK_EXCHANGE"/>
+        <property name="participantStockExchangeCode" type="string" column="PARTICIPANT_STOCK_EXCHANGE_CODE"/>
+        <property name="participantWebsite" type="string" column="PARTICIPANT_WEBSITE"/>
+        <property name="participantNation" type="string" column="PARTICIPANT_NATION"/>
+        <property name="participantNationCode" type="string" column="PARTICIPANT_NATION_CODE"/>
+        <property name="participantPublicStatus" type="string" column="PARTICIPANT_PUBLIC_STATUS"/>
+        <property name="participantSicCodes" type="string" column="PARTICIPANT_SIC_CODES"/>
+        <property name="participantTickerSymbol" type="string" column="PARTICIPANT_TICKER_SYMBOL"/>
+
+        <property name="ultimateParentName" type="string" column="ULTIMATE_PARENT_NAME"/>
+        <property name="ultimateParentNation" type="string" column="ULTIMATE_PARENT_NATION"/>
+        <property name="ultimateParentPrimarySicCode" type="string" column="ULTIMATE_PARENT_PRIMARY_SIC_CODE"/>
+        <property name="ultimateParentCusip" type="string" column="ULTIMATE_PARENT_CUSIP"/>
+        <property name="ultimateParentStatus" type="string" column="ULTIMATE_PARENT_STATUS"/>
+
+        <property name="parentCusip" type="string" column="PARENT_CUSIP"/>
+        <property name="parentName" type="string" column="PARENT_NAME"/>
+
+        <property name="status" type="string" column="STATUS"/>
+        <property name="dealText" type="string" column="DEAL_TEXT"/>
+        <property name="isJointVenture" type="string" column="IS_JOINT_VENTURE"/>
+        <property name="participantOwnerShip" type="string" column="PARTICIPANT_OWNERSHIP"/>
+        <property name="dealNumber" type="string" column="DEAL_NUMBER"/>
+        <property name="isExclusiveLicensingAgreement" type="string" column="IS_EXCLUSIVE_LICENSING_AGREEMENT"/>
+        <property name="isExplorationAgreement" type="string" column="IS_EXPLORATION_AGREEMENT"/>
+        <property name="isFundingAgreement" type="string" column="IS_FUNDING_AGREEMENT"/>
+        <property name="isLicensingAgreement" type="string" column="IS_LICENSING_AGREEMENT"/>
+        <property name="isMarketingAgreement" type="string" column="IS_MARKETING_AGREEMENT"/>
+        <property name="isManufacturingAgreement" type="string" column="IS_MANUFACTURING_AGREEMENT"/>
+        <property name="isRAndDAgreement" type="string" column="IS_R_AND_D_AGREEMENT"/>
+        <property name="isStrategicAgreement" type="string" column="IS_STRATEGIC_AGREEMENT"/>
+        <property name="isSupplyAgreement" type="string" column="IS_SUPPLY_AGREEMENT"/>
+        <property name="allianceNation" type="string" column="ALLIANCE_NATION"/>
+        <property name="participantCount" type="string" column="PARTICIPANT_COUNT"/>
+        <property name="alliancePrimarySicCode" type="string" column="ALLIANCE_PRIMARY_SIC_CODE"/>
+        <property name="allianceAllSicCodes" type="string" column="ALLIANCE_ALL_SIC_CODES"/>
+
+        <property name="jointVentureCusip" type="string" column="JOINT_VENTURE_CUSIP"/>
+        <property name="jointVentureName" type="string" column="JOINT_VENTURE_NAME"/>
+        <property name="jointVentureType" type="string" column="JOINT_VENTURE_TYPE"/>
+    </class>
+</hibernate-mapping>
+

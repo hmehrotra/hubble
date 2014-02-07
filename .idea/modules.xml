@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Config/Config.iml" filepath="$PROJECT_DIR$/Config/Config.iml" />
       <module fileurl="file://$PROJECT_DIR$/Content/Content.iml" filepath="$PROJECT_DIR$/Content/Content.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hubble.iml" filepath="$PROJECT_DIR$/Hubble.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HubbleService/HubbleService.iml" filepath="$PROJECT_DIR$/HubbleService/HubbleService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HubbleServiceProvider/HubbleServiceProvider.iml" filepath="$PROJECT_DIR$/HubbleServiceProvider/HubbleServiceProvider.iml" />
       <module fileurl="file://$PROJECT_DIR$/RabbitmqTest/RabbitmqTest.iml" filepath="$PROJECT_DIR$/RabbitmqTest/RabbitmqTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/Utilities/Utilities.iml" filepath="$PROJECT_DIR$/Utilities/Utilities.iml" />
     </modules>

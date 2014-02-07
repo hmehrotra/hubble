@@ -1,5 +1,7 @@
 package com.hubble.content.h2.bean;
 
+import com.sun.javafx.beans.IDProperty;
+
 /**
  * Bean class for _ArchiveDump table
  * This bean represents an un-formatted database row
@@ -8,6 +10,7 @@ package com.hubble.content.h2.bean;
  */
 public class _ArchiveDump {
 
+    private Long archiveDumpId;
     private String dateAllianceTerminated;
     private String dateExpired;
     private String dateEffective;
@@ -59,6 +62,14 @@ public class _ArchiveDump {
     private String jointVentureCusip;
     private String jointVentureName;
     private String jointVentureType;
+
+    public Long getArchiveDumpId() {
+        return archiveDumpId;
+    }
+
+    public void setArchiveDumpId(Long archiveDumpId) {
+        this.archiveDumpId = archiveDumpId;
+    }
 
     public String getDateAllianceTerminated() {
         return dateAllianceTerminated;
