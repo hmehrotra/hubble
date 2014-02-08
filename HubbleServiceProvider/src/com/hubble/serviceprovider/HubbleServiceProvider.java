@@ -1,10 +1,14 @@
 package com.hubble.serviceprovider;
 
+import com.hubble.content.h2.beanExtensions.ArchiveDump;
 import com.hubble.service.RawDatabaseService;
 import com.hubble.utilities.ObjectUtilities;
 import com.hubble.service.ParticipantService;
 import com.hubble.service.AllianceService;
 import com.hubble.service.SegmentService;
+import com.hubble.content.h2.service.RawDatabaseServiceProvider;
+
+import java.util.List;
 
 /**
  * This service class is the service provider for all client queries and delegates the query to
@@ -41,4 +45,7 @@ public class HubbleServiceProvider implements ParticipantService, AllianceServic
 
 
     /********* Raw Database Services ***************************/
+    public List<ArchiveDump> fetchArchiveDump(){
+        return RawDatabaseServiceProvider.getInstance().fetchArchiveDump();
+    }
 }

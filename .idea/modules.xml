@@ -7,7 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/Hubble.iml" filepath="$PROJECT_DIR$/Hubble.iml" />
       <module fileurl="file://$PROJECT_DIR$/HubbleService/HubbleService.iml" filepath="$PROJECT_DIR$/HubbleService/HubbleService.iml" />
       <module fileurl="file://$PROJECT_DIR$/HubbleServiceProvider/HubbleServiceProvider.iml" filepath="$PROJECT_DIR$/HubbleServiceProvider/HubbleServiceProvider.iml" />
-      <module fileurl="file://$PROJECT_DIR$/RabbitmqTest/RabbitmqTest.iml" filepath="$PROJECT_DIR$/RabbitmqTest/RabbitmqTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RabbitMQ/RabbitMQ.iml" filepath="$PROJECT_DIR$/RabbitMQ/RabbitMQ.iml" />
       <module fileurl="file://$PROJECT_DIR$/Utilities/Utilities.iml" filepath="$PROJECT_DIR$/Utilities/Utilities.iml" />
     </modules>
   </component>
