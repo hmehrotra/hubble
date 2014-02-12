@@ -1,5 +1,6 @@
 package com.hubble.content.h2.bean;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -8,7 +9,7 @@ import java.util.Date;
  * @author Harshit Mehrotra
  * Date Feb 2, 2014
  */
-public class _HubbleArchive {
+public class _HubbleArchive implements Serializable {
     private Date dateAllianceTerminated;
     private Date dateExpired;
     private Date dateEffective;
@@ -60,6 +61,11 @@ public class _HubbleArchive {
     private String jointVentureCusip;
     private String jointVentureName;
     private String jointVentureType;
+
+    /* Public constructor */
+    public _HubbleArchive(){
+
+    }
 
     public Date getDateAllianceTerminated() {
         return dateAllianceTerminated;

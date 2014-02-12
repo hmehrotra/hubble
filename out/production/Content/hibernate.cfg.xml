@@ -8,20 +8,28 @@
         <property name="connection.url">jdbc:h2:~/Documents/IdeaProjects/Database/Hubble</property>
         <property name="connection.username">sa</property>
         <property name="connection.password"></property>
+
         <!-- JDBC connection pool (use the built-in) -->
         <property name="connection.pool_size">1</property>
-        <!-- SQL dialect -->
+
+        <!-- This property makes Hibernate generate the appropriate SQL for H2 database -->
         <property name="dialect">org.hibernate.dialect.H2Dialect</property>
 
         <!-- Enable Hibernate's automatic session context management -->
         <property name="current_session_context_class">thread</property>
+
         <!-- Disable the second-level cache -->
-        <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+        <!-- <property name="cache.provider_class">org.hibernate.cache.</property> -->
+
         <!-- Echo all executed SQL to stdout -->
         <property name="show_sql">true</property>
+
+        <!-- Allows autocommit mode to be used for the JDBC connection -->
+        <property name="hibernate.connection.autocommit">true</property>
+
         <!-- Drop and re-create the database schema on startup -->
         <!-- <property name="hbm2ddl.auto">update</property> -->
-        <mapping resource="com/hubble/content/h2/bean/_ArchiveDump.hbm.xml" />
+        <mapping resource="com/hubble/content/h2/bean/ArchiveDump.hbm.xml" />
 
     </session-factory>
 </hibernate-configuration>

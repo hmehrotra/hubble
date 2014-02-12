@@ -1,6 +1,6 @@
 package com.hubble.content.h2.bean;
 
-import com.sun.javafx.beans.IDProperty;
+import java.io.Serializable;
 
 /**
  * Bean class for _ArchiveDump table
@@ -8,60 +8,65 @@ import com.sun.javafx.beans.IDProperty;
  * @author Harshit Mehrotra
  * Date Feb 2, 2014
  */
-public class _ArchiveDump {
+public class _ArchiveDump implements Serializable{
 
-    private Long archiveDumpId;
-    private String dateAllianceTerminated;
-    private String dateExpired;
-    private String dateEffective;
-    private String dateAnnounced;
+    protected Long archiveDumpId;
+    protected String dateAllianceTerminated;
+    protected String dateExpired;
+    protected String dateEffective;
+    protected String dateAnnounced;
 
-    private String participantName;
-    private String participantBusinessDescription;
-    private String participantPrimarySicCode;
-    private String participantStateCode;
-    private String participantCity;
-    private String participantCusip;
-    private String participantStockExchange;
-    private String participantStockExchangeCode;
-    private String participantWebsite;
-    private String participantNation;
-    private String participantNationCode;
-    private String participantPublicStatus;
-    private String participantSicCodes;
-    private String participantTickerSymbol;
+    protected String participantName;
+    protected String participantBusinessDescription;
+    protected String participantPrimarySicCode;
+    protected String participantStateCode;
+    protected String participantCity;
+    protected String participantCusip;
+    protected String participantStockExchange;
+    protected String participantStockExchangeCode;
+    protected String participantWebsite;
+    protected String participantNation;
+    protected String participantNationCode;
+    protected String participantPublicStatus;
+    protected String participantSicCodes;
+    protected String participantTickerSymbol;
 
-    private String ultimateParentName;
-    private String ultimateParentNation;
-    private String ultimateParentPrimarySicCode;
-    private String ultimateParentCusip;
-    private String ultimateParentStatus;
+    protected String ultimateParentName;
+    protected String ultimateParentNation;
+    protected String ultimateParentPrimarySicCode;
+    protected String ultimateParentCusip;
+    protected String ultimateParentStatus;
 
-    private String parentCusip;
-    private String parentName;
+    protected String parentCusip;
+    protected String parentName;
 
-    private String status;
-    private String dealText;
-    private String isJointVenture;
-    private String participantOwnerShip;
-    private String dealNumber;
-    private String isExclusiveLicensingAgreement;
-    private String isExplorationAgreement;
-    private String isFundingAgreement;
-    private String isLicensingAgreement;
-    private String isMarketingAgreement;
-    private String isManufacturingAgreement;
-    private String isRAndDAgreement;
-    private String isStrategicAgreement;
-    private String isSupplyAgreement;
-    private String allianceNation;
-    private String participantCount;
-    private String alliancePrimarySicCode;
-    private String allianceAllSicCodes;
+    protected String status;
+    protected String dealText;
+    protected String isJointVenture;
+    protected String participantOwnerShip;
+    protected String dealNumber;
+    protected String isExclusiveLicensingAgreement;
+    protected String isExplorationAgreement;
+    protected String isFundingAgreement;
+    protected String isLicensingAgreement;
+    protected String isMarketingAgreement;
+    protected String isManufacturingAgreement;
+    protected String isRAndDAgreement;
+    protected String isStrategicAgreement;
+    protected String isSupplyAgreement;
+    protected String allianceNation;
+    protected String participantCount;
+    protected String alliancePrimarySicCode;
+    protected String allianceAllSicCodes;
 
-    private String jointVentureCusip;
-    private String jointVentureName;
-    private String jointVentureType;
+    protected String jointVentureCusip;
+    protected String jointVentureName;
+    protected String jointVentureType;
+
+    /* Public constructor */
+    public _ArchiveDump(){
+
+    }
 
     public Long getArchiveDumpId() {
         return archiveDumpId;

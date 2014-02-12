@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
-<hibernate-mapping package="com.hubble.content.h2.bean">
-    <class name="_ArchiveDump" table="ARCHIVE_DUMP">
+<hibernate-mapping package="com.hubble.content.h2.beanExtensions">
+    <class name="ArchiveDump" table="ARCHIVE_DUMP">
         <id name="archiveDumpId" column="ARCHIVE_DUMP_ID">
             <generator class="native" />
         </id>

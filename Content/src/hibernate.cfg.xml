@@ -19,7 +19,7 @@
         <property name="current_session_context_class">thread</property>
 
         <!-- Disable the second-level cache -->
-        <property name="cache.provider_class">org.hibernate.cache.</property>
+        <!-- <property name="cache.provider_class">org.hibernate.cache.</property> -->
 
         <!-- Echo all executed SQL to stdout -->
         <property name="show_sql">true</property>
@@ -29,7 +29,7 @@
 
         <!-- Drop and re-create the database schema on startup -->
         <!-- <property name="hbm2ddl.auto">update</property> -->
-        <mapping resource="com/hubble/content/h2/bean/_ArchiveDump.hbm.xml" />
+        <mapping resource="com/hubble/content/h2/bean/ArchiveDump.hbm.xml" />
 
     </session-factory>
 </hibernate-configuration>

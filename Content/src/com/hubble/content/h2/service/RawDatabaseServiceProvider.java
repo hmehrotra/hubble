@@ -39,7 +39,7 @@ public class RawDatabaseServiceProvider implements RawDatabaseService{
     public List<ArchiveDump> fetchArchiveDump(){
         Session session = HibernateUtil.getSessionFactory().getCurrentSession();
         session.beginTransaction();
-        Query query = session.createQuery("from _ArchiveDump");
+        Query query = session.createQuery("from ArchiveDump");
 
         List results = query.list();
 
