@@ -36,13 +36,31 @@ public class RawDumpProducer {
      * @return
      */
     public boolean processAndSendMessage() throws java.io.IOException{
-        String message = "Hello World!";
+        StringBuilder dealTextBuilder = new StringBuilder();
+        StringBuilder message = new StringBuilder("[");
+
         if (!ArrayUtilities.isNullOrEmpty(_beanHolderList)){
-            _channel.basicPublish("", QUEUE_NAME, null, message.getBytes());
             Gson gson = new Gson();
-            message = gson.toJson(_beanHolderList.get(0));
+
+            for (int index = 1; index < _beanHolderList.size(); index++){
+                dealTextBuilder.append(" ").append(_beanHolderList.get(index).getDealText());
+                _beanHolderList.get(index).setDealText(null);
+            }
+
+            _beanHolderList.get(0).setDealText(_beanHolderList.get(0).getDealText() + dealTextBuilder.toString());
+            for (int index = 0; index < _beanHolderList.size(); index++){
+                /* Only include record which have non null participant names */
+                /* Overflowing columns - ParticipantSicCodes and AllianceAllSicCodes */
+                if (!StringUtilities.isNullOrEmpty(_beanHolderList.get(index).getParticipantName()))
+                    message.append(gson.toJson(_beanHolderList.get(index))).append(",");
+            }
+
+            /* Substitute last ' with closing array */
+            message.setCharAt(message.length() - 1, ']');
+            _channel.basicPublish("", QUEUE_NAME, null, message.toString().getBytes());
             System.out.println(" [x] Sent '" + message + "'");
         }
+
         return true;
     }
 

@@ -14,6 +14,11 @@ import com.rabbitmq.client.QueueingConsumer;
  */
 public class RawDumpConsumer {
     private final static String QUEUE_NAME = "RawDumpQueue";
+    private static int messagesReceived =  0;
+    private static final boolean autoAck = false;
+
+    /* Do not send messages to a consumer who has 5 unacknowledged messages  */
+    private static final int prefetchCount = 5;
 
     public static void main(String[] argv)throws java.io.IOException,java.lang.InterruptedException {
 
@@ -21,17 +26,19 @@ public class RawDumpConsumer {
         factory.setHost("localhost");
         Connection connection = factory.newConnection();
         Channel channel = connection.createChannel();
+        channel.basicQos(prefetchCount);
 
         channel.queueDeclare(QUEUE_NAME, false, false, false, null);
         System.out.println(" [*] Waiting for messages. To exit press CTRL+C");
 
         QueueingConsumer consumer = new QueueingConsumer(channel);
-        channel.basicConsume(QUEUE_NAME, true, consumer);
+        channel.basicConsume(QUEUE_NAME, autoAck, consumer);
 
         while (true) {
             QueueingConsumer.Delivery delivery = consumer.nextDelivery();
             String message = new String(delivery.getBody());
-            System.out.println(" [x] Received '" + message + "'");
+            System.out.println(" [x] Message '" + ++messagesReceived + " : " + message + "'");
+            channel.basicAck(delivery.getEnvelope().getDeliveryTag(), false);
         }
     }
 
