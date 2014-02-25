@@ -15,6 +15,8 @@ import java.util.List;
 /**
  * Producer of raw database dump messages. The producer calls {@link HubbleServiceProvider}
  * to fetch a list of archive dump objects and sends them as message to consumers
+ * @author Harshit Mehrotra
+ * Date Feb 12, 2014
  */
 public class RawDumpProducer {
     private final static String QUEUE_NAME = "RawDumpQueue";
