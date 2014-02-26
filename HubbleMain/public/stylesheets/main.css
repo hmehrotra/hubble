@@ -7,6 +7,7 @@
     background-image: -o-linear-gradient(top, #3093c7, #1c5a85);
     background-image: linear-gradient(to bottom, #3093c7, #1c5a85);
     filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#3093c7, endColorstr=#1c5a85);
+    height: 30px;
 }
 
 .action-button:hover{
