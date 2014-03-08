@@ -1,0 +1,42 @@
+@(title: String)
+
+@* Hubble's main page *@
+@* author - Harshit Mehrotra *@
+@* date March 1, 2014 *@
+
+@import helper._
+@main("Hubble"){
+    <script type="text/javascript">
+        $(document).ready(function () {
+	        $('body').layout({
+	            applyDefaultStyles: false,
+	             spacing_open: 1,
+	             spacing_closed: 1
+	        });
+
+		    $("#hubble-menu-bar").menubar({
+			    position: {
+				    within: $(".ui-layout-north").add(window).first()
+			    }
+		    });
+    });
+
+    </script>
+
+    <div class="ui-layout-center">
+
+    </div>
+    <div class="ui-layout-north">
+        <!-- Load template for North Container -->
+        @hubbleMainNavigationMenu()
+    </div>
+    <!-- <div class="ui-layout-south">
+         <!-- Load template for south container -->
+    <!-- </div> -->
+    <div class="ui-layout-east">
+        <!-- Load template for east container -->
+    </div>
+    <div class="ui-layout-west">
+        <!-- Load template for west container -->
+    </div>
+}

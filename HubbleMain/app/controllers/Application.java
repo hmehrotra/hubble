@@ -17,11 +17,11 @@ public class Application extends Controller {
     }
 
     public static Result login(){
-        String title = "New Message";
         return ok(login.render(loginForm));
     }
 
     public static Result validateLogin(){
-        return TODO;
+        /* Login credentials go here */
+        return ok(hubbleMainPage.render("Hello World"));
     }
 }
