@@ -158,13 +158,13 @@ public enum ArchiveDumpProcessor {
         }
     },
     participantOwnerShip(){
-        public String processObject(String value){
-            return StringUtilities.isNullOrEmpty(value) ? value : value.trim();
+        public Float processObject(String value){
+            return StringUtilities.isNullOrEmpty(value) ? null : Float.parseFloat(value.trim());
         }
     },
     dealNumber(){
-        public Integer processObject(String value){
-            return StringUtilities.isNullOrEmpty(value) ? null : Integer.parseInt(value.trim());
+        public Long processObject(String value){
+            return StringUtilities.isNullOrEmpty(value) ? null : Long.parseLong(value.trim());
         }
     },
     isExclusiveLicensingAgreement(){

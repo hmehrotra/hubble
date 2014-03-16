@@ -1,6 +1,7 @@
 package com.hubble.content.h2.service;
 
 import com.hubble.content.h2.beanExtensions.ArchiveDump;
+import com.hubble.content.h2.beanExtensions.HubbleArchive;
 import com.hubble.content.hibernate.HibernateUtil;
 import com.hubble.service.RawDatabaseService;
 import com.hubble.utilities.ObjectUtilities;
@@ -39,11 +40,37 @@ public class RawDatabaseServiceProvider implements RawDatabaseService{
     public List<ArchiveDump> fetchArchiveDump(){
         Session session = HibernateUtil.getSessionFactory().getCurrentSession();
         session.beginTransaction();
-        Query query = session.createQuery("from ArchiveDump");
+        Query query = session.createQuery("from ArchiveDump order by archiveDumpId");
 
+        query.setMaxResults(10);
         List results = query.list();
 
         session.close();
         return results;
+    }
+
+    /**
+     * Receives a list of processed objects from the dump processor and persists them in database
+     * @param processedObjects A list of processed records corresponding to one alliance
+     */
+    public void saveHubbleArchiveProcessedObjects(List <HubbleArchive> processedObjects){
+        Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+        session.beginTransaction();
+
+        for (HubbleArchive processedObject : processedObjects){
+            try{
+                session.save(processedObject);
+                System.out.println("Persisted : " + processedObject.getArchiveDumpId());
+
+                session.flush();
+                session.evict(processedObject);
+            }
+            catch (Exception e){
+                System.out.println("Following exception occurred in persisting this object : " + e.getMessage());
+            }
+        }
+
+        /* Transaction.commit will close the session */
+        session.getTransaction().commit();
     }
 }

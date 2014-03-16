@@ -1,6 +1,7 @@
 package com.hubble.serviceprovider;
 
 import com.hubble.content.h2.beanExtensions.ArchiveDump;
+import com.hubble.content.h2.beanExtensions.HubbleArchive;
 import com.hubble.service.RawDatabaseService;
 import com.hubble.utilities.ObjectUtilities;
 import com.hubble.service.ParticipantService;
@@ -47,5 +48,9 @@ public class HubbleServiceProvider implements ParticipantService, AllianceServic
     /********* Raw Database Services ***************************/
     public List<ArchiveDump> fetchArchiveDump(){
         return RawDatabaseServiceProvider.getInstance().fetchArchiveDump();
+    }
+
+    public void saveHubbleArchiveProcessedObjects(List <HubbleArchive> processedObjects){
+        RawDatabaseServiceProvider.getInstance().saveHubbleArchiveProcessedObjects(processedObjects);
     }
 }

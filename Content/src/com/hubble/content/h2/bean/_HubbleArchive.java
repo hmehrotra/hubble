@@ -10,61 +10,70 @@ import java.util.Date;
  * Date Feb 2, 2014
  */
 public class _HubbleArchive implements Serializable {
-    private Date dateAllianceTerminated;
-    private Date dateExpired;
-    private Date dateEffective;
-    private Date dateAnnounced;
+    protected Long archiveDumpId;
+    protected Date dateAllianceTerminated;
+    protected Date dateExpired;
+    protected Date dateEffective;
+    protected Date dateAnnounced;
 
-    private String participantName;
-    private String participantBusinessDescription;
-    private Integer participantPrimarySicCode;
-    private String participantStateCode;
-    private String participantCity;
-    private String participantCusip;
-    private String participantStockExchange;
-    private String participantStockExchangeCode;
-    private String participantWebsite;
-    private String participantNation;
-    private String participantNationCode;
-    private String participantPublicStatus;
-    private String participantSicCodes;
-    private String participantTickerSymbol;
+    protected String participantName;
+    protected String participantBusinessDescription;
+    protected String participantPrimarySicCode;
+    protected String participantStateCode;
+    protected String participantCity;
+    protected String participantCusip;
+    protected String participantStockExchange;
+    protected String participantStockExchangeCode;
+    protected String participantWebsite;
+    protected String participantNation;
+    protected String participantNationCode;
+    protected String participantPublicStatus;
+    protected String participantSicCodes;
+    protected String participantTickerSymbol;
 
-    private String ultimateParentName;
-    private String ultimateParentNation;
-    private Integer ultimateParentPrimarySicCode;
-    private String ultimateParentCusip;
-    private String ultimateParentStatus;
+    protected String ultimateParentName;
+    protected String ultimateParentNation;
+    protected String ultimateParentPrimarySicCode;
+    protected String ultimateParentCusip;
+    protected String ultimateParentStatus;
 
-    private String parentCusip;
-    private String parentName;
+    protected String parentCusip;
+    protected String parentName;
 
-    private String status;
-    private String dealText;
-    private Float participantOwnerShip;
-    private Long dealNumber;
-    private Boolean isJointVenture;
-    private Boolean isExclusiveLicensingAgreement;
-    private Boolean isExplorationAgreement;
-    private Boolean isFundingAgreement;
-    private Boolean isLicensingAgreement;
-    private Boolean isMarketingAgreement;
-    private Boolean isManufacturingAgreement;
-    private Boolean isRAndDAgreement;
-    private Boolean isStrategicAgreement;
-    private Boolean isSupplyAgreement;
-    private String allianceNation;
-    private Integer participantCount;
-    private Integer alliancePrimarySicCode;
-    private String allianceAllSicCodes;
+    protected String status;
+    protected String dealText;
+    protected Float participantOwnerShip;
+    protected Long dealNumber;
+    protected String isJointVenture;
+    protected String isExclusiveLicensingAgreement;
+    protected String isExplorationAgreement;
+    protected String isFundingAgreement;
+    protected String isLicensingAgreement;
+    protected String isMarketingAgreement;
+    protected String isManufacturingAgreement;
+    protected String isRAndDAgreement;
+    protected String isStrategicAgreement;
+    protected String isSupplyAgreement;
+    protected String allianceNation;
+    protected Integer participantCount;
+    protected String alliancePrimarySicCode;
+    protected String allianceAllSicCodes;
 
-    private String jointVentureCusip;
-    private String jointVentureName;
-    private String jointVentureType;
+    protected String jointVentureCusip;
+    protected String jointVentureName;
+    protected String jointVentureType;
 
     /* Public constructor */
     public _HubbleArchive(){
 
+    }
+
+    public Long getArchiveDumpId(){
+        return archiveDumpId;
+    }
+
+    public void setArchiveDumpId(Long archiveDumpId){
+        this.archiveDumpId = archiveDumpId;
     }
 
     public Date getDateAllianceTerminated() {
@@ -115,11 +124,11 @@ public class _HubbleArchive implements Serializable {
         this.participantBusinessDescription = participantBusinessDescription;
     }
 
-    public Integer getParticipantPrimarySicCode() {
+    public String getParticipantPrimarySicCode() {
         return participantPrimarySicCode;
     }
 
-    public void setParticipantPrimarySicCode(Integer participantPrimarySicCode) {
+    public void setParticipantPrimarySicCode(String participantPrimarySicCode) {
         this.participantPrimarySicCode = participantPrimarySicCode;
     }
 
@@ -227,11 +236,11 @@ public class _HubbleArchive implements Serializable {
         this.ultimateParentNation = ultimateParentNation;
     }
 
-    public Integer getUltimateParentPrimarySicCode() {
+    public String getUltimateParentPrimarySicCode() {
         return ultimateParentPrimarySicCode;
     }
 
-    public void setUltimateParentPrimarySicCode(Integer ultimateParentPrimarySicCode) {
+    public void setUltimateParentPrimarySicCode(String ultimateParentPrimarySicCode) {
         this.ultimateParentPrimarySicCode = ultimateParentPrimarySicCode;
     }
 
@@ -299,83 +308,83 @@ public class _HubbleArchive implements Serializable {
         this.dealNumber = dealNumber;
     }
 
-    public Boolean getIsJointVenture() {
+    public String getIsJointVenture() {
         return isJointVenture;
     }
 
-    public void setIsJointVenture(Boolean isJointVenture) {
+    public void setIsJointVenture(String isJointVenture) {
         this.isJointVenture = isJointVenture;
     }
 
-    public Boolean getIsExclusiveLicensingAgreement() {
+    public String getIsExclusiveLicensingAgreement() {
         return isExclusiveLicensingAgreement;
     }
 
-    public void setIsExclusiveLicensingAgreement(Boolean isExclusiveLicensingAgreement) {
+    public void setIsExclusiveLicensingAgreement(String isExclusiveLicensingAgreement) {
         this.isExclusiveLicensingAgreement = isExclusiveLicensingAgreement;
     }
 
-    public Boolean getIsExplorationAgreement() {
+    public String getIsExplorationAgreement() {
         return isExplorationAgreement;
     }
 
-    public void setIsExplorationAgreement(Boolean isExplorationAgreement) {
+    public void setIsExplorationAgreement(String isExplorationAgreement) {
         this.isExplorationAgreement = isExplorationAgreement;
     }
 
-    public Boolean getIsFundingAgreement() {
+    public String getIsFundingAgreement() {
         return isFundingAgreement;
     }
 
-    public void setIsFundingAgreement(Boolean isFundingAgreement) {
+    public void setIsFundingAgreement(String isFundingAgreement) {
         this.isFundingAgreement = isFundingAgreement;
     }
 
-    public Boolean getIsLicensingAgreement() {
+    public String getIsLicensingAgreement() {
         return isLicensingAgreement;
     }
 
-    public void setIsLicensingAgreement(Boolean isLicensingAgreement) {
+    public void setIsLicensingAgreement(String isLicensingAgreement) {
         this.isLicensingAgreement = isLicensingAgreement;
     }
 
-    public Boolean getIsMarketingAgreement() {
+    public String getIsMarketingAgreement() {
         return isMarketingAgreement;
     }
 
-    public void setIsMarketingAgreement(Boolean isMarketingAgreement) {
+    public void setIsMarketingAgreement(String isMarketingAgreement) {
         this.isMarketingAgreement = isMarketingAgreement;
     }
 
-    public Boolean getIsManufacturingAgreement() {
+    public String getIsManufacturingAgreement() {
         return isManufacturingAgreement;
     }
 
-    public void setIsManufacturingAgreement(Boolean isManufacturingAgreement) {
+    public void setIsManufacturingAgreement(String isManufacturingAgreement) {
         this.isManufacturingAgreement = isManufacturingAgreement;
     }
 
-    public Boolean getIsRAndDAgreement() {
+    public String getIsRAndDAgreement() {
         return isRAndDAgreement;
     }
 
-    public void setIsRAndDAgreement(Boolean isRAndDAgreement) {
+    public void setIsRAndDAgreement(String isRAndDAgreement) {
         this.isRAndDAgreement = isRAndDAgreement;
     }
 
-    public Boolean getIsStrategicAgreement() {
+    public String getIsStrategicAgreement() {
         return isStrategicAgreement;
     }
 
-    public void setIsStrategicAgreement(Boolean isStrategicAgreement) {
+    public void setIsStrategicAgreement(String isStrategicAgreement) {
         this.isStrategicAgreement = isStrategicAgreement;
     }
 
-    public Boolean getIsSupplyAgreement() {
+    public String getIsSupplyAgreement() {
         return isSupplyAgreement;
     }
 
-    public void setIsSupplyAgreement(Boolean isSupplyAgreement) {
+    public void setIsSupplyAgreement(String isSupplyAgreement) {
         this.isSupplyAgreement = isSupplyAgreement;
     }
 
@@ -395,11 +404,11 @@ public class _HubbleArchive implements Serializable {
         this.participantCount = participantCount;
     }
 
-    public Integer getAlliancePrimarySicCode() {
+    public String getAlliancePrimarySicCode() {
         return alliancePrimarySicCode;
     }
 
-    public void setAlliancePrimarySicCode(Integer alliancePrimarySicCode) {
+    public void setAlliancePrimarySicCode(String alliancePrimarySicCode) {
         this.alliancePrimarySicCode = alliancePrimarySicCode;
     }
 

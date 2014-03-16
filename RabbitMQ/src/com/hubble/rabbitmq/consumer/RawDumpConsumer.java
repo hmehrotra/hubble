@@ -1,18 +1,22 @@
 package com.hubble.rabbitmq.consumer;
 
 import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonParser;
 import com.hubble.content.h2.beanExtensions.ArchiveDump;
 import com.hubble.content.h2.beanExtensions.ArchiveDumpProcessor;
 import com.hubble.content.h2.beanExtensions.HubbleArchive;
+import com.hubble.serviceprovider.HubbleServiceProvider;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
 import com.rabbitmq.client.QueueingConsumer;
-import org.jboss.cache.util.BeanUtils;
+import org.apache.commons.beanutils.BeanUtils;
+import org.apache.commons.beanutils.PropertyUtils;
 
 import java.lang.reflect.Field;
-import java.lang.reflect.Type;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -71,17 +75,35 @@ class RawDumpProcessorDelegate {
 
     public void processRawDumpObjects(){
         Gson gson = new Gson();
-        Type archiveDumpListType = new TypeToken<ArchiveDump>() {}.getType();
-        List<ArchiveDump> dumpObjects = gson.fromJson(rawData, archiveDumpListType);
+
+        JsonParser parser = new JsonParser();
+        JsonArray jsonArray = parser.parse(rawData).getAsJsonArray();
+
+        List <ArchiveDump> dumpObjects = new ArrayList<ArchiveDump>();
+        for (JsonElement json : jsonArray){
+            ArchiveDump dumpObject = gson.fromJson(json, ArchiveDump.class);
+            dumpObjects.add(dumpObject);
+
+        }
         HubbleArchive archive;
+        List <HubbleArchive> processedObjects = new ArrayList <HubbleArchive> ();
 
         for (ArchiveDump archiveDump : dumpObjects){
-            Field[] fields = archiveDump.getClass().getFields();
+            Field[] fields = archiveDump.getClass().getSuperclass().getDeclaredFields();
             archive = new HubbleArchive();
 
             for (Field field : fields){
-                // BeanUtils.setProperty(archive, field.toString(), ArchiveDumpProcessor.valueOf(field.toString()).processObject(BeanUtils.getProperty(archiveDump, field.toString())));
+                try{
+                    PropertyUtils.setProperty(archive, field.getName(), ArchiveDumpProcessor.valueOf(field.getName()).processObject(BeanUtils.getProperty(archiveDump, field.getName())));
+                }
+                catch(Exception e){
+                    System.out.println("Exception occurred in accessing field " + field.getName() + " for ArchiveDump object :" + archiveDump.getArchiveDumpId());
+                }
             }
+            processedObjects.add(archive);
         }
+
+        /* Persist processed objects into database */
+        HubbleServiceProvider.getInstance().saveHubbleArchiveProcessedObjects(processedObjects);
     }
 }
