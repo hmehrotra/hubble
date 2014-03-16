@@ -5,8 +5,11 @@ import com.hubble.content.h2.beanExtensions.HubbleArchive;
 import com.hubble.content.hibernate.HibernateUtil;
 import com.hubble.service.RawDatabaseService;
 import com.hubble.utilities.ObjectUtilities;
+import org.hibernate.HibernateException;
 import org.hibernate.Query;
 import org.hibernate.Session;
+import org.hibernate.Transaction;
+
 import java.util.List;
 
 /**
@@ -38,14 +41,27 @@ public class RawDatabaseServiceProvider implements RawDatabaseService{
      * This method should only be used for processing raw dump
      */
     public List<ArchiveDump> fetchArchiveDump(){
+        /* Session in hibernate is not thread-safe.
+           getCurrentSession() returns the session object tied to current context.
+           Each thread gets a different session object and there is no need to
+           close this session
+         */
         Session session = HibernateUtil.getSessionFactory().getCurrentSession();
-        session.beginTransaction();
-        Query query = session.createQuery("from ArchiveDump order by archiveDumpId");
+        Transaction tx;
+        List results = null;
 
-        query.setMaxResults(10);
-        List results = query.list();
+        try{
+            tx = session.beginTransaction();
+            Query query = session.createQuery("from ArchiveDump order by archiveDumpId");
+            results = query.list();
 
-        session.close();
+            tx.commit();
+        }
+        catch (HibernateException he){
+            /* Since this transaction involves read-only operation, there is no need of rollback*/
+            he.printStackTrace();
+        }
+
         return results;
     }
 
@@ -55,22 +71,32 @@ public class RawDatabaseServiceProvider implements RawDatabaseService{
      */
     public void saveHubbleArchiveProcessedObjects(List <HubbleArchive> processedObjects){
         Session session = HibernateUtil.getSessionFactory().getCurrentSession();
-        session.beginTransaction();
-
-        for (HubbleArchive processedObject : processedObjects){
-            try{
+        Transaction tx = null;
+        try{
+            tx = session.beginTransaction();
+            for (HubbleArchive processedObject : processedObjects){
                 session.save(processedObject);
                 System.out.println("Persisted : " + processedObject.getArchiveDumpId());
+            }
 
-                session.flush();
-                session.evict(processedObject);
-            }
-            catch (Exception e){
-                System.out.println("Following exception occurred in persisting this object : " + e.getMessage());
-            }
+            /* Flush a batch of inserts at a go instead of flushing one object at a time */
+            session.flush();
+            session.clear();
+
+            /* Transaction.commit will close the session */
+            tx.commit();
         }
-
-        /* Transaction.commit will close the session */
-        session.getTransaction().commit();
+        catch(HibernateException he){
+            if (tx != null){
+                /* Since this transaction involves writing to database, we need to rollback
+                   in case of failure to avoid putting database in in-consistent state
+                 */
+                tx.rollback();
+            }
+            he.printStackTrace();
+        }
+        catch (Exception e){
+            System.out.println("Following exception occurred in persisting this object : " + e.getMessage());
+        }
     }
 }

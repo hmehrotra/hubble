@@ -4,7 +4,9 @@
 <hibernate-mapping package="com.hubble.content.h2.beanExtensions">
     <class name="HubbleArchive" table="HUBBLE_ARCHIVE">
         <id name="archiveDumpId" type = "long" column="HUBBLE_ARCHIVE_ID">
-            <generator class="native" />
+            <generator class="sequence">
+                <param name = "sequence">HUBBLE_ARCHIVE_SEQ</param>
+            </generator>
         </id>
         <property name="dateAllianceTerminated" type="date" column="DATE_ALLIANCE_TERMINATED"/>
         <property name="dateExpired" type="date" column="DATE_EXPIRED"/>
