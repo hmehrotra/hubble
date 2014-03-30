@@ -6,7 +6,7 @@
 GET        /webjars/*file                    controllers.WebJarAssets.at(file)
 
 # Home page
-GET        /                                 controllers.Application.loginPage()
+GET        /                                 controllers.Application.index()
 
 # Map the JS resource paths
 GET        /*file                            controllers.Assets.at(path="/public", file)

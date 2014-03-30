@@ -1,19 +1,21 @@
-/*global define, angular */
-
+/* Run in strict mode to avoid debugging nightmares */
 'use strict';
 
 require(['angular', './controllers', './directives', './filters', './services', 'angular-route'],
-  function(angular, controllers) {
+    function(angular, controllers) {
 
-    // Declare app level module which depends on filters, and services
-    
-    angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.directives', 'ngRoute']).
-      config(['$routeProvider', function($routeProvider) {
-        $routeProvider.when('/view1', {templateUrl: 'partials/partial1.html', controller: controllers.MyCtrl1});
-        $routeProvider.when('/view2', {templateUrl: 'partials/partial2.html', controller: controllers.MyCtrl2});
-        $routeProvider.otherwise({redirectTo: '/view1'});
-    }]);
-      
-    angular.bootstrap(document, ['myApp']);
+        // Declare app level module which depends on filters, and services
 
-});
+        /* Setter for module dependencies */
+        angular.module('hubble', ['ngRoute']).
+            config(['$routeProvider' , function($routeProvider){
+            $routeProvider.when('/login', { templateUrl: 'views/loginPage.html', controller: controllers.LoginController });
+            $routeProvider.when('/home', { templateUrl: 'views/homePage.html', controller: controllers.LoginController });
+            $routeProvider.otherwise({redirectTo: '/login'});
+        }]);
+
+        angular.bootstrap(document, ['hubble']);
+    });
+
+// Getter for module dependencies
+// angular.module("hubble");

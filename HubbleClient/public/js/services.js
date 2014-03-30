@@ -1,5 +1,4 @@
-/*global define */
-
+/* Running in strict mode to avoid debugging nightmares */
 'use strict';
 
 define(['angular'], function(angular) {

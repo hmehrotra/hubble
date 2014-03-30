@@ -1,19 +1,14 @@
-/*global define */
-
+/* Run in strict mode to avoid debugging nightmares */
 'use strict';
 
 define(function() {
+    /* Controllers */
+    var controllers = {};
 
-/* Controllers */
+    controllers.LoginController = function() {
 
-var controllers = {};
+    };
+    controllers.LoginController.$inject = [];
 
-controllers.MyCtrl1 = function() {}
-controllers.MyCtrl1.$inject = [];
-
-controllers.MyCtrl2 = function() {}
-controllers.MyCtrl2.$inject = [];
-
-return controllers;
-
+    return controllers;
 });

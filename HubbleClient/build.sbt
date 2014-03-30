@@ -1,4 +1,4 @@
-name := """angular-seed-play"""
+name := "HubbleClient"
 
 version := "1.0-SNAPSHOT"
 
