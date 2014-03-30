@@ -1,0 +1,73 @@
+.ui-layout-north {
+    background: white;
+    border:1px solid #CCC;
+    min-height:30px;
+    max-height:30px;
+    scroll:none;
+}
+
+.ui-layout-south {
+    background: white;
+    border:1px solid #CCC;
+    min-height:40px;
+    max-height:40px;
+}
+
+.ui-layout-east {
+    background: white;
+    border:1px solid #CCC;
+    width:150px;
+    min-width:150px;
+    max-width:400px;
+ }
+
+.ui-layout-west{
+    background: white;
+    border:1px solid #CCC;
+    width:150px;
+    min-width:150px;
+    max-width:400px;
+}
+
+.ui-layout-center{
+    background: white;
+    border:1px solid #CCC;
+}
+
+# Menu bar css
+#hubble-menu-bar{
+     list-style-type: none;
+     margin: 0px;
+     padding: 0px;
+}
+
+li {
+     display:inline;
+}
+
+.ui-widget-header{
+    margin: 1px;
+    padding:0px;
+    border: 0px;
+    -webkit-border-radius: 10px;
+    border-radius: 5px;
+    -webkit-box-shadow:inset 0px 0px 1px #edf9ff;
+    box-shadow:inset 0px 0px 1px #edf9ff;
+}
+
+div.ui-layout-toggler.ui-layout-toggler-west.ui-layout-toggler-open.ui-layout-toggler-west-open{
+    width: 1px;
+}
+
+.ui-button-text{
+    font-size: 16px;
+    margin:0px;
+    font-weight:normal;
+    padding:0px;
+}
+
+.ui-helper-clearfix {
+    max-height:30px;
+}
+
+

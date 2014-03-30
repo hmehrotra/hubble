@@ -11,7 +11,7 @@ require(['angular', './controllers', './directives', './filters', './services', 
             config(['$routeProvider' , function($routeProvider){
             $routeProvider.when('/login', { templateUrl: 'views/loginPage.html', controller: controllers.LoginController });
             $routeProvider.when('/home', { templateUrl: 'views/homePage.html', controller: controllers.LoginController });
-            $routeProvider.otherwise({redirectTo: '/login'});
+            $routeProvider.otherwise({redirectTo: '/home'});
         }]);
 
         angular.bootstrap(document, ['hubble']);

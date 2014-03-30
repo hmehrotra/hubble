@@ -3,7 +3,23 @@
 <head>
   <meta charset="utf-8">
   <title>Hubble: Explore a Business Ecosystem</title>
-  <link rel="stylesheet" href="@routes.Assets.at("css/app.css")">
+
+  <!-- Mandatory jQuery Stylesheets -->
+  <link rel="stylesheet" media="screen" href="@routes.Assets.at("jQueryResources/css/smoothness/jquery-ui-1.10.4.custom.css")">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" media="screen" href="@routes.Assets.at("css/main.css")">
+  <link rel="stylesheet" media="screen" href="@routes.Assets.at("css/hubbleMainPage.css")">
+
+  <!-- Mandatory jQuery Javascript -->
+  <script src="@routes.Assets.at("jQueryResources/js/jquery-1.10.2.js")" type="text/javascript"></script>
+  <script src="@routes.Assets.at("jQueryResources/js/jquery-ui-1.10.4.custom.js")" type="text/javascript"></script>
+
+  <!-- Widget specific Javascript -->
+  <script src="@routes.Assets.at("jQueryResources/js/jquery.layout-latest.js")" type="text/javascript"></script>
+
+  <script src="@routes.Assets.at("jQueryResources/js/jquery.ui.menubar.js")" type="text/javascript"></script>
+
   @Html(org.webjars.play.RequireJS.setup("js/app"))
 </head>
 <body>
