@@ -16,16 +16,16 @@
 .ui-layout-east {
     background: white;
     border:1px solid #CCC;
-    width:150px;
-    min-width:150px;
+    width:250px;
+    min-width:250px;
     max-width:400px;
  }
 
 .ui-layout-west{
     background: white;
     border:1px solid #CCC;
-    width:150px;
-    min-width:150px;
+    width:250px;
+    min-width:250px;
     max-width:400px;
 }
 
@@ -41,10 +41,11 @@
      padding: 0px;
 }
 
-li {
-     display:inline;
+li.ui-menubar-item {
+    display:inline;
 }
 
+/*  Menu Bar css */
 .ui-widget-header{
     margin: 1px;
     padding:0px;
@@ -70,4 +71,46 @@ div.ui-layout-toggler.ui-layout-toggler-west.ui-layout-toggler-open.ui-layout-to
     max-height:30px;
 }
 
+/* West Pane - Entity List View css */
+.entity-label {
+    font-size: 14px;
+    font-family: Heveltica;
+    color: Black;
+    font-weight: bold;
+    margin: 0px;
+    padding:3px;
+    padding-left:5px;
+    background:#D1CFCD;
+    margin-bottom:2px;
+}
+
+.entity-holder-div {
+    min-height: 33%;
+    max-height: 33%;
+    overflow-y: auto;
+    overflow-x: hide;
+    border:1px solid gray;
+}
+
+.entity-value {
+    font-size: 13px;
+    font-family: Bookman;
+    color: Black;
+    font-weight: normal;
+}
+
+ul.entity-holder-ul{
+    margin-top:0px;
+    padding-left:0px;
+    list-style-type:none;
+}
+
+li.entity-value:nth-child(odd) {
+    background:#E8E0D8;
+}
+
+li.entity-value{
+    margin:0px;
+    padding:5px;
+}
 
