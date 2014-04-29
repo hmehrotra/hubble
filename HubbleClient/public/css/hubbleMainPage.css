@@ -114,3 +114,12 @@ li.entity-value{
     padding:5px;
 }
 
+.filter-choices-list ul{
+    display: inline;
+    list-style-type: none;
+}
+
+.filter-choices-list li{
+    display: inline;
+}
+
