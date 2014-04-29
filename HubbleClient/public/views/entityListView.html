@@ -9,9 +9,9 @@
 
 <div class = "entity-holder-div company-list-holder">
     <div class="entity-label">Company</div>
-    <input class = "search-box" type="search" name="SearchCompany">
+    <input class = "search-box" type="search" name="SearchCompany" ng-model="queryCompany">
     <ul class = "entity-holder-ul">
-        <li class = "entity-value" ng-repeat="company in companies">
+        <li class = "entity-value" ng-repeat="company in companies | filter:queryCompany">
             {{company.name}}
         </li>
     </ul>
@@ -19,9 +19,9 @@
 
 <div class = "entity-holder-div country-list-holder">
     <div class="entity-label">Country</div>
-    <input class = "search-box" type="search" name="SearchCountry">
+    <input class = "search-box" type="search" name="SearchCountry" ng-model="queryCountry">
     <ul class = "entity-holder-ul">
-        <li class = "entity-value" ng-repeat="country in countries">
+        <li class = "entity-value" ng-repeat="country in countries | filter:queryCountry" >
             {{country.name}}
         </li>
     </ul>

@@ -10,7 +10,7 @@ require(['angular', './controllers', './directives', './filters', './services', 
         angular.module('hubble', ['ngRoute']).
             config(['$routeProvider' , function($routeProvider){
             $routeProvider.when('/login', { templateUrl: 'views/loginPage.html', controller: controllers.LoginController });
-            $routeProvider.when('/home', { templateUrl: 'views/homePage.html', controller: controllers.LoginController });
+            $routeProvider.when('/home', { templateUrl: 'views/homePage.html', controller: controllers.HubbleController });
             $routeProvider.otherwise({redirectTo: '/home'});
         }]);
 
