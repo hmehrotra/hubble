@@ -28,7 +28,7 @@ public class _HubbleArchive implements Serializable {
     protected String participantNation;
     protected String participantNationCode;
     protected String participantPublicStatus;
-    protected String participantSicCodes;
+    protected String participantSicCodes; /* Do not add this to db */
     protected String participantTickerSymbol;
 
     protected String ultimateParentName;
@@ -57,7 +57,7 @@ public class _HubbleArchive implements Serializable {
     protected String allianceNation;
     protected Integer participantCount;
     protected String alliancePrimarySicCode;
-    protected String allianceAllSicCodes;
+    protected String allianceAllSicCodes; /* Do not add this to db */
 
     protected String jointVentureCusip;
     protected String jointVentureName;

@@ -11,4 +11,6 @@ import java.util.List;
  */
 public interface RawDatabaseService {
     public <T extends Object> List <T> fetchArchiveDump();
+
+    public <T extends Object> List <T> fetchHubbleArchive();
 }

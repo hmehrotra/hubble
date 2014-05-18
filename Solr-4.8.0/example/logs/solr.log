@@ -1,0 +1,289 @@
+INFO  - 2014-05-17 14:31:34.193; org.eclipse.jetty.server.Server; jetty-8.1.10.v20130312
+INFO  - 2014-05-17 14:31:34.215; org.eclipse.jetty.deploy.providers.ScanningAppProvider; Deployment monitor /home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/contexts at interval 0
+INFO  - 2014-05-17 14:31:34.221; org.eclipse.jetty.deploy.DeploymentManager; Deployable added: /home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/contexts/solr-jetty-context.xml
+INFO  - 2014-05-17 14:31:34.272; org.eclipse.jetty.webapp.WebInfConfiguration; Extract jar:file:/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/webapps/solr.war!/ to /home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/solr-webapp/webapp
+INFO  - 2014-05-17 14:31:35.949; org.eclipse.jetty.webapp.StandardDescriptorProcessor; NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+INFO  - 2014-05-17 14:31:36.030; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init()
+INFO  - 2014-05-17 14:31:36.115; org.apache.solr.core.SolrResourceLoader; JNDI not configured for solr (NoInitialContextEx)
+INFO  - 2014-05-17 14:31:36.116; org.apache.solr.core.SolrResourceLoader; using system property solr.solr.home: multicore
+INFO  - 2014-05-17 14:31:36.117; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: 'multicore/'
+INFO  - 2014-05-17 14:31:36.277; org.apache.solr.core.ConfigSolr; Loading container configuration from /home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/solr.xml
+INFO  - 2014-05-17 14:31:36.498; org.apache.solr.core.CoreContainer; New CoreContainer 1467807460
+INFO  - 2014-05-17 14:31:36.500; org.apache.solr.core.CoreContainer; Loading cores into CoreContainer [instanceDir=multicore/]
+INFO  - 2014-05-17 14:31:36.527; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting socketTimeout to: 0
+INFO  - 2014-05-17 14:31:36.528; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting urlScheme to: 
+INFO  - 2014-05-17 14:31:36.537; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting connTimeout to: 0
+INFO  - 2014-05-17 14:31:36.538; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxConnectionsPerHost to: 20
+INFO  - 2014-05-17 14:31:36.541; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting corePoolSize to: 0
+INFO  - 2014-05-17 14:31:36.542; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maximumPoolSize to: 2147483647
+INFO  - 2014-05-17 14:31:36.542; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxThreadIdleTime to: 5
+INFO  - 2014-05-17 14:31:36.542; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting sizeOfQueue to: -1
+INFO  - 2014-05-17 14:31:36.542; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting fairnessPolicy to: false
+INFO  - 2014-05-17 14:31:36.821; org.apache.solr.logging.LogWatcher; SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+INFO  - 2014-05-17 14:31:36.823; org.apache.solr.logging.LogWatcher; Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+INFO  - 2014-05-17 14:31:36.824; org.apache.solr.core.CoreContainer; Host Name: 
+INFO  - 2014-05-17 14:31:36.893; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: 'multicore/alliance/'
+INFO  - 2014-05-17 14:31:36.893; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: 'multicore/participant/'
+INFO  - 2014-05-17 14:31:37.018; org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: LUCENE_48
+INFO  - 2014-05-17 14:31:37.018; org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: LUCENE_48
+INFO  - 2014-05-17 14:31:37.144; org.apache.solr.core.SolrConfig; Loaded SolrConfig: solrconfig.xml
+INFO  - 2014-05-17 14:31:37.152; org.apache.solr.schema.IndexSchema; Reading Solr Schema from schema.xml
+INFO  - 2014-05-17 14:31:37.153; org.apache.solr.core.SolrConfig; Loaded SolrConfig: solrconfig.xml
+INFO  - 2014-05-17 14:31:37.154; org.apache.solr.schema.IndexSchema; Reading Solr Schema from schema.xml
+INFO  - 2014-05-17 14:31:37.173; org.apache.solr.schema.IndexSchema; [participant] Schema name=Participant
+INFO  - 2014-05-17 14:31:37.190; org.apache.solr.schema.IndexSchema; [alliance] Schema name=Alliance
+WARN  - 2014-05-17 14:31:37.219; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.IntField]. Please consult documentation how to replace it accordingly.
+WARN  - 2014-05-17 14:31:37.219; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.IntField]. Please consult documentation how to replace it accordingly.
+WARN  - 2014-05-17 14:31:37.227; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.LongField]. Please consult documentation how to replace it accordingly.
+WARN  - 2014-05-17 14:31:37.228; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.LongField]. Please consult documentation how to replace it accordingly.
+WARN  - 2014-05-17 14:31:37.234; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.DoubleField]. Please consult documentation how to replace it accordingly.
+ERROR - 2014-05-17 14:31:37.314; org.apache.solr.core.CoreContainer; Unable to create core: alliance
+org.apache.solr.common.SolrException: Could not load core configuration for core alliance
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:66)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:554)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:261)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:253)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Unknown fieldType 'float' specified on field participantOwnership. Schema file is multicore/alliance/schema.xml
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:616)
+	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:166)
+	at org.apache.solr.schema.IndexSchemaFactory.create(IndexSchemaFactory.java:55)
+	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:69)
+	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:89)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:62)
+	... 9 more
+Caused by: org.apache.solr.common.SolrException: Unknown fieldType 'float' specified on field participantOwnership
+	at org.apache.solr.schema.IndexSchema.loadFields(IndexSchema.java:659)
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:473)
+	... 14 more
+INFO  - 2014-05-17 14:31:37.318; org.apache.solr.schema.IndexSchema; default search field in schema is name
+ERROR - 2014-05-17 14:31:37.318; org.apache.solr.common.SolrException; null:org.apache.solr.common.SolrException: Unable to create core: alliance
+	at org.apache.solr.core.CoreContainer.recordAndThrow(CoreContainer.java:911)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:568)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:261)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:253)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Could not load core configuration for core alliance
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:66)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:554)
+	... 8 more
+Caused by: org.apache.solr.common.SolrException: Unknown fieldType 'float' specified on field participantOwnership. Schema file is multicore/alliance/schema.xml
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:616)
+	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:166)
+	at org.apache.solr.schema.IndexSchemaFactory.create(IndexSchemaFactory.java:55)
+	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:69)
+	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:89)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:62)
+	... 9 more
+Caused by: org.apache.solr.common.SolrException: Unknown fieldType 'float' specified on field participantOwnership
+	at org.apache.solr.schema.IndexSchema.loadFields(IndexSchema.java:659)
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:473)
+	... 14 more
+
+INFO  - 2014-05-17 14:31:37.320; org.apache.solr.schema.IndexSchema; query parser default operator is OR
+INFO  - 2014-05-17 14:31:37.322; org.apache.solr.schema.IndexSchema; unique key field: id
+INFO  - 2014-05-17 14:31:37.324; org.apache.solr.core.CoreContainer; Creating SolrCore 'participant' using configuration from instancedir multicore/participant/
+INFO  - 2014-05-17 14:31:37.346; org.apache.solr.core.SolrCore; solr.StandardDirectoryFactory
+INFO  - 2014-05-17 14:31:37.354; org.apache.solr.core.SolrCore; [participant] Opening new SolrCore at multicore/participant/, dataDir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/
+INFO  - 2014-05-17 14:31:37.354; org.apache.solr.core.SolrCore; JMX monitoring not detected for core: participant
+INFO  - 2014-05-17 14:31:37.370; org.apache.solr.core.CachingDirectoryFactory; return new directory for /home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data
+INFO  - 2014-05-17 14:31:37.372; org.apache.solr.core.SolrCore; New index directory detected: old=null new=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index/
+WARN  - 2014-05-17 14:31:37.372; org.apache.solr.core.SolrCore; [participant] Solr index directory '/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index' doesn't exist. Creating new index...
+INFO  - 2014-05-17 14:31:37.391; org.apache.solr.core.CachingDirectoryFactory; return new directory for /home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index
+INFO  - 2014-05-17 14:31:37.619; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=1
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_1,generation=1}
+INFO  - 2014-05-17 14:31:37.620; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 1
+INFO  - 2014-05-17 14:31:37.692; org.apache.solr.core.SolrCore; no updateRequestProcessorChain defined as default, creating implicit default
+INFO  - 2014-05-17 14:31:37.700; org.apache.solr.core.RequestHandlers; created /get: solr.RealTimeGetHandler
+INFO  - 2014-05-17 14:31:37.701; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.ReplicationHandler
+INFO  - 2014-05-17 14:31:37.701; org.apache.solr.core.RequestHandlers; created /replication: solr.ReplicationHandler
+INFO  - 2014-05-17 14:31:37.703; org.apache.solr.core.RequestHandlers; created standard: solr.StandardRequestHandler
+INFO  - 2014-05-17 14:31:37.704; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+INFO  - 2014-05-17 14:31:37.704; org.apache.solr.core.RequestHandlers; created /analysis/field: solr.FieldAnalysisRequestHandler
+INFO  - 2014-05-17 14:31:37.707; org.apache.solr.core.RequestHandlers; created /update: solr.UpdateRequestHandler
+INFO  - 2014-05-17 14:31:37.708; org.apache.solr.core.RequestHandlers; created /admin/: org.apache.solr.handler.admin.AdminHandlers
+INFO  - 2014-05-17 14:31:37.710; org.apache.solr.core.RequestHandlers; created /admin/ping: solr.PingRequestHandler
+INFO  - 2014-05-17 14:31:37.727; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2014-05-17 14:31:37.745; org.apache.solr.update.CommitTracker; Hard AutoCommit: disabled
+INFO  - 2014-05-17 14:31:37.746; org.apache.solr.update.CommitTracker; Soft AutoCommit: disabled
+INFO  - 2014-05-17 14:31:37.752; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_1,generation=1}
+INFO  - 2014-05-17 14:31:37.752; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 1
+INFO  - 2014-05-17 14:31:37.760; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@d344913[participant] main
+INFO  - 2014-05-17 14:31:37.768; org.apache.solr.rest.ManagedResourceStorage$FileStorageIO; File-based storage initialized to use dir: /home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/conf
+INFO  - 2014-05-17 14:31:37.768; org.apache.solr.rest.RestManager; Initializing RestManager with initArgs: {storageDir=multicore/participant/conf/}
+INFO  - 2014-05-17 14:31:37.779; org.apache.solr.rest.ManagedResourceStorage; Reading _rest_managed.json using file:dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/conf
+WARN  - 2014-05-17 14:31:37.780; org.apache.solr.rest.ManagedResource; No stored data found for /rest/managed
+WARN  - 2014-05-17 14:31:37.780; org.apache.solr.rest.ManagedResource; No registered observers for /rest/managed
+INFO  - 2014-05-17 14:31:37.780; org.apache.solr.rest.RestManager; Initializing 0 registered ManagedResources
+INFO  - 2014-05-17 14:31:37.795; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@d344913[participant] main{StandardDirectoryReader(segments_1:1:nrt)}
+INFO  - 2014-05-17 14:31:37.795; org.apache.solr.core.CoreContainer; registering core: participant
+INFO  - 2014-05-17 14:31:37.797; org.apache.solr.servlet.SolrDispatchFilter; user.dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example
+INFO  - 2014-05-17 14:31:37.797; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init() done
+INFO  - 2014-05-17 14:31:37.831; org.eclipse.jetty.server.AbstractConnector; Started SocketConnector@0.0.0.0:8983
+INFO  - 2014-05-17 14:35:08.972; org.eclipse.jetty.server.Server; jetty-8.1.10.v20130312
+INFO  - 2014-05-17 14:35:08.993; org.eclipse.jetty.deploy.providers.ScanningAppProvider; Deployment monitor /home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/contexts at interval 0
+INFO  - 2014-05-17 14:35:08.998; org.eclipse.jetty.deploy.DeploymentManager; Deployable added: /home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/contexts/solr-jetty-context.xml
+INFO  - 2014-05-17 14:35:10.184; org.eclipse.jetty.webapp.StandardDescriptorProcessor; NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+INFO  - 2014-05-17 14:35:10.247; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init()
+INFO  - 2014-05-17 14:35:10.269; org.apache.solr.core.SolrResourceLoader; JNDI not configured for solr (NoInitialContextEx)
+INFO  - 2014-05-17 14:35:10.269; org.apache.solr.core.SolrResourceLoader; using system property solr.solr.home: multicore
+INFO  - 2014-05-17 14:35:10.270; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: 'multicore/'
+INFO  - 2014-05-17 14:35:10.421; org.apache.solr.core.ConfigSolr; Loading container configuration from /home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/solr.xml
+INFO  - 2014-05-17 14:35:10.556; org.apache.solr.core.CoreContainer; New CoreContainer 372008638
+INFO  - 2014-05-17 14:35:10.557; org.apache.solr.core.CoreContainer; Loading cores into CoreContainer [instanceDir=multicore/]
+INFO  - 2014-05-17 14:35:10.570; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting socketTimeout to: 0
+INFO  - 2014-05-17 14:35:10.570; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting urlScheme to: 
+INFO  - 2014-05-17 14:35:10.574; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting connTimeout to: 0
+INFO  - 2014-05-17 14:35:10.575; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxConnectionsPerHost to: 20
+INFO  - 2014-05-17 14:35:10.575; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting corePoolSize to: 0
+INFO  - 2014-05-17 14:35:10.577; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maximumPoolSize to: 2147483647
+INFO  - 2014-05-17 14:35:10.578; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxThreadIdleTime to: 5
+INFO  - 2014-05-17 14:35:10.578; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting sizeOfQueue to: -1
+INFO  - 2014-05-17 14:35:10.578; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting fairnessPolicy to: false
+INFO  - 2014-05-17 14:35:10.699; org.apache.solr.logging.LogWatcher; SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+INFO  - 2014-05-17 14:35:10.700; org.apache.solr.logging.LogWatcher; Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+INFO  - 2014-05-17 14:35:10.701; org.apache.solr.core.CoreContainer; Host Name: 
+INFO  - 2014-05-17 14:35:10.748; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: 'multicore/alliance/'
+INFO  - 2014-05-17 14:35:10.748; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: 'multicore/participant/'
+INFO  - 2014-05-17 14:35:10.824; org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: LUCENE_48
+INFO  - 2014-05-17 14:35:10.824; org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: LUCENE_48
+INFO  - 2014-05-17 14:35:10.932; org.apache.solr.core.SolrConfig; Loaded SolrConfig: solrconfig.xml
+INFO  - 2014-05-17 14:35:10.938; org.apache.solr.schema.IndexSchema; Reading Solr Schema from schema.xml
+INFO  - 2014-05-17 14:35:10.940; org.apache.solr.core.SolrConfig; Loaded SolrConfig: solrconfig.xml
+INFO  - 2014-05-17 14:35:10.941; org.apache.solr.schema.IndexSchema; Reading Solr Schema from schema.xml
+INFO  - 2014-05-17 14:35:10.956; org.apache.solr.schema.IndexSchema; [participant] Schema name=Participant
+INFO  - 2014-05-17 14:35:10.969; org.apache.solr.schema.IndexSchema; [alliance] Schema name=Alliance
+WARN  - 2014-05-17 14:35:10.989; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.IntField]. Please consult documentation how to replace it accordingly.
+WARN  - 2014-05-17 14:35:10.989; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.LongField]. Please consult documentation how to replace it accordingly.
+WARN  - 2014-05-17 14:35:10.997; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.FloatField]. Please consult documentation how to replace it accordingly.
+WARN  - 2014-05-17 14:35:10.998; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.FloatField]. Please consult documentation how to replace it accordingly.
+WARN  - 2014-05-17 14:35:11.003; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.DoubleField]. Please consult documentation how to replace it accordingly.
+WARN  - 2014-05-17 14:35:11.003; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.DoubleField]. Please consult documentation how to replace it accordingly.
+INFO  - 2014-05-17 14:35:11.030; org.apache.solr.schema.IndexSchema; default search field in schema is name
+INFO  - 2014-05-17 14:35:11.032; org.apache.solr.schema.IndexSchema; query parser default operator is OR
+INFO  - 2014-05-17 14:35:11.032; org.apache.solr.schema.IndexSchema; default search field in schema is name
+INFO  - 2014-05-17 14:35:11.033; org.apache.solr.schema.IndexSchema; unique key field: id
+INFO  - 2014-05-17 14:35:11.034; org.apache.solr.schema.IndexSchema; query parser default operator is OR
+INFO  - 2014-05-17 14:35:11.035; org.apache.solr.core.CoreContainer; Creating SolrCore 'participant' using configuration from instancedir multicore/participant/
+INFO  - 2014-05-17 14:35:11.036; org.apache.solr.schema.IndexSchema; unique key field: id
+INFO  - 2014-05-17 14:35:11.039; org.apache.solr.core.CoreContainer; Creating SolrCore 'alliance' using configuration from instancedir multicore/alliance/
+INFO  - 2014-05-17 14:35:11.051; org.apache.solr.core.SolrCore; solr.StandardDirectoryFactory
+INFO  - 2014-05-17 14:35:11.051; org.apache.solr.core.SolrCore; solr.StandardDirectoryFactory
+INFO  - 2014-05-17 14:35:11.066; org.apache.solr.core.SolrCore; [participant] Opening new SolrCore at multicore/participant/, dataDir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/
+INFO  - 2014-05-17 14:35:11.066; org.apache.solr.core.SolrCore; [alliance] Opening new SolrCore at multicore/alliance/, dataDir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/alliance/data/
+INFO  - 2014-05-17 14:35:11.066; org.apache.solr.core.SolrCore; JMX monitoring not detected for core: alliance
+INFO  - 2014-05-17 14:35:11.066; org.apache.solr.core.SolrCore; JMX monitoring not detected for core: participant
+INFO  - 2014-05-17 14:35:11.079; org.apache.solr.core.CachingDirectoryFactory; return new directory for /home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data
+INFO  - 2014-05-17 14:35:11.079; org.apache.solr.core.CachingDirectoryFactory; return new directory for /home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/alliance/data
+INFO  - 2014-05-17 14:35:11.080; org.apache.solr.core.SolrCore; New index directory detected: old=null new=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index/
+INFO  - 2014-05-17 14:35:11.080; org.apache.solr.core.SolrCore; New index directory detected: old=null new=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/alliance/data/index/
+INFO  - 2014-05-17 14:35:11.081; org.apache.solr.core.CachingDirectoryFactory; return new directory for /home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index
+WARN  - 2014-05-17 14:35:11.081; org.apache.solr.core.SolrCore; [alliance] Solr index directory '/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/alliance/data/index' doesn't exist. Creating new index...
+INFO  - 2014-05-17 14:35:11.088; org.apache.solr.core.CachingDirectoryFactory; return new directory for /home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/alliance/data/index
+INFO  - 2014-05-17 14:35:11.173; org.apache.solr.core.SolrCore; no updateRequestProcessorChain defined as default, creating implicit default
+INFO  - 2014-05-17 14:35:11.189; org.apache.solr.core.RequestHandlers; created /get: solr.RealTimeGetHandler
+INFO  - 2014-05-17 14:35:11.190; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.ReplicationHandler
+INFO  - 2014-05-17 14:35:11.190; org.apache.solr.core.RequestHandlers; created /replication: solr.ReplicationHandler
+INFO  - 2014-05-17 14:35:11.192; org.apache.solr.core.RequestHandlers; created standard: solr.StandardRequestHandler
+INFO  - 2014-05-17 14:35:11.192; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+INFO  - 2014-05-17 14:35:11.192; org.apache.solr.core.RequestHandlers; created /analysis/field: solr.FieldAnalysisRequestHandler
+INFO  - 2014-05-17 14:35:11.195; org.apache.solr.core.RequestHandlers; created /update: solr.UpdateRequestHandler
+INFO  - 2014-05-17 14:35:11.195; org.apache.solr.core.RequestHandlers; created /admin/: org.apache.solr.handler.admin.AdminHandlers
+INFO  - 2014-05-17 14:35:11.197; org.apache.solr.core.RequestHandlers; created /admin/ping: solr.PingRequestHandler
+INFO  - 2014-05-17 14:35:11.210; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2014-05-17 14:35:11.223; org.apache.solr.update.CommitTracker; Hard AutoCommit: disabled
+INFO  - 2014-05-17 14:35:11.224; org.apache.solr.update.CommitTracker; Soft AutoCommit: disabled
+INFO  - 2014-05-17 14:35:11.230; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_1,generation=1}
+INFO  - 2014-05-17 14:35:11.231; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 1
+INFO  - 2014-05-17 14:35:11.237; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@614c0482[participant] main
+INFO  - 2014-05-17 14:35:11.242; org.apache.solr.rest.ManagedResourceStorage$FileStorageIO; File-based storage initialized to use dir: /home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/conf
+INFO  - 2014-05-17 14:35:11.242; org.apache.solr.rest.RestManager; Initializing RestManager with initArgs: {storageDir=multicore/participant/conf/}
+INFO  - 2014-05-17 14:35:11.251; org.apache.solr.rest.ManagedResourceStorage; Reading _rest_managed.json using file:dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/conf
+WARN  - 2014-05-17 14:35:11.251; org.apache.solr.rest.ManagedResource; No stored data found for /rest/managed
+WARN  - 2014-05-17 14:35:11.252; org.apache.solr.rest.ManagedResource; No registered observers for /rest/managed
+INFO  - 2014-05-17 14:35:11.252; org.apache.solr.rest.RestManager; Initializing 0 registered ManagedResources
+INFO  - 2014-05-17 14:35:11.262; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@614c0482[participant] main{StandardDirectoryReader(segments_1:1:nrt)}
+INFO  - 2014-05-17 14:35:11.262; org.apache.solr.core.CoreContainer; registering core: participant
+INFO  - 2014-05-17 14:35:11.361; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=1
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/alliance/data/index,segFN=segments_1,generation=1}
+INFO  - 2014-05-17 14:35:11.362; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 1
+INFO  - 2014-05-17 14:35:11.364; org.apache.solr.core.SolrCore; no updateRequestProcessorChain defined as default, creating implicit default
+INFO  - 2014-05-17 14:35:11.364; org.apache.solr.core.RequestHandlers; created /get: solr.RealTimeGetHandler
+INFO  - 2014-05-17 14:35:11.364; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.ReplicationHandler
+INFO  - 2014-05-17 14:35:11.365; org.apache.solr.core.RequestHandlers; created /replication: solr.ReplicationHandler
+INFO  - 2014-05-17 14:35:11.365; org.apache.solr.core.RequestHandlers; created standard: solr.StandardRequestHandler
+INFO  - 2014-05-17 14:35:11.365; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+INFO  - 2014-05-17 14:35:11.365; org.apache.solr.core.RequestHandlers; created /analysis/field: solr.FieldAnalysisRequestHandler
+INFO  - 2014-05-17 14:35:11.366; org.apache.solr.core.RequestHandlers; created /update: solr.UpdateRequestHandler
+INFO  - 2014-05-17 14:35:11.366; org.apache.solr.core.RequestHandlers; created /admin/: org.apache.solr.handler.admin.AdminHandlers
+INFO  - 2014-05-17 14:35:11.366; org.apache.solr.core.RequestHandlers; created /admin/ping: solr.PingRequestHandler
+INFO  - 2014-05-17 14:35:11.367; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2014-05-17 14:35:11.370; org.apache.solr.update.CommitTracker; Hard AutoCommit: disabled
+INFO  - 2014-05-17 14:35:11.370; org.apache.solr.update.CommitTracker; Soft AutoCommit: disabled
+INFO  - 2014-05-17 14:35:11.372; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/alliance/data/index,segFN=segments_1,generation=1}
+INFO  - 2014-05-17 14:35:11.373; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 1
+INFO  - 2014-05-17 14:35:11.373; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@2fe0df4b[alliance] main
+INFO  - 2014-05-17 14:35:11.373; org.apache.solr.rest.ManagedResourceStorage$FileStorageIO; File-based storage initialized to use dir: /home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/alliance/conf
+INFO  - 2014-05-17 14:35:11.374; org.apache.solr.rest.RestManager; Initializing RestManager with initArgs: {storageDir=multicore/alliance/conf/}
+INFO  - 2014-05-17 14:35:11.374; org.apache.solr.rest.ManagedResourceStorage; Reading _rest_managed.json using file:dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/alliance/conf
+WARN  - 2014-05-17 14:35:11.375; org.apache.solr.rest.ManagedResource; No stored data found for /rest/managed
+WARN  - 2014-05-17 14:35:11.375; org.apache.solr.rest.ManagedResource; No registered observers for /rest/managed
+INFO  - 2014-05-17 14:35:11.375; org.apache.solr.rest.RestManager; Initializing 0 registered ManagedResources
+INFO  - 2014-05-17 14:35:11.376; org.apache.solr.core.SolrCore; [alliance] Registered new searcher Searcher@2fe0df4b[alliance] main{StandardDirectoryReader(segments_1:1:nrt)}
+INFO  - 2014-05-17 14:35:11.376; org.apache.solr.core.CoreContainer; registering core: alliance
+INFO  - 2014-05-17 14:35:11.378; org.apache.solr.servlet.SolrDispatchFilter; user.dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example
+INFO  - 2014-05-17 14:35:11.378; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init() done
+INFO  - 2014-05-17 14:35:11.404; org.eclipse.jetty.server.AbstractConnector; Started SocketConnector@0.0.0.0:8983
+INFO  - 2014-05-17 14:36:43.042; org.apache.solr.servlet.SolrDispatchFilter; [admin] webapp=null path=/admin/cores params={indexInfo=false&_=1400362603034&wt=json} status=0 QTime=5 
+INFO  - 2014-05-17 14:36:43.101; org.apache.solr.servlet.SolrDispatchFilter; [admin] webapp=null path=/admin/info/system params={_=1400362603069&wt=json} status=0 QTime=30 
+ERROR - 2014-05-17 14:36:48.565; org.apache.solr.handler.admin.ShowFileRequestHandler; Can not find: admin-extra.menu-top.html [/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/alliance/conf/admin-extra.menu-top.html]
+ERROR - 2014-05-17 14:36:48.565; org.apache.solr.handler.admin.ShowFileRequestHandler; Can not find: admin-extra.menu-bottom.html [/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/alliance/conf/admin-extra.menu-bottom.html]
+INFO  - 2014-05-17 14:36:48.566; org.apache.solr.core.SolrCore; [alliance] webapp=/solr path=/admin/file/ params={file=admin-extra.menu-bottom.html&_=1400362608557&contentType=text/html;charset%3Dutf-8} status=404 QTime=8 
+INFO  - 2014-05-17 14:36:48.566; org.apache.solr.core.SolrCore; [alliance] webapp=/solr path=/admin/file/ params={file=admin-extra.menu-top.html&_=1400362608556&contentType=text/html;charset%3Dutf-8} status=404 QTime=8 
+INFO  - 2014-05-17 14:36:48.579; org.apache.solr.core.SolrCore; [alliance] webapp=/solr path=/admin/luke params={numTerms=0&_=1400362608572&show=index&wt=json} status=0 QTime=1 
+ERROR - 2014-05-17 14:36:48.583; org.apache.solr.handler.admin.ShowFileRequestHandler; Can not find: admin-extra.html [/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/alliance/conf/admin-extra.html]
+INFO  - 2014-05-17 14:36:48.584; org.apache.solr.core.SolrCore; [alliance] webapp=/solr path=/admin/file/ params={file=admin-extra.html&_=1400362608580} status=404 QTime=2 
+INFO  - 2014-05-17 14:36:48.584; org.apache.solr.core.SolrCore; [alliance] webapp=/solr path=/admin/system params={_=1400362608579&wt=json} status=0 QTime=3 
+INFO  - 2014-05-17 14:36:48.589; org.apache.solr.core.SolrCore; [alliance] webapp=/solr path=/admin/ping params={action=status&_=1400362608582&wt=json} status=503 QTime=5 
+INFO  - 2014-05-17 14:36:48.607; org.apache.solr.handler.ReplicationHandler; Commits will be reserved for  10000
+INFO  - 2014-05-17 14:36:48.610; org.apache.solr.core.SolrCore; [alliance] webapp=/solr path=/replication params={command=details&_=1400362608577&wt=json} status=0 QTime=17 
+INFO  - 2014-05-17 14:36:56.999; org.apache.solr.core.SolrCore; [participant] webapp=/solr path=/admin/luke params={numTerms=0&_=1400362616996&show=index&wt=json} status=0 QTime=0 
+INFO  - 2014-05-17 14:36:57.001; org.apache.solr.handler.ReplicationHandler; Commits will be reserved for  10000
+INFO  - 2014-05-17 14:36:57.002; org.apache.solr.core.SolrCore; [participant] webapp=/solr path=/replication params={command=details&_=1400362616998&wt=json} status=0 QTime=2 
+ERROR - 2014-05-17 14:36:57.003; org.apache.solr.handler.admin.ShowFileRequestHandler; Can not find: admin-extra.html [/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/conf/admin-extra.html]
+INFO  - 2014-05-17 14:36:57.004; org.apache.solr.core.SolrCore; [participant] webapp=/solr path=/admin/file/ params={file=admin-extra.html&_=1400362617000} status=404 QTime=1 
+INFO  - 2014-05-17 14:36:57.005; org.apache.solr.core.SolrCore; [participant] webapp=/solr path=/admin/system params={_=1400362616999&wt=json} status=0 QTime=4 
+INFO  - 2014-05-17 14:36:57.006; org.apache.solr.core.SolrCore; [participant] webapp=/solr path=/admin/ping params={action=status&_=1400362617000&wt=json} status=503 QTime=0 
+INFO  - 2014-05-17 14:37:40.558; org.apache.solr.core.SolrCore; [participant] webapp=/solr path=/select params={indent=true&q=*:*&_=1400362660532&wt=json} hits=0 status=0 QTime=23 
+INFO  - 2014-05-17 14:37:50.179; org.apache.solr.servlet.SolrDispatchFilter; [admin] webapp=null path=/admin/cores params={_=1400362670177&wt=json} status=0 QTime=1 
+INFO  - 2014-05-17 14:37:50.222; org.apache.solr.servlet.SolrDispatchFilter; [admin] webapp=null path=/admin/cores params={_=1400362670192&wt=json} status=0 QTime=1 
+INFO  - 2014-05-17 14:37:52.017; org.apache.solr.core.SolrCore; [alliance] webapp=/solr path=/admin/luke params={numTerms=0&_=1400362672013&show=index&wt=json} status=0 QTime=0 
+INFO  - 2014-05-17 14:37:52.018; org.apache.solr.core.SolrCore; [alliance] webapp=/solr path=/replication params={command=details&_=1400362672016&wt=json} status=0 QTime=1 
+ERROR - 2014-05-17 14:37:52.021; org.apache.solr.handler.admin.ShowFileRequestHandler; Can not find: admin-extra.html [/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/alliance/conf/admin-extra.html]
+INFO  - 2014-05-17 14:37:52.021; org.apache.solr.core.SolrCore; [alliance] webapp=/solr path=/admin/system params={_=1400362672017&wt=json} status=0 QTime=3 
+INFO  - 2014-05-17 14:37:52.022; org.apache.solr.core.SolrCore; [alliance] webapp=/solr path=/admin/ping params={action=status&_=1400362672019&wt=json} status=503 QTime=1 
+INFO  - 2014-05-17 14:37:52.021; org.apache.solr.core.SolrCore; [alliance] webapp=/solr path=/admin/file/ params={file=admin-extra.html&_=1400362672018} status=404 QTime=1 
+INFO  - 2014-05-17 14:37:57.161; org.apache.solr.core.SolrCore; [alliance] webapp=/solr path=/select params={indent=true&q=*:*&_=1400362677157&wt=json} hits=0 status=0 QTime=1 
+INFO  - 2014-05-17 14:46:37.695; org.apache.solr.core.SolrCore; [participant] webapp=/solr path=/admin/luke params={numTerms=0&_=1400363197691&show=index&wt=json} status=0 QTime=0 
+INFO  - 2014-05-17 14:46:37.698; org.apache.solr.core.SolrCore; [participant] webapp=/solr path=/replication params={command=details&_=1400363197694&wt=json} status=0 QTime=2 
+INFO  - 2014-05-17 14:46:37.699; org.apache.solr.core.SolrCore; [participant] webapp=/solr path=/admin/file/ params={file=admin-extra.html&_=1400363197696} status=0 QTime=1 
+INFO  - 2014-05-17 14:46:37.701; org.apache.solr.core.SolrCore; [participant] webapp=/solr path=/admin/ping params={action=status&_=1400363197698&wt=json} status=503 QTime=1 
+INFO  - 2014-05-17 14:46:37.701; org.apache.solr.core.SolrCore; [participant] webapp=/solr path=/admin/system params={_=1400363197695&wt=json} status=0 QTime=4 
+INFO  - 2014-05-17 14:46:39.379; org.apache.solr.core.SolrCore; [alliance] webapp=/solr path=/admin/luke params={numTerms=0&_=1400363199376&show=index&wt=json} status=0 QTime=0 
+INFO  - 2014-05-17 14:46:39.380; org.apache.solr.core.SolrCore; [alliance] webapp=/solr path=/replication params={command=details&_=1400363199378&wt=json} status=0 QTime=1 
+INFO  - 2014-05-17 14:46:39.382; org.apache.solr.core.SolrCore; [alliance] webapp=/solr path=/admin/file/ params={file=admin-extra.html&_=1400363199380} status=0 QTime=0 
+INFO  - 2014-05-17 14:46:39.384; org.apache.solr.core.SolrCore; [alliance] webapp=/solr path=/admin/system params={_=1400363199379&wt=json} status=0 QTime=3 
+INFO  - 2014-05-17 14:46:39.385; org.apache.solr.core.SolrCore; [alliance] webapp=/solr path=/admin/ping params={action=status&_=1400363199382&wt=json} status=503 QTime=1 

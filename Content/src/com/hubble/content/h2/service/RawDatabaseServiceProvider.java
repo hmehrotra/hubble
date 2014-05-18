@@ -9,7 +9,6 @@ import org.hibernate.HibernateException;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-
 import java.util.List;
 
 /**
@@ -53,6 +52,35 @@ public class RawDatabaseServiceProvider implements RawDatabaseService{
         try{
             tx = session.beginTransaction();
             Query query = session.createQuery("from ArchiveDump order by archiveDumpId");
+            results = query.list();
+
+            tx.commit();
+        }
+        catch (HibernateException he){
+            /* Since this transaction involves read-only operation, there is no need of rollback*/
+            he.printStackTrace();
+        }
+
+        return results;
+    }
+
+    /**
+     * Fetches and returns all records in processed hubble archive.
+     * This method should only be used for processed hubble archive
+     */
+    public List<HubbleArchive> fetchHubbleArchive(){
+        /* Session in hibernate is not thread-safe.
+           getCurrentSession() returns the session object tied to current context.
+           Each thread gets a different session object and there is no need to
+           close this session
+         */
+        Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+        Transaction tx;
+        List results = null;
+
+        try{
+            tx = session.beginTransaction();
+            Query query = session.createQuery("from HubbleArchive order by archiveDumpId");
             results = query.list();
 
             tx.commit();

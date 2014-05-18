@@ -2,6 +2,7 @@ package com.hubble.serviceprovider;
 
 import com.hubble.content.h2.beanExtensions.ArchiveDump;
 import com.hubble.content.h2.beanExtensions.HubbleArchive;
+import com.hubble.content.h2.service.SegmentServiceProvider;
 import com.hubble.service.RawDatabaseService;
 import com.hubble.utilities.ObjectUtilities;
 import com.hubble.service.ParticipantService;
@@ -43,11 +44,21 @@ public class HubbleServiceProvider implements ParticipantService, AllianceServic
 
 
     /********* Segment service provider methods *****************/
+    public List <String> segmentNamesForSicCode(String sicCode){
+        return SegmentServiceProvider.getInstaance().segmentNamesForSicCode(sicCode);
+    }
 
+    public List <String> sicCodesForSegmentName(String segmentName){
+        return SegmentServiceProvider.getInstaance().sicCodesForSegmentName(segmentName);
+    }
 
     /********* Raw Database Services ***************************/
     public List<ArchiveDump> fetchArchiveDump(){
         return RawDatabaseServiceProvider.getInstance().fetchArchiveDump();
+    }
+
+    public List <HubbleArchive> fetchHubbleArchive(){
+        return RawDatabaseServiceProvider.getInstance().fetchHubbleArchive();
     }
 
     public void saveHubbleArchiveProcessedObjects(List <HubbleArchive> processedObjects){

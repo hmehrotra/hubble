@@ -1,0 +1,70 @@
+<?xml version="1.0" ?>
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one or more
+ contributor license agreements.  See the NOTICE file distributed with
+ this work for additional information regarding copyright ownership.
+ The ASF licenses this file to You under the Apache License, Version 2.0
+ (the "License"); you may not use this file except in compliance with
+ the License.  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<schema name="Participant" version="1.1">
+
+  <fieldtype name="string"  class="solr.StrField" sortMissingLast="true" omitNorms="true"/>
+  <fieldType name="int" class="solr.IntField" />
+  <fieldType name="long" class="solr.LongField" />
+  <fieldType name="float" class="solr.FloatField" />
+  <fieldType name="double" class="solr.DoubleField" />
+  <fieldType name="date" class="solr.TrieDateField" sortMissingLast="true" />
+
+  <!-- general -->
+  <field name="id"        type="string"    indexed="true"  stored="true"  multiValued="false" required="true"/>
+  <field name="type"      type="string"    indexed="true"  stored="true"  multiValued="false" /> 
+  <field name="name"      type="string"    indexed="true"  stored="true"  multiValued="false" /> 
+  <field name="Participant"     type="string"    indexed="true"  stored="true"  multiValued="false" />
+  <field name="_version_" type="long"      indexed="true"  stored="true"/>
+
+  <!-- ParticipantCusip is the primary key -->
+  <field name="participantCusip"        type="string"    indexed="true"  stored="true"  multiValued="false" required="true"/>	
+  <field name="participantName"        type="string"    indexed="true"  stored="true"  multiValued="false" required="true"/>
+  <field name="participantBusinessDescription"        type="string"    indexed="true"  stored="true"  multiValued="false" required="false"/>
+  <field name="participantPrimarySicCode"        type="string"    indexed="true"  stored="true"  multiValued="true" required="true"/>
+  <field name="participantMarketSegments"        type="string"    indexed="true"  stored="true"  multiValued="true" required="true"/>
+
+  <field name="participantStateCode"        type="string"    indexed="true"  stored="true"  multiValued="false" required="false"/>
+  <field name="participantCity"        type="string"    indexed="true"  stored="true"  multiValued="false" required="false"/>  
+  <field name="participantStockExchange"        type="string"    indexed="true"  stored="true"  multiValued="false" required="false"/>
+  <field name="participantStockExchangeCode"       type="string"    indexed="true"  stored="true"  multiValued="false" required="false"/>
+  <field name="participantWebsite"        type="string"    indexed="true"  stored="true"  multiValued="false" required="false"/>
+  <field name="participantNation"        type="string"    indexed="true"  stored="true"  multiValued="false" required="false"/>
+  <field name="participantNationCode"        type="string"    indexed="true"  stored="true"  multiValued="false" required="false"/>
+  <field name="participantPublicStatus"        type="string"    indexed="true"  stored="true"  multiValued="false" required="false"/>
+  <field name="participantTickerSymbol"        type="string"    indexed="true"  stored="true"  multiValued="false" required="false"/>
+
+  <field name="ultimateParentCusip"        type="string"    indexed="true"  stored="true"  multiValued="false" required="false"/>
+  <field name="ultimateParentName"        type="string"    indexed="true"  stored="true"  multiValued="false" required="false"/>
+  <field name="ultimateParentPrimarySicCode"        type="string"    indexed="true"  stored="true"  multiValued="true" required="false"/>  
+  <field name="ultimateParentMarketSegments"        type="string"    indexed="true"  stored="true"  multiValued="true" required="false"/>  
+  <field name="ultimateParentStatus"        type="string"    indexed="true"  stored="true"  multiValued="false" required="false"/>
+
+  <field name="parentCusip"        type="string"    indexed="true"  stored="true"  multiValued="false" required="false"/>
+  <field name="parentName"        type="string"    indexed="true"  stored="true"  multiValued="false" required="false"/>
+
+ <!-- field to use to determine and enforce document uniqueness. -->
+ <uniqueKey>id</uniqueKey>
+
+ <!-- field for the QueryParser to use when an explicit fieldname is absent -->
+ <defaultSearchField>name</defaultSearchField>
+
+ <!-- SolrQueryParser configuration: defaultOperator="AND|OR" -->
+ <solrQueryParser defaultOperator="OR"/>
+</schema>
+
