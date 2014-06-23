@@ -9,7 +9,7 @@ import java.util.List;
  * @author Harshit Mehrotra
  * Date Feb 6, 2014.
  */
-public interface RawDatabaseService {
+public interface RawDatabaseService extends Service{
     public <T extends Object> List <T> fetchArchiveDump();
 
     public <T extends Object> List <T> fetchHubbleArchive();

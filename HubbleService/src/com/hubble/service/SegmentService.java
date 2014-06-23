@@ -8,7 +8,7 @@ import java.util.List;
  * @author Harshit Mehrotra
  * Date Feb 6, 2014.
  */
-public interface SegmentService {
+public interface SegmentService extends Service{
     public List<String> segmentNamesForSicCode(String sicCode);
 
     public List <String> sicCodesForSegmentName(String segmentName);

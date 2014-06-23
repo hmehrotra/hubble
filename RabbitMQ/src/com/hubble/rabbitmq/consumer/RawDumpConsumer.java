@@ -7,7 +7,8 @@ import com.google.gson.JsonParser;
 import com.hubble.content.h2.beanExtensions.ArchiveDump;
 import com.hubble.content.h2.beanExtensions.ArchiveDumpProcessor;
 import com.hubble.content.h2.beanExtensions.HubbleArchive;
-import com.hubble.serviceprovider.HubbleServiceProvider;
+import com.hubble.serviceprovider.RawDatabaseServiceProvider;
+import com.hubble.serviceprovider.HubbleServiceProviderRegistration;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
@@ -61,7 +62,6 @@ public class RawDumpConsumer {
     }
 }
 
-
 /**
  * This class takes in a message from {@link RawDumpConsumer} and extracts list of {@link com.hubble.content.h2.beanExtensions.ArchiveDump}
  * objects from it, processes the objects and persists processed objects into database
@@ -104,6 +104,7 @@ class RawDumpProcessorDelegate {
         }
 
         /* Persist processed objects into database */
-        HubbleServiceProvider.getInstance().saveHubbleArchiveProcessedObjects(processedObjects);
+        RawDatabaseServiceProvider service = (RawDatabaseServiceProvider) HubbleServiceProviderRegistration.getServiceProvider("RawDatabaseService");
+        service.saveHubbleArchiveProcessedObjects(processedObjects);
     }
 }

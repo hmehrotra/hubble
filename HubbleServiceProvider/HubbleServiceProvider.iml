@@ -5,11 +5,12 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="HubbleService" />
     <orderEntry type="module" module-name="Utilities" />
     <orderEntry type="module" module-name="Content" />
+    <orderEntry type="library" name="Jars" level="project" />
   </component>
 </module>
 

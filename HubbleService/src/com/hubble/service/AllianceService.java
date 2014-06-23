@@ -6,5 +6,6 @@ package com.hubble.service;
  * @author Harshit Mehrotra
  * Date Feb 6, 2014.
  */
-public interface AllianceService {
+public interface AllianceService extends Service{
+
 }

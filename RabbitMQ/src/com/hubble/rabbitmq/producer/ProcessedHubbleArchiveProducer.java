@@ -2,7 +2,9 @@ package com.hubble.rabbitmq.producer;
 
 import com.google.gson.Gson;
 import com.hubble.content.h2.beanExtensions.HubbleArchive;
+import com.hubble.serviceprovider.RawDatabaseServiceProvider;
 import com.hubble.serviceprovider.HubbleServiceProvider;
+import com.hubble.serviceprovider.HubbleServiceProviderRegistration;
 import com.hubble.utilities.ArrayUtilities;
 import com.hubble.utilities.StringUtilities;
 import com.rabbitmq.client.Channel;
@@ -62,7 +64,9 @@ public class ProcessedHubbleArchiveProducer {
     public static void main(String args[]){
         ProcessedHubbleArchiveProducer producer = new ProcessedHubbleArchiveProducer();
 
-        List <HubbleArchive> hubbleArchiveList = HubbleServiceProvider.getInstance().fetchHubbleArchive();
+        RawDatabaseServiceProvider service = (RawDatabaseServiceProvider) HubbleServiceProviderRegistration.getServiceProvider("RawDatabaseServiceProvider");
+        List <HubbleArchive> hubbleArchiveList = service.fetchHubbleArchive();
+
         ConnectionFactory factory = new ConnectionFactory();
         factory.setHost("localhost");
 

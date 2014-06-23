@@ -1,15 +1,15 @@
 package com.hubble.rabbitmq.consumer;
 
-import com.google.gson.Gson;
-import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonParser;
+import com.google.gson.*;
 import com.hubble.content.h2.beanExtensions.HubbleArchive;
 import com.hubble.content.solr.SolrCache;
+import com.hubble.utilities.DateTypeAdapter;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
 import com.rabbitmq.client.QueueingConsumer;
+
+import java.util.Date;
 
 /**
  * Consumer of the processed hubble archive. The consumer reads messages containing alliance information from the producer,
@@ -65,7 +65,7 @@ class ProcessedHubleArchiveConsumerDelegate{
     }
 
     public void extractHubbleArchiveObjects(){
-        Gson gson = new Gson();
+        Gson gson = new GsonBuilder().registerTypeAdapter(Date.class, new DateTypeAdapter()).create();
 
         JsonParser parser = new JsonParser();
         JsonArray jsonArray = parser.parse(data).getAsJsonArray();
