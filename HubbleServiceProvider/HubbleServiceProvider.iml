@@ -9,8 +9,8 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="HubbleService" />
     <orderEntry type="module" module-name="Utilities" />
-    <orderEntry type="module" module-name="Content" />
     <orderEntry type="library" name="Jars" level="project" />
+    <orderEntry type="module" module-name="Content" />
   </component>
 </module>
 

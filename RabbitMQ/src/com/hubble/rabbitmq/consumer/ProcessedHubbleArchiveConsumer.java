@@ -2,7 +2,7 @@ package com.hubble.rabbitmq.consumer;
 
 import com.google.gson.*;
 import com.hubble.content.h2.beanExtensions.HubbleArchive;
-import com.hubble.content.solr.SolrCache;
+import com.hubble.serviceprovider.SolrCache;
 import com.hubble.utilities.DateTypeAdapter;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
@@ -72,7 +72,7 @@ class ProcessedHubleArchiveConsumerDelegate{
 
         for (JsonElement json : jsonArray){
             HubbleArchive archiveObject = gson.fromJson(json, HubbleArchive.class);
-            SolrCache.addObjectToSolrCache(archiveObject);
+            SolrCache.getInstance().addObjectToSolrCache(archiveObject);
         }
     }
 }

@@ -92,6 +92,8 @@ public class RawDatabaseServiceProvider implements RawDatabaseService, HubbleSer
         try{
             tx = session.beginTransaction();
             Query query = session.createQuery("from HubbleArchive order by archiveDumpId");
+            query.setMaxResults(100);
+
             results = query.list();
 
             tx.commit();
