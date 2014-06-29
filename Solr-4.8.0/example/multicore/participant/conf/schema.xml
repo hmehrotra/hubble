@@ -22,7 +22,7 @@
   <fieldType name="int" class="solr.IntField" />
   <fieldType name="long" class="solr.LongField" />
   <fieldType name="float" class="solr.FloatField" />
-  <fieldType name="double" class="solr.DoubleField" />
+  <fieldType name="double" class="solr.DoubleField" />N
   <fieldType name="date" class="solr.TrieDateField" sortMissingLast="true" />
 
   <!-- general -->

@@ -9,10 +9,8 @@ import org.hibernate.HibernateException;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+
+import java.util.*;
 
 /**
  * Service provider class for Market Segments related query
@@ -109,10 +107,40 @@ public class SegmentServiceProvider implements SegmentService, HubbleServiceProv
         return _sicCodeSegmentNameMap.get(sicCode);
     }
 
+    public List <String> segmentNamesForSicCodes(List <String> sicCodes){
+        List <String> segmentNames = new ArrayList<>();
+        List <String> _tempSegmentName;
+
+        if (sicCodes != null){
+            for (String sicCode : sicCodes){
+                _tempSegmentName = segmentNamesForSicCode(sicCode);
+
+                if ( !ObjectUtilities.isNull(_tempSegmentName)){
+                    segmentNames.addAll(_tempSegmentName);
+                }
+            }
+        }
+
+        /* Remove duplicates */
+        HashSet <String> set = new HashSet<>();
+        set.addAll(segmentNames);
+
+        segmentNames.clear();
+        segmentNames.addAll(set);
+
+        return segmentNames;
+    }
+
     public static void main(String args[]){
         SegmentServiceProvider p = new SegmentServiceProvider();
 
         System.out.println(p.segmentNamesForSicCode("7372"));
+        System.out.println(p.segmentNamesForSicCode("3651"));
         System.out.println(p.sicCodesForSegmentName("Gaming Providers"));
+
+        List <String> testSics = new ArrayList<>();
+        testSics.add("aabb");
+        testSics.add("tttt");
+        System.out.println(p.segmentNamesForSicCodes(testSics));
     }
 }

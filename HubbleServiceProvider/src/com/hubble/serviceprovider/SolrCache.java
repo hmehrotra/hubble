@@ -2,9 +2,13 @@ package com.hubble.serviceprovider;
 
 import com.hubble.content.h2.beanExtensions.HubbleArchive;
 import com.hubble.utilities.ObjectUtilities;
+import com.hubble.utilities.StringUtilities;
 import org.apache.solr.client.solrj.SolrServer;
 import org.apache.solr.client.solrj.impl.HttpSolrServer;
 import org.apache.solr.common.SolrInputDocument;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by haughty on 5/18/14.
@@ -53,17 +57,49 @@ public class SolrCache {
   /**
    * Adds information about participant to solr cache
    */
-  public void addParticipantToSolrCache(HubbleArchive archiveObject){
+  public void addParticipantToSolrCache(HubbleArchive archiveObject, String alliancePrimarySicCode, List <String> allianceAllSicCodes){
      SolrInputDocument doc = new SolrInputDocument();
 
      doc.setField("id", archiveObject.getArchiveDumpId().toString());
      doc.addField("participantCusip", archiveObject.getParticipantCusip());
      doc.addField("participantName", archiveObject.getParticipantName());
      doc.addField("participantBusinessDescription", archiveObject.getParticipantBusinessDescription());
-     doc.addField("participantPrimarySicCode", archiveObject.getParticipantPrimarySicCode());
 
      SegmentServiceProvider serviceProvider = (SegmentServiceProvider) HubbleServiceProviderRegistration.getServiceProvider("SegmentServiceProvider");
-     doc.addField("participantMarketSegments", serviceProvider.segmentNamesForSicCode(archiveObject.getParticipantPrimarySicCode()));
+
+     // Market segments of ultimate parent
+     doc.addField("ultimateParentPrimarySicCode", archiveObject.getUltimateParentPrimarySicCode());
+     List<String> ultimateParentPrimarySegments = serviceProvider.segmentNamesForSicCode(archiveObject.getUltimateParentPrimarySicCode());
+     doc.addField("ultimateParentMarketSegments", ultimateParentPrimarySegments );
+
+     // Market segments of participant
+     doc.addField("participantPrimarySicCode", archiveObject.getParticipantPrimarySicCode());
+     List <String> marketSegments = serviceProvider.segmentNamesForSicCode(archiveObject.getParticipantPrimarySicCode());
+
+     /* If not found, use market segments of ultimate parent */
+     marketSegments = (!ObjectUtilities.isNull(marketSegments) && marketSegments.size() > 0) ?
+                       marketSegments :
+                       ultimateParentPrimarySegments;
+
+     /* Still not found, use primary sic code of alliance to find market segments */
+     marketSegments = (!ObjectUtilities.isNull(marketSegments) && marketSegments.size() > 0) ?
+                      marketSegments :
+                      (!StringUtilities.isNullOrEmpty(alliancePrimarySicCode)) ?
+                      serviceProvider.segmentNamesForSicCode(archiveObject.getParticipantPrimarySicCode()) :
+                      null;
+
+     /* Still not found, use all sic codes of alliance to find market segments */
+     marketSegments = (!ObjectUtilities.isNull(marketSegments) && marketSegments.size() > 0) ?
+                      marketSegments :
+                      serviceProvider.segmentNamesForSicCodes(allianceAllSicCodes);
+
+     /* If still not found, use NA */
+     if (ObjectUtilities.isNull(marketSegments) || marketSegments.size() == 0){
+         marketSegments = new ArrayList<>();
+         marketSegments.add("NA");
+     }
+
+     doc.addField("participantMarketSegments", marketSegments);
 
      doc.addField("participantStateCode", archiveObject.getParticipantStateCode());
      doc.addField("participantCity", archiveObject.getParticipantCity());
@@ -76,8 +112,7 @@ public class SolrCache {
      doc.addField("participantTickerSymbol", archiveObject.getParticipantTickerSymbol());
      doc.addField("ultimateParentCusip", archiveObject.getUltimateParentCusip());
      doc.addField("ultimateParentName", archiveObject.getUltimateParentName());
-     doc.addField("ultimateParentPrimarySicCode", archiveObject.getUltimateParentPrimarySicCode());
-     doc.addField("ultimateParentMarketSegments", serviceProvider.segmentNamesForSicCode(archiveObject.getUltimateParentPrimarySicCode()));
+
      doc.addField("ultimateParentStatus", archiveObject.getUltimateParentStatus());
      doc.addField("parentCusip", archiveObject.getParentCusip());
      doc.addField("parentName", archiveObject.getParentName());
@@ -102,12 +137,33 @@ public class SolrCache {
       doc.addField("dealNumber", archiveObject.getDealNumber());
   }
 
-  public void addObjectToSolrCache(HubbleArchive archiveObject){
-    addParticipantToSolrCache(archiveObject);
+   /**
+    * Takes a list of processed objects corresponding to an alliance and adds it to solr core
+    * @param archiveObjects
+    */
+  public void addObjectsToSolrCache(List <HubbleArchive> archiveObjects){
 
-    /* if (!ObjectUtilities.isNull(archiveObject.getDealNumber())){
-        addAllianceToSolrCache(archiveObject);
-    }*/
+    String primarySicCodeOfAlliance = null;
+    List <String> allSicCodesOfAlliance = new ArrayList<>();
+
+    /* Find primary and all sic codes of alliance */
+    for (HubbleArchive archiveObject : archiveObjects){
+        if (archiveObject.getAlliancePrimarySicCode() != null){
+            primarySicCodeOfAlliance = archiveObject.getAlliancePrimarySicCode();
+        }
+        if (archiveObject.getAllianceAllSicCodes() != null){
+            allSicCodesOfAlliance.add(archiveObject.getAllianceAllSicCodes());
+        }
+    }
+
+    /* Cache all the objects */
+    for (HubbleArchive archiveObject : archiveObjects){
+        addParticipantToSolrCache(archiveObject, primarySicCodeOfAlliance, allSicCodesOfAlliance);
+
+        /*if (!ObjectUtilities.isNull(archiveObject.getDealNumber())){
+            addAllianceToSolrCache(archiveObject);
+        }*/
+    }
   }
 
   /**
@@ -116,7 +172,10 @@ public class SolrCache {
   public static void main(String[] args){
      /* try{
           getParticipantSolrServer().deleteByQuery("*:*");
+          getParticipantSolrServer().commit();
+
           getAllianceSolrServer().deleteByQuery("*:*");
+          getAllianceSolrServer().commit();
      }
      catch(Exception e){
         System.out.println(e.getMessage());

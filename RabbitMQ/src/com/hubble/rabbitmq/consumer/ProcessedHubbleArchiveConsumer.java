@@ -9,7 +9,9 @@ import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
 import com.rabbitmq.client.QueueingConsumer;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 /**
  * Consumer of the processed hubble archive. The consumer reads messages containing alliance information from the producer,
@@ -70,9 +72,12 @@ class ProcessedHubleArchiveConsumerDelegate{
         JsonParser parser = new JsonParser();
         JsonArray jsonArray = parser.parse(data).getAsJsonArray();
 
+        List<HubbleArchive> archiveObjects = new ArrayList<>();
         for (JsonElement json : jsonArray){
             HubbleArchive archiveObject = gson.fromJson(json, HubbleArchive.class);
-            SolrCache.getInstance().addObjectToSolrCache(archiveObject);
+            archiveObjects.add(archiveObject);
         }
+
+        SolrCache.getInstance().addObjectsToSolrCache(archiveObjects);
     }
 }

@@ -7395,3 +7395,1046 @@ ERROR - 2014-06-28 17:50:17.091; org.apache.solr.common.SolrException; org.apach
 
 INFO  - 2014-06-28 17:50:17.091; org.apache.solr.core.SolrCore; [participant] webapp=/solr path=/select params={indent=true&q=particpantMarketSegments:Mobile*&_=1404003017088&wt=json} status=400 QTime=1 
 INFO  - 2014-06-28 17:50:40.395; org.apache.solr.core.SolrCore; [participant] webapp=/solr path=/select params={indent=true&q=participantMarketSegments:Mobile*&_=1404003040389&wt=json} hits=8 status=0 QTime=5 
+INFO  - 2014-06-28 23:52:16.204; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@61be2a1d[participant] realtime
+INFO  - 2014-06-28 23:52:16.205; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {deleteByQuery=*:* (-1472226641753145344)} 0 36
+INFO  - 2014-06-28 23:52:17.392; org.apache.solr.update.processor.LogUpdateProcessor; [alliance] webapp=/solr path=/update params={wt=javabin&version=2} {deleteByQuery=*:* (-1472226643034505216)} 0 1
+INFO  - 2014-06-28 23:52:28.850; org.apache.solr.servlet.SolrDispatchFilter; [admin] webapp=null path=/admin/cores params={indexInfo=false&_=1404024748846&wt=json} status=0 QTime=1 
+INFO  - 2014-06-28 23:52:28.890; org.apache.solr.servlet.SolrDispatchFilter; [admin] webapp=null path=/admin/info/system params={_=1404024748871&wt=json} status=0 QTime=4 
+INFO  - 2014-06-28 23:52:33.184; org.apache.solr.core.SolrCore; [alliance] webapp=/solr path=/admin/file/ params={file=admin-extra.menu-top.html&_=1404024753182&contentType=text/html;charset%3Dutf-8} status=0 QTime=1 
+INFO  - 2014-06-28 23:52:33.187; org.apache.solr.core.SolrCore; [alliance] webapp=/solr path=/admin/file/ params={file=admin-extra.menu-bottom.html&_=1404024753182&contentType=text/html;charset%3Dutf-8} status=0 QTime=0 
+INFO  - 2014-06-28 23:52:33.202; org.apache.solr.core.SolrCore; [alliance] webapp=/solr path=/admin/luke params={numTerms=0&_=1404024753195&show=index&wt=json} status=0 QTime=1 
+INFO  - 2014-06-28 23:52:33.202; org.apache.solr.core.SolrCore; [alliance] webapp=/solr path=/replication params={command=details&_=1404024753200&wt=json} status=0 QTime=1 
+INFO  - 2014-06-28 23:52:33.205; org.apache.solr.core.SolrCore; [alliance] webapp=/solr path=/admin/file/ params={file=admin-extra.html&_=1404024753202} status=0 QTime=0 
+INFO  - 2014-06-28 23:52:33.206; org.apache.solr.core.SolrCore; [alliance] webapp=/solr path=/admin/system params={_=1404024753201&wt=json} status=0 QTime=4 
+INFO  - 2014-06-28 23:52:33.210; org.apache.solr.core.SolrCore; [alliance] webapp=/solr path=/admin/ping params={action=status&_=1404024753207&wt=json} status=503 QTime=1 
+INFO  - 2014-06-28 23:52:36.490; org.apache.solr.core.SolrCore; [participant] webapp=/solr path=/admin/luke params={numTerms=0&_=1404024756484&show=index&wt=json} status=0 QTime=1 
+INFO  - 2014-06-28 23:52:36.491; org.apache.solr.core.SolrCore; [participant] webapp=/solr path=/replication params={command=details&_=1404024756487&wt=json} status=0 QTime=2 
+INFO  - 2014-06-28 23:52:36.594; org.apache.solr.core.SolrCore; [participant] webapp=/solr path=/admin/file/ params={file=admin-extra.html&_=1404024756490} status=0 QTime=1 
+INFO  - 2014-06-28 23:52:36.595; org.apache.solr.core.SolrCore; [participant] webapp=/solr path=/admin/ping params={action=status&_=1404024756491&wt=json} status=503 QTime=1 
+INFO  - 2014-06-28 23:52:36.599; org.apache.solr.core.SolrCore; [participant] webapp=/solr path=/admin/system params={_=1404024756489&wt=json} status=0 QTime=6 
+INFO  - 2014-06-28 23:52:47.166; org.apache.solr.core.SolrCore; [participant] webapp=/solr path=/select params={indent=true&q=*:*&_=1404024767161&wt=json} hits=75 status=0 QTime=1 
+INFO  - 2014-06-28 23:55:16.926; org.apache.solr.core.SolrCore; [participant] webapp=/solr path=/select params={indent=true&q=*:*&_=1404024916920&wt=json} hits=75 status=0 QTime=0 
+INFO  - 2014-06-28 23:55:37.556; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {deleteByQuery=*:* (-1472226852921671680)} 0 2
+INFO  - 2014-06-28 23:55:38.379; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:55:38.564; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_24,generation=76}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_25,generation=77}
+INFO  - 2014-06-28 23:55:38.565; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 77
+INFO  - 2014-06-28 23:55:38.565; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@1520a43d[participant] main
+INFO  - 2014-06-28 23:55:38.566; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@1520a43d[participant] main{StandardDirectoryReader(segments_24:169:nrt)}
+INFO  - 2014-06-28 23:55:38.566; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:55:38.568; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 189
+INFO  - 2014-06-28 23:55:39.857; org.apache.solr.update.processor.LogUpdateProcessor; [alliance] webapp=/solr path=/update params={wt=javabin&version=2} {deleteByQuery=*:* (-1472226855334445056)} 0 1
+INFO  - 2014-06-28 23:55:42.140; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:55:42.141; org.apache.solr.update.DirectUpdateHandler2; No uncommitted changes. Skipping IW.commit.
+INFO  - 2014-06-28 23:55:42.141; org.apache.solr.core.SolrCore; SolrIndexSearcher has not changed - not re-opening: org.apache.solr.search.SolrIndexSearcher
+INFO  - 2014-06-28 23:55:42.141; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:55:42.141; org.apache.solr.update.processor.LogUpdateProcessor; [alliance] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 1
+INFO  - 2014-06-28 23:56:01.910; org.apache.solr.core.SolrCore; [participant] webapp=/solr path=/select params={indent=true&q=*:*&_=1404024961905&wt=json} hits=0 status=0 QTime=0 
+INFO  - 2014-06-28 23:57:13.668; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[1 (1472226953699262464)]} 0 5
+INFO  - 2014-06-28 23:57:13.711; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:14.536; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_25,generation=77}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_26,generation=78}
+INFO  - 2014-06-28 23:57:14.536; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 78
+INFO  - 2014-06-28 23:57:14.540; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@4e57e3e[participant] main
+INFO  - 2014-06-28 23:57:14.541; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@4e57e3e[participant] main{StandardDirectoryReader(segments_26:171:nrt _2b(4.8):C1)}
+INFO  - 2014-06-28 23:57:14.541; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:14.541; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 830
+INFO  - 2014-06-28 23:57:14.550; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[2 (1472226954625155072)]} 0 4
+INFO  - 2014-06-28 23:57:14.554; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:15.219; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_26,generation=78}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_27,generation=79}
+INFO  - 2014-06-28 23:57:15.219; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 79
+INFO  - 2014-06-28 23:57:15.222; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@64c0e790[participant] main
+INFO  - 2014-06-28 23:57:15.223; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@64c0e790[participant] main{StandardDirectoryReader(segments_27:173:nrt _2b(4.8):C1 _2c(4.8):C1)}
+INFO  - 2014-06-28 23:57:15.223; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:15.224; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 670
+INFO  - 2014-06-28 23:57:15.231; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[3 (1472226955339235328)]} 0 3
+INFO  - 2014-06-28 23:57:15.235; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:15.899; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_27,generation=79}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_28,generation=80}
+INFO  - 2014-06-28 23:57:15.900; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 80
+INFO  - 2014-06-28 23:57:15.903; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@6d13c68d[participant] main
+INFO  - 2014-06-28 23:57:15.904; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@6d13c68d[participant] main{StandardDirectoryReader(segments_28:175:nrt _2b(4.8):C1 _2c(4.8):C1 _2d(4.8):C1)}
+INFO  - 2014-06-28 23:57:15.905; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:15.905; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 670
+INFO  - 2014-06-28 23:57:15.918; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[4 (1472226956060655616)]} 0 3
+INFO  - 2014-06-28 23:57:16.037; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:16.769; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_28,generation=80}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_29,generation=81}
+INFO  - 2014-06-28 23:57:16.770; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 81
+INFO  - 2014-06-28 23:57:16.773; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@31b52301[participant] main
+INFO  - 2014-06-28 23:57:16.774; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@31b52301[participant] main{StandardDirectoryReader(segments_29:177:nrt _2b(4.8):C1 _2c(4.8):C1 _2d(4.8):C1 _2e(4.8):C1)}
+INFO  - 2014-06-28 23:57:16.774; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:16.774; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 737
+INFO  - 2014-06-28 23:57:16.782; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[5 (1472226956965576704)]} 0 3
+INFO  - 2014-06-28 23:57:16.786; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:17.383; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_29,generation=81}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2a,generation=82}
+INFO  - 2014-06-28 23:57:17.384; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 82
+INFO  - 2014-06-28 23:57:17.387; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@189a57e0[participant] main
+INFO  - 2014-06-28 23:57:17.388; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@189a57e0[participant] main{StandardDirectoryReader(segments_2a:179:nrt _2b(4.8):C1 _2c(4.8):C1 _2d(4.8):C1 _2e(4.8):C1 _2f(4.8):C1)}
+INFO  - 2014-06-28 23:57:17.388; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:17.389; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 603
+INFO  - 2014-06-28 23:57:17.396; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[6 (1472226957609402368)]} 0 3
+INFO  - 2014-06-28 23:57:17.400; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:18.155; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2a,generation=82}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2b,generation=83}
+INFO  - 2014-06-28 23:57:18.155; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 83
+INFO  - 2014-06-28 23:57:18.159; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@3a1103af[participant] main
+INFO  - 2014-06-28 23:57:18.160; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@3a1103af[participant] main{StandardDirectoryReader(segments_2b:181:nrt _2b(4.8):C1 _2c(4.8):C1 _2d(4.8):C1 _2e(4.8):C1 _2f(4.8):C1 _2g(4.8):C1)}
+INFO  - 2014-06-28 23:57:18.160; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:18.160; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 760
+INFO  - 2014-06-28 23:57:18.172; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[7 (1472226958423097344)]} 0 4
+INFO  - 2014-06-28 23:57:18.175; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:19.114; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2b,generation=83}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2c,generation=84}
+INFO  - 2014-06-28 23:57:19.114; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 84
+INFO  - 2014-06-28 23:57:19.118; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@1582eb84[participant] main
+INFO  - 2014-06-28 23:57:19.119; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@1582eb84[participant] main{StandardDirectoryReader(segments_2c:183:nrt _2b(4.8):C1 _2c(4.8):C1 _2d(4.8):C1 _2e(4.8):C1 _2f(4.8):C1 _2g(4.8):C1 _2h(4.8):C1)}
+INFO  - 2014-06-28 23:57:19.119; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:19.119; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 944
+INFO  - 2014-06-28 23:57:19.126; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[8 (1472226959423438848)]} 0 3
+INFO  - 2014-06-28 23:57:19.129; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:20.006; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2c,generation=84}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2d,generation=85}
+INFO  - 2014-06-28 23:57:20.007; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 85
+INFO  - 2014-06-28 23:57:20.010; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@194206c9[participant] main
+INFO  - 2014-06-28 23:57:20.011; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@194206c9[participant] main{StandardDirectoryReader(segments_2d:185:nrt _2b(4.8):C1 _2c(4.8):C1 _2d(4.8):C1 _2e(4.8):C1 _2f(4.8):C1 _2g(4.8):C1 _2h(4.8):C1 _2i(4.8):C1)}
+INFO  - 2014-06-28 23:57:20.011; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:20.012; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 883
+INFO  - 2014-06-28 23:57:20.024; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[9 (1472226960365060096)]} 0 3
+INFO  - 2014-06-28 23:57:20.027; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:20.700; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2d,generation=85}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2e,generation=86}
+INFO  - 2014-06-28 23:57:20.700; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 86
+INFO  - 2014-06-28 23:57:20.703; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@12842207[participant] main
+INFO  - 2014-06-28 23:57:20.705; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@12842207[participant] main{StandardDirectoryReader(segments_2e:187:nrt _2b(4.8):C1 _2c(4.8):C1 _2d(4.8):C1 _2e(4.8):C1 _2f(4.8):C1 _2g(4.8):C1 _2h(4.8):C1 _2i(4.8):C1 _2j(4.8):C1)}
+INFO  - 2014-06-28 23:57:20.705; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:20.705; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 678
+INFO  - 2014-06-28 23:57:20.714; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[10 (1472226961087528960)]} 0 5
+INFO  - 2014-06-28 23:57:20.718; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:21.314; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2e,generation=86}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2f,generation=87}
+INFO  - 2014-06-28 23:57:21.314; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 87
+INFO  - 2014-06-28 23:57:21.318; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@215bbb25[participant] main
+INFO  - 2014-06-28 23:57:21.318; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:21.318; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@215bbb25[participant] main{StandardDirectoryReader(segments_2f:191:nrt _2l(4.8):C10)}
+INFO  - 2014-06-28 23:57:21.322; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 604
+INFO  - 2014-06-28 23:57:21.332; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[11 (1472226961737646080)]} 0 3
+INFO  - 2014-06-28 23:57:21.336; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:22.385; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2f,generation=87}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2g,generation=88}
+INFO  - 2014-06-28 23:57:22.386; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 88
+INFO  - 2014-06-28 23:57:22.392; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@1c6dd984[participant] main
+INFO  - 2014-06-28 23:57:22.393; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:22.393; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@1c6dd984[participant] main{StandardDirectoryReader(segments_2g:193:nrt _2l(4.8):C10 _2m(4.8):C1)}
+INFO  - 2014-06-28 23:57:22.393; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 1057
+INFO  - 2014-06-28 23:57:22.401; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[12 (1472226962857525248)]} 0 4
+INFO  - 2014-06-28 23:57:22.404; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:23.290; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2g,generation=88}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2h,generation=89}
+INFO  - 2014-06-28 23:57:23.290; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 89
+INFO  - 2014-06-28 23:57:23.294; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@2bf525ec[participant] main
+INFO  - 2014-06-28 23:57:23.294; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@2bf525ec[participant] main{StandardDirectoryReader(segments_2h:195:nrt _2l(4.8):C10 _2m(4.8):C1 _2n(4.8):C1)}
+INFO  - 2014-06-28 23:57:23.294; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:23.295; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 891
+INFO  - 2014-06-28 23:57:23.305; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[13 (1472226963805437952)]} 0 4
+INFO  - 2014-06-28 23:57:23.308; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:24.794; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2h,generation=89}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2i,generation=90}
+INFO  - 2014-06-28 23:57:24.794; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 90
+INFO  - 2014-06-28 23:57:24.797; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@7c0cec3d[participant] main
+INFO  - 2014-06-28 23:57:24.798; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:24.798; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@7c0cec3d[participant] main{StandardDirectoryReader(segments_2i:197:nrt _2l(4.8):C10 _2m(4.8):C1 _2n(4.8):C1 _2o(4.8):C1)}
+INFO  - 2014-06-28 23:57:24.799; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 1491
+INFO  - 2014-06-28 23:57:24.805; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[14 (1472226965379350528)]} 0 3
+INFO  - 2014-06-28 23:57:24.809; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:25.519; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2i,generation=90}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2j,generation=91}
+INFO  - 2014-06-28 23:57:25.519; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 91
+INFO  - 2014-06-28 23:57:25.523; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@78afca52[participant] main
+INFO  - 2014-06-28 23:57:25.523; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:25.523; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@78afca52[participant] main{StandardDirectoryReader(segments_2j:199:nrt _2l(4.8):C10 _2m(4.8):C1 _2n(4.8):C1 _2o(4.8):C1 _2p(4.8):C1)}
+INFO  - 2014-06-28 23:57:25.524; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 716
+INFO  - 2014-06-28 23:57:25.534; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[15 (1472226966142713856)]} 0 3
+INFO  - 2014-06-28 23:57:25.538; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:26.778; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2j,generation=91}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2k,generation=92}
+INFO  - 2014-06-28 23:57:26.778; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 92
+INFO  - 2014-06-28 23:57:26.781; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@57ec94ea[participant] main
+INFO  - 2014-06-28 23:57:26.782; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:26.782; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@57ec94ea[participant] main{StandardDirectoryReader(segments_2k:201:nrt _2l(4.8):C10 _2m(4.8):C1 _2n(4.8):C1 _2o(4.8):C1 _2p(4.8):C1 _2q(4.8):C1)}
+INFO  - 2014-06-28 23:57:26.783; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 1246
+INFO  - 2014-06-28 23:57:26.790; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[16 (1472226967459725312)]} 0 4
+INFO  - 2014-06-28 23:57:26.793; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:27.371; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2k,generation=92}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2l,generation=93}
+INFO  - 2014-06-28 23:57:27.371; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 93
+INFO  - 2014-06-28 23:57:27.375; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@67f095ba[participant] main
+INFO  - 2014-06-28 23:57:27.376; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:27.376; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@67f095ba[participant] main{StandardDirectoryReader(segments_2l:203:nrt _2l(4.8):C10 _2m(4.8):C1 _2n(4.8):C1 _2o(4.8):C1 _2p(4.8):C1 _2q(4.8):C1 _2r(4.8):C1)}
+INFO  - 2014-06-28 23:57:27.376; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 583
+INFO  - 2014-06-28 23:57:27.387; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[17 (1472226968084676608)]} 0 4
+INFO  - 2014-06-28 23:57:27.390; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:27.963; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2l,generation=93}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2m,generation=94}
+INFO  - 2014-06-28 23:57:27.963; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 94
+INFO  - 2014-06-28 23:57:27.967; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@4ba21fce[participant] main
+INFO  - 2014-06-28 23:57:27.968; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:27.968; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@4ba21fce[participant] main{StandardDirectoryReader(segments_2m:205:nrt _2l(4.8):C10 _2m(4.8):C1 _2n(4.8):C1 _2o(4.8):C1 _2p(4.8):C1 _2q(4.8):C1 _2r(4.8):C1 _2s(4.8):C1)}
+INFO  - 2014-06-28 23:57:27.968; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 578
+INFO  - 2014-06-28 23:57:27.975; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[18 (1472226968703336448)]} 0 3
+INFO  - 2014-06-28 23:57:27.985; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:28.855; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2m,generation=94}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2n,generation=95}
+INFO  - 2014-06-28 23:57:28.856; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 95
+INFO  - 2014-06-28 23:57:28.859; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@7f2ae42e[participant] main
+INFO  - 2014-06-28 23:57:28.860; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:28.860; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@7f2ae42e[participant] main{StandardDirectoryReader(segments_2n:207:nrt _2l(4.8):C10 _2m(4.8):C1 _2n(4.8):C1 _2o(4.8):C1 _2p(4.8):C1 _2q(4.8):C1 _2r(4.8):C1 _2s(4.8):C1 _2t(4.8):C1)}
+INFO  - 2014-06-28 23:57:28.861; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 876
+INFO  - 2014-06-28 23:57:28.872; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[19 (1472226969642860544)]} 0 4
+INFO  - 2014-06-28 23:57:28.875; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:29.682; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2n,generation=95}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2o,generation=96}
+INFO  - 2014-06-28 23:57:29.683; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 96
+INFO  - 2014-06-28 23:57:29.686; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@3d31ef93[participant] main
+INFO  - 2014-06-28 23:57:29.687; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:29.687; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@3d31ef93[participant] main{StandardDirectoryReader(segments_2o:211:nrt _2v(4.8):C19)}
+INFO  - 2014-06-28 23:57:29.690; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 815
+INFO  - 2014-06-28 23:57:29.697; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[20 (1472226970507935744)]} 0 3
+INFO  - 2014-06-28 23:57:29.701; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:31.276; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2o,generation=96}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2p,generation=97}
+INFO  - 2014-06-28 23:57:31.277; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 97
+INFO  - 2014-06-28 23:57:31.283; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@7d1c1ce6[participant] main
+INFO  - 2014-06-28 23:57:31.284; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:31.284; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@7d1c1ce6[participant] main{StandardDirectoryReader(segments_2p:213:nrt _2v(4.8):C19 _2w(4.8):C1)}
+INFO  - 2014-06-28 23:57:31.285; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 1584
+INFO  - 2014-06-28 23:57:31.294; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[21 (1472226972182511616)]} 0 4
+INFO  - 2014-06-28 23:57:31.297; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:31.969; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2p,generation=97}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2q,generation=98}
+INFO  - 2014-06-28 23:57:31.969; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 98
+INFO  - 2014-06-28 23:57:31.972; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@281b48b4[participant] main
+INFO  - 2014-06-28 23:57:31.973; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:31.973; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@281b48b4[participant] main{StandardDirectoryReader(segments_2q:215:nrt _2v(4.8):C19 _2w(4.8):C1 _2x(4.8):C1)}
+INFO  - 2014-06-28 23:57:31.973; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 676
+INFO  - 2014-06-28 23:57:31.980; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[22 (1472226972902883328)]} 0 3
+INFO  - 2014-06-28 23:57:31.984; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:32.784; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2q,generation=98}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2r,generation=99}
+INFO  - 2014-06-28 23:57:32.785; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 99
+INFO  - 2014-06-28 23:57:32.788; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@29695f02[participant] main
+INFO  - 2014-06-28 23:57:32.789; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:32.789; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@29695f02[participant] main{StandardDirectoryReader(segments_2r:217:nrt _2v(4.8):C19 _2w(4.8):C1 _2x(4.8):C1 _2y(4.8):C1)}
+INFO  - 2014-06-28 23:57:32.789; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 805
+INFO  - 2014-06-28 23:57:32.799; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[23 (1472226973760618496)]} 0 4
+INFO  - 2014-06-28 23:57:32.802; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:33.465; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2r,generation=99}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2s,generation=100}
+INFO  - 2014-06-28 23:57:33.465; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 100
+INFO  - 2014-06-28 23:57:33.469; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@7ee9fc96[participant] main
+INFO  - 2014-06-28 23:57:33.469; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:33.470; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@7ee9fc96[participant] main{StandardDirectoryReader(segments_2s:219:nrt _2v(4.8):C19 _2w(4.8):C1 _2x(4.8):C1 _2y(4.8):C1 _2z(4.8):C1)}
+INFO  - 2014-06-28 23:57:33.470; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 668
+INFO  - 2014-06-28 23:57:33.477; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[24 (1472226974471553024)]} 0 4
+INFO  - 2014-06-28 23:57:33.480; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:34.090; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2s,generation=100}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2t,generation=101}
+INFO  - 2014-06-28 23:57:34.091; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 101
+INFO  - 2014-06-28 23:57:34.094; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@27da6356[participant] main
+INFO  - 2014-06-28 23:57:34.095; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@27da6356[participant] main{StandardDirectoryReader(segments_2t:221:nrt _2v(4.8):C19 _2w(4.8):C1 _2x(4.8):C1 _2y(4.8):C1 _2z(4.8):C1 _30(4.8):C1)}
+INFO  - 2014-06-28 23:57:34.095; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:34.096; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 616
+INFO  - 2014-06-28 23:57:34.108; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[25 (1472226975131107328)]} 0 6
+INFO  - 2014-06-28 23:57:34.113; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:34.827; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2t,generation=101}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2u,generation=102}
+INFO  - 2014-06-28 23:57:34.827; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 102
+INFO  - 2014-06-28 23:57:34.830; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@726eea32[participant] main
+INFO  - 2014-06-28 23:57:34.831; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:34.831; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@726eea32[participant] main{StandardDirectoryReader(segments_2u:223:nrt _2v(4.8):C19 _2w(4.8):C1 _2x(4.8):C1 _2y(4.8):C1 _2z(4.8):C1 _30(4.8):C1 _31(4.8):C1)}
+INFO  - 2014-06-28 23:57:34.832; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 719
+INFO  - 2014-06-28 23:57:34.839; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[26 (1472226975899713536)]} 0 4
+INFO  - 2014-06-28 23:57:34.842; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:35.420; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2u,generation=102}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2v,generation=103}
+INFO  - 2014-06-28 23:57:35.420; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 103
+INFO  - 2014-06-28 23:57:35.424; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@35f76d07[participant] main
+INFO  - 2014-06-28 23:57:35.424; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:35.424; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@35f76d07[participant] main{StandardDirectoryReader(segments_2v:225:nrt _2v(4.8):C19 _2w(4.8):C1 _2x(4.8):C1 _2y(4.8):C1 _2z(4.8):C1 _30(4.8):C1 _31(4.8):C1 _32(4.8):C1)}
+INFO  - 2014-06-28 23:57:35.425; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 583
+INFO  - 2014-06-28 23:57:35.434; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[27 (1472226976523616256)]} 0 3
+INFO  - 2014-06-28 23:57:35.438; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:36.201; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2v,generation=103}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2w,generation=104}
+INFO  - 2014-06-28 23:57:36.201; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 104
+INFO  - 2014-06-28 23:57:36.205; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@3aa7a661[participant] main
+INFO  - 2014-06-28 23:57:36.205; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:36.205; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@3aa7a661[participant] main{StandardDirectoryReader(segments_2w:227:nrt _2v(4.8):C19 _2w(4.8):C1 _2x(4.8):C1 _2y(4.8):C1 _2z(4.8):C1 _30(4.8):C1 _31(4.8):C1 _32(4.8):C1 _33(4.8):C1)}
+INFO  - 2014-06-28 23:57:36.206; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 768
+INFO  - 2014-06-28 23:57:36.213; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[28 (1472226977340456960)]} 0 4
+INFO  - 2014-06-28 23:57:36.216; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:37.526; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2w,generation=104}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2x,generation=105}
+INFO  - 2014-06-28 23:57:37.526; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 105
+INFO  - 2014-06-28 23:57:37.530; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@45304040[participant] main
+INFO  - 2014-06-28 23:57:37.530; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:37.530; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@45304040[participant] main{StandardDirectoryReader(segments_2x:231:nrt _35(4.8):C28)}
+INFO  - 2014-06-28 23:57:37.534; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 1318
+INFO  - 2014-06-28 23:57:37.546; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[29 (1472226978736111616)]} 0 6
+INFO  - 2014-06-28 23:57:37.551; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:38.788; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2x,generation=105}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2y,generation=106}
+INFO  - 2014-06-28 23:57:38.789; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 106
+INFO  - 2014-06-28 23:57:38.795; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@3ec90472[participant] main
+INFO  - 2014-06-28 23:57:38.796; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:38.796; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@3ec90472[participant] main{StandardDirectoryReader(segments_2y:233:nrt _35(4.8):C28 _36(4.8):C1)}
+INFO  - 2014-06-28 23:57:38.797; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 1246
+INFO  - 2014-06-28 23:57:38.806; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[30 (1472226980057317376)]} 0 6
+INFO  - 2014-06-28 23:57:38.810; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:39.558; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2y,generation=106}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2z,generation=107}
+INFO  - 2014-06-28 23:57:39.559; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 107
+INFO  - 2014-06-28 23:57:39.563; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@a343c9[participant] main
+INFO  - 2014-06-28 23:57:39.563; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:39.563; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@a343c9[participant] main{StandardDirectoryReader(segments_2z:235:nrt _35(4.8):C28 _36(4.8):C1 _37(4.8):C1)}
+INFO  - 2014-06-28 23:57:39.564; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 754
+INFO  - 2014-06-28 23:57:39.572; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[31 (1472226980863672320)]} 0 3
+INFO  - 2014-06-28 23:57:39.576; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:40.462; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_2z,generation=107}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_30,generation=108}
+INFO  - 2014-06-28 23:57:40.462; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 108
+INFO  - 2014-06-28 23:57:40.466; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@22b7bc01[participant] main
+INFO  - 2014-06-28 23:57:40.466; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:40.466; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@22b7bc01[participant] main{StandardDirectoryReader(segments_30:237:nrt _35(4.8):C28 _36(4.8):C1 _37(4.8):C1 _38(4.8):C1)}
+INFO  - 2014-06-28 23:57:40.467; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 891
+INFO  - 2014-06-28 23:57:40.474; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[32 (1472226981808439296)]} 0 4
+INFO  - 2014-06-28 23:57:40.477; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:41.055; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_30,generation=108}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_31,generation=109}
+INFO  - 2014-06-28 23:57:41.056; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 109
+INFO  - 2014-06-28 23:57:41.059; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@1f12007b[participant] main
+INFO  - 2014-06-28 23:57:41.060; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:41.060; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@1f12007b[participant] main{StandardDirectoryReader(segments_31:239:nrt _35(4.8):C28 _36(4.8):C1 _37(4.8):C1 _38(4.8):C1 _39(4.8):C1)}
+INFO  - 2014-06-28 23:57:41.060; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 583
+INFO  - 2014-06-28 23:57:41.069; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[33 (1472226982432342016)]} 0 4
+INFO  - 2014-06-28 23:57:41.072; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:41.769; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_31,generation=109}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_32,generation=110}
+INFO  - 2014-06-28 23:57:41.770; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 110
+INFO  - 2014-06-28 23:57:41.773; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@2f265d09[participant] main
+INFO  - 2014-06-28 23:57:41.774; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:41.774; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@2f265d09[participant] main{StandardDirectoryReader(segments_32:241:nrt _35(4.8):C28 _36(4.8):C1 _37(4.8):C1 _38(4.8):C1 _39(4.8):C1 _3a(4.8):C1)}
+INFO  - 2014-06-28 23:57:41.774; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 702
+INFO  - 2014-06-28 23:57:41.781; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[34 (1472226983178928128)]} 0 3
+INFO  - 2014-06-28 23:57:41.784; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:42.361; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_32,generation=110}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_33,generation=111}
+INFO  - 2014-06-28 23:57:42.362; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 111
+INFO  - 2014-06-28 23:57:42.365; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@28ab6530[participant] main
+INFO  - 2014-06-28 23:57:42.366; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:42.366; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@28ab6530[participant] main{StandardDirectoryReader(segments_33:243:nrt _35(4.8):C28 _36(4.8):C1 _37(4.8):C1 _38(4.8):C1 _39(4.8):C1 _3a(4.8):C1 _3b(4.8):C1)}
+INFO  - 2014-06-28 23:57:42.367; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 583
+INFO  - 2014-06-28 23:57:42.378; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[35 (1472226983804928000)]} 0 4
+INFO  - 2014-06-28 23:57:42.382; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:43.720; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_33,generation=111}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_34,generation=112}
+INFO  - 2014-06-28 23:57:43.720; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 112
+INFO  - 2014-06-28 23:57:43.724; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@4c838c64[participant] main
+INFO  - 2014-06-28 23:57:43.724; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:43.724; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@4c838c64[participant] main{StandardDirectoryReader(segments_34:245:nrt _35(4.8):C28 _36(4.8):C1 _37(4.8):C1 _38(4.8):C1 _39(4.8):C1 _3a(4.8):C1 _3b(4.8):C1 _3c(4.8):C1)}
+INFO  - 2014-06-28 23:57:43.725; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 1343
+INFO  - 2014-06-28 23:57:43.731; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[36 (1472226985224699904)]} 0 3
+INFO  - 2014-06-28 23:57:43.735; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:44.558; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_34,generation=112}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_35,generation=113}
+INFO  - 2014-06-28 23:57:44.558; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 113
+INFO  - 2014-06-28 23:57:44.562; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@798e9678[participant] main
+INFO  - 2014-06-28 23:57:44.563; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:44.563; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@798e9678[participant] main{StandardDirectoryReader(segments_35:247:nrt _35(4.8):C28 _36(4.8):C1 _37(4.8):C1 _38(4.8):C1 _39(4.8):C1 _3a(4.8):C1 _3b(4.8):C1 _3c(4.8):C1 _3d(4.8):C1)}
+INFO  - 2014-06-28 23:57:44.563; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 828
+INFO  - 2014-06-28 23:57:44.570; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[37 (1472226986103406592)]} 0 3
+INFO  - 2014-06-28 23:57:44.573; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:45.164; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_35,generation=113}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_36,generation=114}
+INFO  - 2014-06-28 23:57:45.164; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 114
+INFO  - 2014-06-28 23:57:45.168; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@48b645b9[participant] main
+INFO  - 2014-06-28 23:57:45.168; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:45.168; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@48b645b9[participant] main{StandardDirectoryReader(segments_36:251:nrt _3f(4.8):C37)}
+INFO  - 2014-06-28 23:57:45.172; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 598
+INFO  - 2014-06-28 23:57:45.179; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[38 (1472226986740940800)]} 0 4
+INFO  - 2014-06-28 23:57:45.183; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:46.225; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_36,generation=114}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_37,generation=115}
+INFO  - 2014-06-28 23:57:46.226; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 115
+INFO  - 2014-06-28 23:57:46.233; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@446659b6[participant] main
+INFO  - 2014-06-28 23:57:46.233; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:46.233; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@446659b6[participant] main{StandardDirectoryReader(segments_37:253:nrt _3f(4.8):C37 _3g(4.8):C1)}
+INFO  - 2014-06-28 23:57:46.234; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 1051
+INFO  - 2014-06-28 23:57:46.242; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[39 (1472226987855577088)]} 0 5
+INFO  - 2014-06-28 23:57:46.246; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:46.840; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_37,generation=115}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_38,generation=116}
+INFO  - 2014-06-28 23:57:46.840; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 116
+INFO  - 2014-06-28 23:57:46.844; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@78c218ac[participant] main
+INFO  - 2014-06-28 23:57:46.845; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:46.845; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@78c218ac[participant] main{StandardDirectoryReader(segments_38:255:nrt _3f(4.8):C37 _3g(4.8):C1 _3h(4.8):C1)}
+INFO  - 2014-06-28 23:57:46.845; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 599
+INFO  - 2014-06-28 23:57:46.852; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[40 (1472226988496257024)]} 0 4
+INFO  - 2014-06-28 23:57:46.855; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:47.454; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_38,generation=116}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_39,generation=117}
+INFO  - 2014-06-28 23:57:47.455; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 117
+INFO  - 2014-06-28 23:57:47.458; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@56ecfc9d[participant] main
+INFO  - 2014-06-28 23:57:47.459; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:47.459; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@56ecfc9d[participant] main{StandardDirectoryReader(segments_39:257:nrt _3f(4.8):C37 _3g(4.8):C1 _3h(4.8):C1 _3i(4.8):C1)}
+INFO  - 2014-06-28 23:57:47.460; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 605
+INFO  - 2014-06-28 23:57:47.466; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[41 (1472226989140082688)]} 0 3
+INFO  - 2014-06-28 23:57:47.469; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:48.046; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_39,generation=117}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3a,generation=118}
+INFO  - 2014-06-28 23:57:48.047; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 118
+INFO  - 2014-06-28 23:57:48.050; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@6125b2ad[participant] main
+INFO  - 2014-06-28 23:57:48.051; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:48.051; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@6125b2ad[participant] main{StandardDirectoryReader(segments_3a:259:nrt _3f(4.8):C37 _3g(4.8):C1 _3h(4.8):C1 _3i(4.8):C1 _3j(4.8):C1)}
+INFO  - 2014-06-28 23:57:48.052; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 583
+INFO  - 2014-06-28 23:57:48.058; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[42 (1472226989760839680)]} 0 3
+INFO  - 2014-06-28 23:57:48.061; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:48.740; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3a,generation=118}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3b,generation=119}
+INFO  - 2014-06-28 23:57:48.740; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 119
+INFO  - 2014-06-28 23:57:48.744; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@4d2f5143[participant] main
+INFO  - 2014-06-28 23:57:48.744; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:48.744; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@4d2f5143[participant] main{StandardDirectoryReader(segments_3b:261:nrt _3f(4.8):C37 _3g(4.8):C1 _3h(4.8):C1 _3i(4.8):C1 _3j(4.8):C1 _3k(4.8):C1)}
+INFO  - 2014-06-28 23:57:48.745; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 684
+INFO  - 2014-06-28 23:57:48.754; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[43 (1472226990490648576)]} 0 4
+INFO  - 2014-06-28 23:57:48.758; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:49.876; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3b,generation=119}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3c,generation=120}
+INFO  - 2014-06-28 23:57:49.877; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 120
+INFO  - 2014-06-28 23:57:49.881; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@6584c20a[participant] main
+INFO  - 2014-06-28 23:57:49.881; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:49.881; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@6584c20a[participant] main{StandardDirectoryReader(segments_3c:263:nrt _3f(4.8):C37 _3g(4.8):C1 _3h(4.8):C1 _3i(4.8):C1 _3j(4.8):C1 _3k(4.8):C1 _3l(4.8):C1)}
+INFO  - 2014-06-28 23:57:49.882; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 1124
+INFO  - 2014-06-28 23:57:49.889; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[44 (1472226991680782336)]} 0 4
+INFO  - 2014-06-28 23:57:49.892; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:50.902; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3c,generation=120}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3d,generation=121}
+INFO  - 2014-06-28 23:57:50.902; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 121
+INFO  - 2014-06-28 23:57:50.906; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@1039e063[participant] main
+INFO  - 2014-06-28 23:57:50.907; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:50.907; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@1039e063[participant] main{StandardDirectoryReader(segments_3d:265:nrt _3f(4.8):C37 _3g(4.8):C1 _3h(4.8):C1 _3i(4.8):C1 _3j(4.8):C1 _3k(4.8):C1 _3l(4.8):C1 _3m(4.8):C1)}
+INFO  - 2014-06-28 23:57:50.907; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 1015
+INFO  - 2014-06-28 23:57:50.917; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[45 (1472226992757669888)]} 0 4
+INFO  - 2014-06-28 23:57:50.920; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:51.618; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3d,generation=121}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3e,generation=122}
+INFO  - 2014-06-28 23:57:51.618; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 122
+INFO  - 2014-06-28 23:57:51.622; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@4359a380[participant] main
+INFO  - 2014-06-28 23:57:51.622; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:51.622; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@4359a380[participant] main{StandardDirectoryReader(segments_3e:267:nrt _3f(4.8):C37 _3g(4.8):C1 _3h(4.8):C1 _3i(4.8):C1 _3j(4.8):C1 _3k(4.8):C1 _3l(4.8):C1 _3m(4.8):C1 _3n(4.8):C1)}
+INFO  - 2014-06-28 23:57:51.623; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 703
+INFO  - 2014-06-28 23:57:51.631; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[46 (1472226993506353152)]} 0 5
+INFO  - 2014-06-28 23:57:51.634; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:52.210; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3e,generation=122}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3f,generation=123}
+INFO  - 2014-06-28 23:57:52.210; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 123
+INFO  - 2014-06-28 23:57:52.214; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@7961df18[participant] main
+INFO  - 2014-06-28 23:57:52.215; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:52.215; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@7961df18[participant] main{StandardDirectoryReader(segments_3f:271:nrt _3p(4.8):C46)}
+INFO  - 2014-06-28 23:57:52.218; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 584
+INFO  - 2014-06-28 23:57:52.227; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[47 (1472226994131304448)]} 0 4
+INFO  - 2014-06-28 23:57:52.230; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:53.248; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3f,generation=123}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3g,generation=124}
+INFO  - 2014-06-28 23:57:53.249; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 124
+INFO  - 2014-06-28 23:57:53.258; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@66bbb128[participant] main
+INFO  - 2014-06-28 23:57:53.259; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@66bbb128[participant] main{StandardDirectoryReader(segments_3g:273:nrt _3p(4.8):C46 _3q(4.8):C1)}
+INFO  - 2014-06-28 23:57:53.259; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:53.260; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 1030
+INFO  - 2014-06-28 23:57:53.267; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[48 (1472226995222872064)]} 0 4
+INFO  - 2014-06-28 23:57:53.270; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:53.920; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3g,generation=124}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3h,generation=125}
+INFO  - 2014-06-28 23:57:53.920; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 125
+INFO  - 2014-06-28 23:57:53.923; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@5e324995[participant] main
+INFO  - 2014-06-28 23:57:53.924; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:53.924; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@5e324995[participant] main{StandardDirectoryReader(segments_3h:275:nrt _3p(4.8):C46 _3q(4.8):C1 _3r(4.8):C1)}
+INFO  - 2014-06-28 23:57:53.925; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 656
+INFO  - 2014-06-28 23:57:53.933; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[49 (1472226995921223680)]} 0 3
+INFO  - 2014-06-28 23:57:53.936; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:54.679; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3h,generation=125}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3i,generation=126}
+INFO  - 2014-06-28 23:57:54.679; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 126
+INFO  - 2014-06-28 23:57:54.683; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@7c7c5bdf[participant] main
+INFO  - 2014-06-28 23:57:54.683; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:54.683; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@7c7c5bdf[participant] main{StandardDirectoryReader(segments_3i:277:nrt _3p(4.8):C46 _3q(4.8):C1 _3r(4.8):C1 _3s(4.8):C1)}
+INFO  - 2014-06-28 23:57:54.684; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 748
+INFO  - 2014-06-28 23:57:54.690; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[50 (1472226996716044288)]} 0 3
+INFO  - 2014-06-28 23:57:54.693; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:55.726; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3i,generation=126}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3j,generation=127}
+INFO  - 2014-06-28 23:57:55.727; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 127
+INFO  - 2014-06-28 23:57:55.730; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@18f2825e[participant] main
+INFO  - 2014-06-28 23:57:55.731; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:55.731; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@18f2825e[participant] main{StandardDirectoryReader(segments_3j:279:nrt _3p(4.8):C46 _3q(4.8):C1 _3r(4.8):C1 _3s(4.8):C1 _3t(4.8):C1)}
+INFO  - 2014-06-28 23:57:55.732; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 1039
+INFO  - 2014-06-28 23:57:55.740; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[51 (1472226997816000512)]} 0 4
+INFO  - 2014-06-28 23:57:55.743; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:56.874; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3j,generation=127}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3k,generation=128}
+INFO  - 2014-06-28 23:57:56.875; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 128
+INFO  - 2014-06-28 23:57:56.878; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@4c63e387[participant] main
+INFO  - 2014-06-28 23:57:56.879; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:56.879; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@4c63e387[participant] main{StandardDirectoryReader(segments_3k:281:nrt _3p(4.8):C46 _3q(4.8):C1 _3r(4.8):C1 _3s(4.8):C1 _3t(4.8):C1 _3u(4.8):C1)}
+INFO  - 2014-06-28 23:57:56.879; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 1136
+INFO  - 2014-06-28 23:57:56.886; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[52 (1472226999017668608)]} 0 3
+INFO  - 2014-06-28 23:57:56.889; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:57.601; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3k,generation=128}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3l,generation=129}
+INFO  - 2014-06-28 23:57:57.601; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 129
+INFO  - 2014-06-28 23:57:57.605; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@41b0d0a7[participant] main
+INFO  - 2014-06-28 23:57:57.605; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:57.605; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@41b0d0a7[participant] main{StandardDirectoryReader(segments_3l:283:nrt _3p(4.8):C46 _3q(4.8):C1 _3r(4.8):C1 _3s(4.8):C1 _3t(4.8):C1 _3u(4.8):C1 _3v(4.8):C1)}
+INFO  - 2014-06-28 23:57:57.606; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 717
+INFO  - 2014-06-28 23:57:57.615; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[53 (1472226999782080512)]} 0 3
+INFO  - 2014-06-28 23:57:57.618; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:58.215; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3l,generation=129}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3m,generation=130}
+INFO  - 2014-06-28 23:57:58.216; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 130
+INFO  - 2014-06-28 23:57:58.220; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@60f01703[participant] main
+INFO  - 2014-06-28 23:57:58.220; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:58.220; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@60f01703[participant] main{StandardDirectoryReader(segments_3m:285:nrt _3p(4.8):C46 _3q(4.8):C1 _3r(4.8):C1 _3s(4.8):C1 _3t(4.8):C1 _3u(4.8):C1 _3v(4.8):C1 _3w(4.8):C1)}
+INFO  - 2014-06-28 23:57:58.221; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 603
+INFO  - 2014-06-28 23:57:58.228; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[54 (1472227000424857600)]} 0 4
+INFO  - 2014-06-28 23:57:58.232; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:59.386; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3m,generation=130}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3n,generation=131}
+INFO  - 2014-06-28 23:57:59.386; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 131
+INFO  - 2014-06-28 23:57:59.390; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@c30d75[participant] main
+INFO  - 2014-06-28 23:57:59.391; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:59.391; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@c30d75[participant] main{StandardDirectoryReader(segments_3n:287:nrt _3p(4.8):C46 _3q(4.8):C1 _3r(4.8):C1 _3s(4.8):C1 _3t(4.8):C1 _3u(4.8):C1 _3v(4.8):C1 _3w(4.8):C1 _3x(4.8):C1)}
+INFO  - 2014-06-28 23:57:59.391; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 1159
+INFO  - 2014-06-28 23:57:59.398; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[55 (1472227001651691520)]} 0 3
+INFO  - 2014-06-28 23:57:59.402; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:57:59.980; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3n,generation=131}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3o,generation=132}
+INFO  - 2014-06-28 23:57:59.980; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 132
+INFO  - 2014-06-28 23:57:59.984; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@78242c99[participant] main
+INFO  - 2014-06-28 23:57:59.984; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:57:59.984; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@78242c99[participant] main{StandardDirectoryReader(segments_3o:291:nrt _3z(4.8):C55)}
+INFO  - 2014-06-28 23:57:59.987; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 586
+INFO  - 2014-06-28 23:57:59.994; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[56 (1472227002276642816)]} 0 3
+INFO  - 2014-06-28 23:57:59.997; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:58:01.374; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3o,generation=132}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3p,generation=133}
+INFO  - 2014-06-28 23:58:01.375; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 133
+INFO  - 2014-06-28 23:58:01.381; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@56d22841[participant] main
+INFO  - 2014-06-28 23:58:01.382; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:58:01.382; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@56d22841[participant] main{StandardDirectoryReader(segments_3p:293:nrt _3z(4.8):C55 _40(4.8):C1)}
+INFO  - 2014-06-28 23:58:01.383; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 1386
+INFO  - 2014-06-28 23:58:01.389; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[57 (1472227003739406336)]} 0 3
+INFO  - 2014-06-28 23:58:01.392; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:58:02.190; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3p,generation=133}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3q,generation=134}
+INFO  - 2014-06-28 23:58:02.191; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 134
+INFO  - 2014-06-28 23:58:02.194; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@2e9f560[participant] main
+INFO  - 2014-06-28 23:58:02.195; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:58:02.195; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@2e9f560[participant] main{StandardDirectoryReader(segments_3q:295:nrt _3z(4.8):C55 _40(4.8):C1 _41(4.8):C1)}
+INFO  - 2014-06-28 23:58:02.195; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 803
+INFO  - 2014-06-28 23:58:02.203; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[58 (1472227004593995776)]} 0 3
+INFO  - 2014-06-28 23:58:02.206; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:58:03.227; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3q,generation=134}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3r,generation=135}
+INFO  - 2014-06-28 23:58:03.227; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 135
+INFO  - 2014-06-28 23:58:03.231; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@1debb8e9[participant] main
+INFO  - 2014-06-28 23:58:03.231; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:58:03.231; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@1debb8e9[participant] main{StandardDirectoryReader(segments_3r:297:nrt _3z(4.8):C55 _40(4.8):C1 _41(4.8):C1 _42(4.8):C1)}
+INFO  - 2014-06-28 23:58:03.232; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 1026
+INFO  - 2014-06-28 23:58:03.238; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[59 (1472227005679271936)]} 0 3
+INFO  - 2014-06-28 23:58:03.242; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:58:03.819; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3r,generation=135}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3s,generation=136}
+INFO  - 2014-06-28 23:58:03.819; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 136
+INFO  - 2014-06-28 23:58:03.823; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@ec48686[participant] main
+INFO  - 2014-06-28 23:58:03.823; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:58:03.823; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@ec48686[participant] main{StandardDirectoryReader(segments_3s:299:nrt _3z(4.8):C55 _40(4.8):C1 _41(4.8):C1 _42(4.8):C1 _43(4.8):C1)}
+INFO  - 2014-06-28 23:58:03.824; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 583
+INFO  - 2014-06-28 23:58:03.833; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[60 (1472227006302126080)]} 0 4
+INFO  - 2014-06-28 23:58:03.836; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:58:04.555; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3s,generation=136}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3t,generation=137}
+INFO  - 2014-06-28 23:58:04.556; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 137
+INFO  - 2014-06-28 23:58:04.559; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@1dd527ea[participant] main
+INFO  - 2014-06-28 23:58:04.560; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:58:04.560; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@1dd527ea[participant] main{StandardDirectoryReader(segments_3t:301:nrt _3z(4.8):C55 _40(4.8):C1 _41(4.8):C1 _42(4.8):C1 _43(4.8):C1 _44(4.8):C1)}
+INFO  - 2014-06-28 23:58:04.561; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 725
+INFO  - 2014-06-28 23:58:04.568; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[61 (1472227007072829440)]} 0 4
+INFO  - 2014-06-28 23:58:04.572; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:58:05.149; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3t,generation=137}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3u,generation=138}
+INFO  - 2014-06-28 23:58:05.149; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 138
+INFO  - 2014-06-28 23:58:05.153; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@3e56fc95[participant] main
+INFO  - 2014-06-28 23:58:05.153; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:58:05.153; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@3e56fc95[participant] main{StandardDirectoryReader(segments_3u:303:nrt _3z(4.8):C55 _40(4.8):C1 _41(4.8):C1 _42(4.8):C1 _43(4.8):C1 _44(4.8):C1 _45(4.8):C1)}
+INFO  - 2014-06-28 23:58:05.154; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 582
+INFO  - 2014-06-28 23:58:05.164; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[62 (1472227007696732160)]} 0 5
+INFO  - 2014-06-28 23:58:05.167; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:58:06.541; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3u,generation=138}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3v,generation=139}
+INFO  - 2014-06-28 23:58:06.541; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 139
+INFO  - 2014-06-28 23:58:06.545; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@3df55c9c[participant] main
+INFO  - 2014-06-28 23:58:06.545; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:58:06.545; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@3df55c9c[participant] main{StandardDirectoryReader(segments_3v:305:nrt _3z(4.8):C55 _40(4.8):C1 _41(4.8):C1 _42(4.8):C1 _43(4.8):C1 _44(4.8):C1 _45(4.8):C1 _46(4.8):C1)}
+INFO  - 2014-06-28 23:58:06.546; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 1379
+INFO  - 2014-06-28 23:58:06.553; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[63 (1472227009154252800)]} 0 4
+INFO  - 2014-06-28 23:58:06.556; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:58:07.155; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3v,generation=139}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3w,generation=140}
+INFO  - 2014-06-28 23:58:07.156; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 140
+INFO  - 2014-06-28 23:58:07.159; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@5d1a16a3[participant] main
+INFO  - 2014-06-28 23:58:07.160; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:58:07.160; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@5d1a16a3[participant] main{StandardDirectoryReader(segments_3w:307:nrt _3z(4.8):C55 _40(4.8):C1 _41(4.8):C1 _42(4.8):C1 _43(4.8):C1 _44(4.8):C1 _45(4.8):C1 _46(4.8):C1 _47(4.8):C1)}
+INFO  - 2014-06-28 23:58:07.160; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 604
+INFO  - 2014-06-28 23:58:07.167; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[64 (1472227009798078464)]} 0 3
+INFO  - 2014-06-28 23:58:07.171; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:58:07.749; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3w,generation=140}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3x,generation=141}
+INFO  - 2014-06-28 23:58:07.749; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 141
+INFO  - 2014-06-28 23:58:07.753; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@397f6d6[participant] main
+INFO  - 2014-06-28 23:58:07.754; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:58:07.754; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@397f6d6[participant] main{StandardDirectoryReader(segments_3x:311:nrt _49(4.8):C64)}
+INFO  - 2014-06-28 23:58:07.757; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 586
+INFO  - 2014-06-28 23:58:07.767; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[65 (1472227010426175488)]} 0 5
+INFO  - 2014-06-28 23:58:07.770; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:58:09.365; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3x,generation=141}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3y,generation=142}
+INFO  - 2014-06-28 23:58:09.365; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 142
+INFO  - 2014-06-28 23:58:09.372; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@170282ca[participant] main
+INFO  - 2014-06-28 23:58:09.373; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:58:09.373; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@170282ca[participant] main{StandardDirectoryReader(segments_3y:313:nrt _49(4.8):C64 _4a(4.8):C1)}
+INFO  - 2014-06-28 23:58:09.373; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 1603
+INFO  - 2014-06-28 23:58:09.380; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[66 (1472227012118577152)]} 0 3
+INFO  - 2014-06-28 23:58:09.383; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:58:10.046; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3y,generation=142}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3z,generation=143}
+INFO  - 2014-06-28 23:58:10.047; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 143
+INFO  - 2014-06-28 23:58:10.050; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@55173ad3[participant] main
+INFO  - 2014-06-28 23:58:10.050; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:58:10.050; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@55173ad3[participant] main{StandardDirectoryReader(segments_3z:315:nrt _49(4.8):C64 _4a(4.8):C1 _4b(4.8):C1)}
+INFO  - 2014-06-28 23:58:10.051; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 668
+INFO  - 2014-06-28 23:58:10.060; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[67 (1472227012831608832)]} 0 4
+INFO  - 2014-06-28 23:58:10.063; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:58:11.028; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_3z,generation=143}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_40,generation=144}
+INFO  - 2014-06-28 23:58:11.029; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 144
+INFO  - 2014-06-28 23:58:11.032; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@7b58555c[participant] main
+INFO  - 2014-06-28 23:58:11.033; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:58:11.033; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@7b58555c[participant] main{StandardDirectoryReader(segments_40:317:nrt _49(4.8):C64 _4a(4.8):C1 _4b(4.8):C1 _4c(4.8):C1)}
+INFO  - 2014-06-28 23:58:11.033; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 970
+INFO  - 2014-06-28 23:58:11.040; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[68 (1472227013859213312)]} 0 4
+INFO  - 2014-06-28 23:58:11.044; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:58:11.732; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_40,generation=144}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_41,generation=145}
+INFO  - 2014-06-28 23:58:11.732; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 145
+INFO  - 2014-06-28 23:58:11.735; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@37f5e68[participant] main
+INFO  - 2014-06-28 23:58:11.736; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:58:11.736; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@37f5e68[participant] main{StandardDirectoryReader(segments_41:319:nrt _49(4.8):C64 _4a(4.8):C1 _4b(4.8):C1 _4c(4.8):C1 _4d(4.8):C1)}
+INFO  - 2014-06-28 23:58:11.736; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 692
+INFO  - 2014-06-28 23:58:11.746; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[69 (1472227014599507968)]} 0 4
+INFO  - 2014-06-28 23:58:11.749; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:58:12.590; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_41,generation=145}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_42,generation=146}
+INFO  - 2014-06-28 23:58:12.591; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 146
+INFO  - 2014-06-28 23:58:12.594; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@379159fa[participant] main
+INFO  - 2014-06-28 23:58:12.595; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:58:12.595; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@379159fa[participant] main{StandardDirectoryReader(segments_42:321:nrt _49(4.8):C64 _4a(4.8):C1 _4b(4.8):C1 _4c(4.8):C1 _4d(4.8):C1 _4e(4.8):C1)}
+INFO  - 2014-06-28 23:58:12.595; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 846
+INFO  - 2014-06-28 23:58:12.601; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[70 (1472227015497089024)]} 0 3
+INFO  - 2014-06-28 23:58:12.604; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:58:13.171; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_42,generation=146}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_43,generation=147}
+INFO  - 2014-06-28 23:58:13.172; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 147
+INFO  - 2014-06-28 23:58:13.175; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@ea0732c[participant] main
+INFO  - 2014-06-28 23:58:13.175; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:58:13.175; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@ea0732c[participant] main{StandardDirectoryReader(segments_43:323:nrt _49(4.8):C64 _4a(4.8):C1 _4b(4.8):C1 _4c(4.8):C1 _4d(4.8):C1 _4e(4.8):C1 _4f(4.8):C1)}
+INFO  - 2014-06-28 23:58:13.176; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 572
+INFO  - 2014-06-28 23:58:13.184; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[71 (1472227016107360256)]} 0 3
+INFO  - 2014-06-28 23:58:13.188; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:58:13.788; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_43,generation=147}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_44,generation=148}
+INFO  - 2014-06-28 23:58:13.788; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 148
+INFO  - 2014-06-28 23:58:13.791; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@dddb03e[participant] main
+INFO  - 2014-06-28 23:58:13.792; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:58:13.792; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@dddb03e[participant] main{StandardDirectoryReader(segments_44:325:nrt _49(4.8):C64 _4a(4.8):C1 _4b(4.8):C1 _4c(4.8):C1 _4d(4.8):C1 _4e(4.8):C1 _4f(4.8):C1 _4g(4.8):C1)}
+INFO  - 2014-06-28 23:58:13.793; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 605
+INFO  - 2014-06-28 23:58:13.799; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[72 (1472227016752234496)]} 0 3
+INFO  - 2014-06-28 23:58:13.802; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:58:14.469; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_44,generation=148}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_45,generation=149}
+INFO  - 2014-06-28 23:58:14.469; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 149
+INFO  - 2014-06-28 23:58:14.472; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@640c40f9[participant] main
+INFO  - 2014-06-28 23:58:14.473; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:58:14.473; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@640c40f9[participant] main{StandardDirectoryReader(segments_45:327:nrt _49(4.8):C64 _4a(4.8):C1 _4b(4.8):C1 _4c(4.8):C1 _4d(4.8):C1 _4e(4.8):C1 _4f(4.8):C1 _4g(4.8):C1 _4h(4.8):C1)}
+INFO  - 2014-06-28 23:58:14.474; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 672
+INFO  - 2014-06-28 23:58:14.481; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[73 (1472227017468411904)]} 0 3
+INFO  - 2014-06-28 23:58:14.485; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:58:15.150; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_45,generation=149}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_46,generation=150}
+INFO  - 2014-06-28 23:58:15.150; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 150
+INFO  - 2014-06-28 23:58:15.153; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@1d4b808d[participant] main
+INFO  - 2014-06-28 23:58:15.154; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:58:15.154; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@1d4b808d[participant] main{StandardDirectoryReader(segments_46:331:nrt _4j(4.8):C73)}
+INFO  - 2014-06-28 23:58:15.157; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 672
+INFO  - 2014-06-28 23:58:15.163; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[74 (1472227018183540736)]} 0 3
+INFO  - 2014-06-28 23:58:15.166; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:58:16.912; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_46,generation=150}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_47,generation=151}
+INFO  - 2014-06-28 23:58:16.912; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 151
+INFO  - 2014-06-28 23:58:16.918; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@196257ee[participant] main
+INFO  - 2014-06-28 23:58:16.919; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:58:16.919; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@196257ee[participant] main{StandardDirectoryReader(segments_47:333:nrt _4j(4.8):C73 _4k(4.8):C1)}
+INFO  - 2014-06-28 23:58:16.919; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 1753
+INFO  - 2014-06-28 23:58:16.927; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[75 (1472227020033228800)]} 0 3
+INFO  - 2014-06-28 23:58:16.930; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:58:17.504; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_47,generation=151}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_48,generation=152}
+INFO  - 2014-06-28 23:58:17.505; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 152
+INFO  - 2014-06-28 23:58:17.508; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@43d23fc8[participant] main
+INFO  - 2014-06-28 23:58:17.508; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:58:17.508; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@43d23fc8[participant] main{StandardDirectoryReader(segments_48:335:nrt _4j(4.8):C73 _4k(4.8):C1 _4l(4.8):C1)}
+INFO  - 2014-06-28 23:58:17.509; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 579
+INFO  - 2014-06-28 23:58:17.515; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[76 (1472227020648742912)]} 0 3
+INFO  - 2014-06-28 23:58:17.518; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:58:18.274; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_48,generation=152}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_49,generation=153}
+INFO  - 2014-06-28 23:58:18.274; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 153
+INFO  - 2014-06-28 23:58:18.277; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@3882bf18[participant] main
+INFO  - 2014-06-28 23:58:18.278; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:58:18.278; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@3882bf18[participant] main{StandardDirectoryReader(segments_49:337:nrt _4j(4.8):C73 _4k(4.8):C1 _4l(4.8):C1 _4m(4.8):C1)}
+INFO  - 2014-06-28 23:58:18.279; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 761
+INFO  - 2014-06-28 23:58:18.286; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[77 (1472227021458243584)]} 0 3
+INFO  - 2014-06-28 23:58:18.290; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:58:19.123; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_49,generation=153}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_4a,generation=154}
+INFO  - 2014-06-28 23:58:19.124; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 154
+INFO  - 2014-06-28 23:58:19.127; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@45cd4674[participant] main
+INFO  - 2014-06-28 23:58:19.127; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:58:19.127; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@45cd4674[participant] main{StandardDirectoryReader(segments_4a:339:nrt _4j(4.8):C73 _4k(4.8):C1 _4l(4.8):C1 _4m(4.8):C1 _4n(4.8):C1)}
+INFO  - 2014-06-28 23:58:19.128; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 838
+INFO  - 2014-06-28 23:58:19.134; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[78 (1472227022347436032)]} 0 3
+INFO  - 2014-06-28 23:58:19.138; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:58:19.749; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_4a,generation=154}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_4b,generation=155}
+INFO  - 2014-06-28 23:58:19.749; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 155
+INFO  - 2014-06-28 23:58:19.752; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@1148392c[participant] main
+INFO  - 2014-06-28 23:58:19.753; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:58:19.753; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@1148392c[participant] main{StandardDirectoryReader(segments_4b:341:nrt _4j(4.8):C73 _4k(4.8):C1 _4l(4.8):C1 _4m(4.8):C1 _4n(4.8):C1 _4o(4.8):C1)}
+INFO  - 2014-06-28 23:58:19.753; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 615
+INFO  - 2014-06-28 23:58:19.761; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[79 (1472227023004893184)]} 0 3
+INFO  - 2014-06-28 23:58:19.764; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:58:20.341; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_4b,generation=155}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_4c,generation=156}
+INFO  - 2014-06-28 23:58:20.341; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 156
+INFO  - 2014-06-28 23:58:20.344; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@1d2cb36f[participant] main
+INFO  - 2014-06-28 23:58:20.345; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:58:20.345; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@1d2cb36f[participant] main{StandardDirectoryReader(segments_4c:343:nrt _4j(4.8):C73 _4k(4.8):C1 _4l(4.8):C1 _4m(4.8):C1 _4n(4.8):C1 _4o(4.8):C1 _4p(4.8):C1)}
+INFO  - 2014-06-28 23:58:20.345; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 581
+INFO  - 2014-06-28 23:58:20.352; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[80 (1472227023623553024)]} 0 3
+INFO  - 2014-06-28 23:58:20.355; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:58:20.921; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_4c,generation=156}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_4d,generation=157}
+INFO  - 2014-06-28 23:58:20.922; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 157
+INFO  - 2014-06-28 23:58:20.925; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@5fc1d8ea[participant] main
+INFO  - 2014-06-28 23:58:20.926; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:58:20.926; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@5fc1d8ea[participant] main{StandardDirectoryReader(segments_4d:345:nrt _4j(4.8):C73 _4k(4.8):C1 _4l(4.8):C1 _4m(4.8):C1 _4n(4.8):C1 _4o(4.8):C1 _4p(4.8):C1 _4q(4.8):C1)}
+INFO  - 2014-06-28 23:58:20.926; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 571
+INFO  - 2014-06-28 23:58:20.935; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[81 (1472227024233824256)]} 0 4
+INFO  - 2014-06-28 23:58:20.938; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:58:21.959; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_4d,generation=157}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_4e,generation=158}
+INFO  - 2014-06-28 23:58:21.960; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 158
+INFO  - 2014-06-28 23:58:21.963; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@7ceac2df[participant] main
+INFO  - 2014-06-28 23:58:21.963; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:58:21.963; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@7ceac2df[participant] main{StandardDirectoryReader(segments_4e:347:nrt _4j(4.8):C73 _4k(4.8):C1 _4l(4.8):C1 _4m(4.8):C1 _4n(4.8):C1 _4o(4.8):C1 _4p(4.8):C1 _4q(4.8):C1 _4r(4.8):C1)}
+INFO  - 2014-06-28 23:58:21.964; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 1026
+INFO  - 2014-06-28 23:58:21.971; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[82 (1472227025321197568)]} 0 4
+INFO  - 2014-06-28 23:58:21.974; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:58:22.974; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_4e,generation=158}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_4f,generation=159}
+INFO  - 2014-06-28 23:58:22.974; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 159
+INFO  - 2014-06-28 23:58:22.977; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@4265d6f5[participant] main
+INFO  - 2014-06-28 23:58:22.978; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:58:22.978; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@4265d6f5[participant] main{StandardDirectoryReader(segments_4f:351:nrt _4t(4.8):C82)}
+INFO  - 2014-06-28 23:58:22.981; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 1007
+INFO  - 2014-06-28 23:58:22.989; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[83 (1472227026388647936)]} 0 3
+INFO  - 2014-06-28 23:58:22.993; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:58:24.258; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_4f,generation=159}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_4g,generation=160}
+INFO  - 2014-06-28 23:58:24.259; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 160
+INFO  - 2014-06-28 23:58:24.265; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@6f236810[participant] main
+INFO  - 2014-06-28 23:58:24.265; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:58:24.265; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@6f236810[participant] main{StandardDirectoryReader(segments_4g:353:nrt _4t(4.8):C82 _4u(4.8):C1)}
+INFO  - 2014-06-28 23:58:24.266; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 1273
+INFO  - 2014-06-28 23:58:24.274; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[84 (1472227027735019520)]} 0 5
+INFO  - 2014-06-28 23:58:24.277; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:58:25.028; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_4g,generation=160}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_4h,generation=161}
+INFO  - 2014-06-28 23:58:25.029; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 161
+INFO  - 2014-06-28 23:58:25.032; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@427f20ba[participant] main
+INFO  - 2014-06-28 23:58:25.033; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:58:25.033; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@427f20ba[participant] main{StandardDirectoryReader(segments_4h:355:nrt _4t(4.8):C82 _4u(4.8):C1 _4v(4.8):C1)}
+INFO  - 2014-06-28 23:58:25.033; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 756
+INFO  - 2014-06-28 23:58:25.042; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[85 (1472227028541374464)]} 0 4
+INFO  - 2014-06-28 23:58:25.045; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:58:25.698; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_4h,generation=161}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_4i,generation=162}
+INFO  - 2014-06-28 23:58:25.699; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 162
+INFO  - 2014-06-28 23:58:25.702; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@5b53fe38[participant] main
+INFO  - 2014-06-28 23:58:25.702; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:58:25.702; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@5b53fe38[participant] main{StandardDirectoryReader(segments_4i:357:nrt _4t(4.8):C82 _4u(4.8):C1 _4v(4.8):C1 _4w(4.8):C1)}
+INFO  - 2014-06-28 23:58:25.703; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 658
+INFO  - 2014-06-28 23:58:25.709; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[86 (1472227029241823232)]} 0 3
+INFO  - 2014-06-28 23:58:25.713; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:58:26.379; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_4i,generation=162}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_4j,generation=163}
+INFO  - 2014-06-28 23:58:26.380; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 163
+INFO  - 2014-06-28 23:58:26.383; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@469c1f03[participant] main
+INFO  - 2014-06-28 23:58:26.383; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:58:26.383; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@469c1f03[participant] main{StandardDirectoryReader(segments_4j:359:nrt _4t(4.8):C82 _4u(4.8):C1 _4v(4.8):C1 _4w(4.8):C1 _4x(4.8):C1)}
+INFO  - 2014-06-28 23:58:26.384; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 671
+INFO  - 2014-06-28 23:58:26.392; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[87 (1472227029956952064)]} 0 3
+INFO  - 2014-06-28 23:58:26.395; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:58:26.995; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_4j,generation=163}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_4k,generation=164}
+INFO  - 2014-06-28 23:58:26.996; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 164
+INFO  - 2014-06-28 23:58:26.999; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@350aa5bc[participant] main
+INFO  - 2014-06-28 23:58:26.999; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:58:26.999; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@350aa5bc[participant] main{StandardDirectoryReader(segments_4k:361:nrt _4t(4.8):C82 _4u(4.8):C1 _4v(4.8):C1 _4w(4.8):C1 _4x(4.8):C1 _4y(4.8):C1)}
+INFO  - 2014-06-28 23:58:27.000; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 605
+INFO  - 2014-06-28 23:58:27.006; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[88 (1472227030600777728)]} 0 3
+INFO  - 2014-06-28 23:58:27.009; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:58:28.320; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_4k,generation=164}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_4l,generation=165}
+INFO  - 2014-06-28 23:58:28.321; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 165
+INFO  - 2014-06-28 23:58:28.324; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@d67373d[participant] main
+INFO  - 2014-06-28 23:58:28.324; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:58:28.324; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@d67373d[participant] main{StandardDirectoryReader(segments_4l:363:nrt _4t(4.8):C82 _4u(4.8):C1 _4v(4.8):C1 _4w(4.8):C1 _4x(4.8):C1 _4y(4.8):C1 _4z(4.8):C1)}
+INFO  - 2014-06-28 23:58:28.325; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 1316
+INFO  - 2014-06-28 23:58:28.333; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[89 (1472227031992238080)]} 0 3
+INFO  - 2014-06-28 23:58:28.336; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:58:29.747; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_4l,generation=165}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_4m,generation=166}
+INFO  - 2014-06-28 23:58:29.747; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 166
+INFO  - 2014-06-28 23:58:29.750; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@62b818f9[participant] main
+INFO  - 2014-06-28 23:58:29.751; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:58:29.751; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@62b818f9[participant] main{StandardDirectoryReader(segments_4m:365:nrt _4t(4.8):C82 _4u(4.8):C1 _4v(4.8):C1 _4w(4.8):C1 _4x(4.8):C1 _4y(4.8):C1 _4z(4.8):C1 _50(4.8):C1)}
+INFO  - 2014-06-28 23:58:29.752; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 1416
+INFO  - 2014-06-28 23:58:29.758; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[90 (1472227033487507456)]} 0 3
+INFO  - 2014-06-28 23:58:29.761; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:58:30.730; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_4m,generation=166}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_4n,generation=167}
+INFO  - 2014-06-28 23:58:30.730; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 167
+INFO  - 2014-06-28 23:58:30.733; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@460aa49b[participant] main
+INFO  - 2014-06-28 23:58:30.733; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:58:30.734; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@460aa49b[participant] main{StandardDirectoryReader(segments_4n:367:nrt _4t(4.8):C82 _4u(4.8):C1 _4v(4.8):C1 _4w(4.8):C1 _4x(4.8):C1 _4y(4.8):C1 _4z(4.8):C1 _50(4.8):C1 _51(4.8):C1)}
+INFO  - 2014-06-28 23:58:30.734; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 973
+INFO  - 2014-06-28 23:58:30.742; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[91 (1472227034519306240)]} 0 3
+INFO  - 2014-06-28 23:58:30.745; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:58:31.322; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_4n,generation=167}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_4o,generation=168}
+INFO  - 2014-06-28 23:58:31.322; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 168
+INFO  - 2014-06-28 23:58:31.325; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@44174925[participant] main
+INFO  - 2014-06-28 23:58:31.326; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:58:31.326; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@44174925[participant] main{StandardDirectoryReader(segments_4o:371:nrt _53(4.8):C91)}
+INFO  - 2014-06-28 23:58:31.329; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 584
+INFO  - 2014-06-28 23:58:31.334; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[92 (1472227035140063232)]} 0 2
+INFO  - 2014-06-28 23:58:31.338; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:58:32.493; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_4o,generation=168}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_4p,generation=169}
+INFO  - 2014-06-28 23:58:32.494; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 169
+INFO  - 2014-06-28 23:58:32.500; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@5853d6bb[participant] main
+INFO  - 2014-06-28 23:58:32.500; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:58:32.500; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@5853d6bb[participant] main{StandardDirectoryReader(segments_4p:373:nrt _53(4.8):C91 _54(4.8):C1)}
+INFO  - 2014-06-28 23:58:32.501; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 1163
+INFO  - 2014-06-28 23:58:32.508; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[93 (1472227036371091456)]} 0 2
+INFO  - 2014-06-28 23:58:32.511; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:58:33.109; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_4p,generation=169}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_4q,generation=170}
+INFO  - 2014-06-28 23:58:33.110; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 170
+INFO  - 2014-06-28 23:58:33.113; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@3cd8a408[participant] main
+INFO  - 2014-06-28 23:58:33.113; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:58:33.113; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@3cd8a408[participant] main{StandardDirectoryReader(segments_4q:375:nrt _53(4.8):C91 _54(4.8):C1 _55(4.8):C1)}
+INFO  - 2014-06-28 23:58:33.114; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 603
+INFO  - 2014-06-28 23:58:33.120; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[94 (1472227037012819968)]} 0 3
+INFO  - 2014-06-28 23:58:33.123; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:58:33.690; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_4q,generation=170}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_4r,generation=171}
+INFO  - 2014-06-28 23:58:33.691; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 171
+INFO  - 2014-06-28 23:58:33.694; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@2f601cda[participant] main
+INFO  - 2014-06-28 23:58:33.694; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:58:33.694; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@2f601cda[participant] main{StandardDirectoryReader(segments_4r:377:nrt _53(4.8):C91 _54(4.8):C1 _55(4.8):C1 _56(4.8):C1)}
+INFO  - 2014-06-28 23:58:33.695; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 572
+INFO  - 2014-06-28 23:58:33.701; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[95 (1472227037620994048)]} 0 2
+INFO  - 2014-06-28 23:58:33.703; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:58:34.516; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_4r,generation=171}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_4s,generation=172}
+INFO  - 2014-06-28 23:58:34.516; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 172
+INFO  - 2014-06-28 23:58:34.519; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@3970a5ee[participant] main
+INFO  - 2014-06-28 23:58:34.520; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:58:34.520; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@3970a5ee[participant] main{StandardDirectoryReader(segments_4s:379:nrt _53(4.8):C91 _54(4.8):C1 _55(4.8):C1 _56(4.8):C1 _57(4.8):C1)}
+INFO  - 2014-06-28 23:58:34.520; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 817
+INFO  - 2014-06-28 23:58:34.528; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[96 (1472227038489214976)]} 0 3
+INFO  - 2014-06-28 23:58:34.532; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:58:35.654; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_4s,generation=172}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_4t,generation=173}
+INFO  - 2014-06-28 23:58:35.654; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 173
+INFO  - 2014-06-28 23:58:35.657; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@31572f7e[participant] main
+INFO  - 2014-06-28 23:58:35.658; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:58:35.658; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@31572f7e[participant] main{StandardDirectoryReader(segments_4t:381:nrt _53(4.8):C91 _54(4.8):C1 _55(4.8):C1 _56(4.8):C1 _57(4.8):C1 _58(4.8):C1)}
+INFO  - 2014-06-28 23:58:35.659; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 1128
+INFO  - 2014-06-28 23:58:35.665; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[97 (1472227039680397312)]} 0 3
+INFO  - 2014-06-28 23:58:35.668; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:58:36.435; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_4t,generation=173}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_4u,generation=174}
+INFO  - 2014-06-28 23:58:36.435; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 174
+INFO  - 2014-06-28 23:58:36.438; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@322dca53[participant] main
+INFO  - 2014-06-28 23:58:36.438; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:58:36.438; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@322dca53[participant] main{StandardDirectoryReader(segments_4u:383:nrt _53(4.8):C91 _54(4.8):C1 _55(4.8):C1 _56(4.8):C1 _57(4.8):C1 _58(4.8):C1 _59(4.8):C1)}
+INFO  - 2014-06-28 23:58:36.439; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 771
+INFO  - 2014-06-28 23:58:36.447; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[98 (1472227040500383744)]} 0 3
+INFO  - 2014-06-28 23:58:36.450; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:58:37.049; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_4u,generation=174}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_4v,generation=175}
+INFO  - 2014-06-28 23:58:37.049; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 175
+INFO  - 2014-06-28 23:58:37.052; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@65a8f181[participant] main
+INFO  - 2014-06-28 23:58:37.053; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:58:37.053; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@65a8f181[participant] main{StandardDirectoryReader(segments_4v:385:nrt _53(4.8):C91 _54(4.8):C1 _55(4.8):C1 _56(4.8):C1 _57(4.8):C1 _58(4.8):C1 _59(4.8):C1 _5a(4.8):C1)}
+INFO  - 2014-06-28 23:58:37.053; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 603
+INFO  - 2014-06-28 23:58:37.059; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[99 (1472227041143160832)]} 0 3
+INFO  - 2014-06-28 23:58:37.062; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:58:37.985; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_4v,generation=175}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_4w,generation=176}
+INFO  - 2014-06-28 23:58:37.986; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 176
+INFO  - 2014-06-28 23:58:37.988; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@377a911[participant] main
+INFO  - 2014-06-28 23:58:37.989; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:58:37.989; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@377a911[participant] main{StandardDirectoryReader(segments_4w:387:nrt _53(4.8):C91 _54(4.8):C1 _55(4.8):C1 _56(4.8):C1 _57(4.8):C1 _58(4.8):C1 _59(4.8):C1 _5a(4.8):C1 _5b(4.8):C1)}
+INFO  - 2014-06-28 23:58:37.990; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 928
+INFO  - 2014-06-28 23:58:37.997; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={wt=javabin&version=2} {add=[100 (1472227042126725120)]} 0 3
+INFO  - 2014-06-28 23:58:38.000; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2014-06-28 23:58:38.835; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_4w,generation=176}
+	commit{dir=/home/haughty/Documents/IdeaProjects/hubble/Solr-4.8.0/example/multicore/participant/data/index,segFN=segments_4x,generation=177}
+INFO  - 2014-06-28 23:58:38.835; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 177
+INFO  - 2014-06-28 23:58:38.839; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@21c1bc4a[participant] main
+INFO  - 2014-06-28 23:58:38.839; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2014-06-28 23:58:38.839; org.apache.solr.core.SolrCore; [participant] Registered new searcher Searcher@21c1bc4a[participant] main{StandardDirectoryReader(segments_4x:391:nrt _5d(4.8):C100)}
+INFO  - 2014-06-28 23:58:38.842; org.apache.solr.update.processor.LogUpdateProcessor; [participant] webapp=/solr path=/update params={waitSearcher=true&commit=true&wt=javabin&version=2&softCommit=false} {commit=} 0 842
+INFO  - 2014-06-28 23:58:50.704; org.apache.solr.core.SolrCore; [participant] webapp=/solr path=/select params={indent=true&q=*:*&_=1404025130700&wt=json} hits=100 status=0 QTime=1 
+INFO  - 2014-06-29 00:00:09.646; org.apache.solr.core.SolrCore; [participant] webapp=/solr path=/select params={indent=true&q=participantMarketSegments:NA&_=1404025209636&wt=json} hits=3 status=0 QTime=3 
+INFO  - 2014-06-29 00:00:48.266; org.apache.solr.core.SolrCore; [participant] webapp=/solr path=/admin/luke params={numTerms=0&_=1404025248228&show=index&wt=json} status=0 QTime=1 
+INFO  - 2014-06-29 00:00:48.266; org.apache.solr.core.SolrCore; [participant] webapp=/solr path=/admin/ping params={action=status&_=1404025248234&wt=json} status=503 QTime=0 
+INFO  - 2014-06-29 00:00:48.266; org.apache.solr.core.SolrCore; [participant] webapp=/solr path=/admin/file/ params={file=admin-extra.html&_=1404025248233} status=0 QTime=1 
+INFO  - 2014-06-29 00:00:48.268; org.apache.solr.core.SolrCore; [participant] webapp=/solr path=/admin/system params={_=1404025248232&wt=json} status=0 QTime=3 
+INFO  - 2014-06-29 00:00:48.268; org.apache.solr.core.SolrCore; [participant] webapp=/solr path=/replication params={command=details&_=1404025248231&wt=json} status=0 QTime=3 
