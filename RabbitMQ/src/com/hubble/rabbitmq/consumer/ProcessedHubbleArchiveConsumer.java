@@ -45,7 +45,7 @@ public class ProcessedHubbleArchiveConsumer {
         while (true) {
             QueueingConsumer.Delivery delivery = consumer.nextDelivery();
             String message = new String(delivery.getBody());
-            System.out.println(" [x] Message '" + ++messagesReceived + " : " + message + "'");
+            System.out.println(" [x] Message '" + messagesReceived++ + " : " + message + "'");
 
             ProcessedHubleArchiveConsumerDelegate delegate = new ProcessedHubleArchiveConsumerDelegate(message);
             delegate.extractHubbleArchiveObjects();
@@ -78,6 +78,6 @@ class ProcessedHubleArchiveConsumerDelegate{
             archiveObjects.add(archiveObject);
         }
 
-        SolrCache.getInstance().addObjectsToSolrCache(archiveObjects);
+        SolrCache.getInstance().addObjectsToCache(archiveObjects);
     }
 }

@@ -34,9 +34,6 @@
 
   <!--Alliance core specific fields -->
   <field name = "dealNumber"	type="long"    indexed="true"  stored="true"  multiValued="false" required="true"/>
-  <field name = "hubbleArchiveIdStart"	type="int"    indexed="false"  stored="true"  multiValued="false" required="true"/>
-  <field name = "hubbleArchiveIdEnd"	type="int"    indexed="false"  stored="true"  multiValued="false" required="true"/>
-
   <field name = "dateAllianceTerminated"	type="date"    indexed="true"  stored="true"  multiValued="false" required="false"/>
   <field name = "dateExpired"	type="date"    indexed="true"  stored="true"  multiValued="false" required="false"/>
   <field name = "dateEffective"	type="date"    indexed="true"  stored="true"  multiValued="false" required="false"/>
@@ -44,6 +41,7 @@
   <field name = "status"	type="string"    indexed="true"  stored="true"  multiValued="false" required="false"/>
   <field name = "dealText"	type="string"    indexed="true"  stored="true"  multiValued="false" required="false"/>
 
+  <field name = "participantName"	type="string"    indexed="true"  stored="true"  multiValued="true" required="true"/>
   <field name = "participantCusip"	type="string"    indexed="true"  stored="true"  multiValued="true" required="true"/>	
   <field name = "participantOwnership"	type="float"    indexed="true"  stored="true"  multiValued="true" required="false"/>
 
@@ -62,6 +60,7 @@
   <field name = "participantCount"	type="int"    indexed="true"  stored="true"  multiValued="false" required="false"/>
   <field name = "alliancePrimarySicCode"	type="string"    indexed="true"  stored="true"  multiValued="false" required="false"/>
   <field name = "allianceAllSicCodes"	type="string"    indexed="true"  stored="true"  multiValued="true" required="false"/>
+  <field name = "allianceMarketSegments"	type="string"    indexed="true"  stored="true"  multiValued="true" required="false"/>
 
   <field name = "jointVentureCusip"	type="string"    indexed="true"  stored="true"  multiValued="false" required="false"/>
   <field name = "jointVentureName"	type="string"    indexed="true"  stored="true"  multiValued="false" required="false"/>

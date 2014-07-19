@@ -114,12 +114,33 @@ li.entity-value{
     padding:5px;
 }
 
-.filter-choices-list ul{
-    display: inline;
-    list-style-type: none;
+#filter-view-div ul{
+    list-style: none;
 }
 
-.filter-choices-list li{
+#filter-view-div li{
     display: inline;
+    padding-right: 20px;
+}
+
+.filter-choices-list{
+    display:inline-flex;
+    margin-left:0px;
+    padding-left:10px;
+}
+
+#search-view-tab{
+    width:100%;
+    height:100%;
+    position:absolute;
+}
+
+#search-box-container{
+    padding-top:20px;
+}
+
+#univ-search-box{
+    width:400px;
+    height:25px;
 }
 
