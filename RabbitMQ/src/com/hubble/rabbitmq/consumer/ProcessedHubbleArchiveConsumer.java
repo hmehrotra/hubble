@@ -2,6 +2,7 @@ package com.hubble.rabbitmq.consumer;
 
 import com.google.gson.*;
 import com.hubble.content.h2.beanExtensions.HubbleArchive;
+import com.hubble.serviceprovider.Neo4jCache;
 import com.hubble.serviceprovider.SolrCache;
 import com.hubble.utilities.DateTypeAdapter;
 import com.rabbitmq.client.Channel;
@@ -79,5 +80,6 @@ class ProcessedHubleArchiveConsumerDelegate{
         }
 
         SolrCache.getInstance().addObjectsToCache(archiveObjects);
+        Neo4jCache.getInstance().addObjectsToCache(archiveObjects);
     }
 }
