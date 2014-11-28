@@ -1,0 +1,39 @@
+<script type="text/javascript">
+     $(document).ready(function () {
+         $('body').layout({
+             applyDefaultStyles: false,
+             center__paneSelector: "#center-pane",
+             west__paneSelector: "#west-pane",
+             /* south__paneSelector: "#south-pane", Hiding the south pane */
+             north__paneSelector: "#north-pane",
+             east__paneSelector: "#east-pane",
+	         spacing_open: 1,
+	         spacing_closed: 1
+	     });
+
+		 $("#hubble-menu-bar").menubar({
+		    position: {
+		        within: $(".ui-layout-north").add(window).first()
+			}
+		 });
+    });
+
+</script>
+
+<div id="center-pane" class="ui-layout-center">
+    <ng-include src="'views/viewsContainer.html'"/>
+</div>
+<div id="north-pane" class="ui-layout-north">
+    <!-- Load template for North Container -->
+    <ng-include src="'views/menuBar.html'"/>
+</div>
+<div id="south-pane" class="ui-layout-south">
+     <!-- Load template for south container -->
+</div>
+<div id="east-pane" class="ui-layout-east">
+    <!-- Load template for east container -->
+</div>
+<div id="west-pane" class="ui-layout-west">
+    <!-- Load template for west container -->
+    <ng-include src="'views/entityListView.html'"/>
+</div>

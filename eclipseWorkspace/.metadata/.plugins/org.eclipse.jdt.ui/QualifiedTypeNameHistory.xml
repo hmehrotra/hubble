@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.hubble.hubbleservice.model.bean._ArchiveDump"/>
+<fullyQualifiedTypeName name="com.hubble.hubbleservice.model.bean._HubbleArchive"/>
+<fullyQualifiedTypeName name="com.hubble.hubbleservice.model.bean._SicCodeSegmentMapping"/>
+<fullyQualifiedTypeName name="com.hubble.hubbleservice.model.beanExtensions.HubbleArchive"/>
+<fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+<fullyQualifiedTypeName name="java.text.ParseException"/>
+<fullyQualifiedTypeName name="javax.inject.Named"/>
+<fullyQualifiedTypeName name="javax.inject.Inject"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,18 @@
+package com.hubble.hubbleservice.cache;
+
+import java.util.List;
+import com.hubble.hubbleservice.model.beanExtensions.HubbleArchive;
+
+/**
+ * This interface consists of all functions to be implemented by
+ * a Hubble Cache.
+ *
+ * @author Harshit Mehrotra
+ * Date: July 19, 2014
+ */
+
+public interface HubbleCache {
+
+    /* Handles addition of new objects to this cache */
+    public void addObjectsToCache(List<HubbleArchive> archiveObjects);
+}

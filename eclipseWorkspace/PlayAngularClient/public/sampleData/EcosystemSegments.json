@@ -1,0 +1,16 @@
+{
+  "segmentNames":   [
+    {
+        "name":"Network Provider"
+    },
+    {
+        "name":"Infrastructure Provider"
+    },
+    {
+        "name":"Internet Provider"
+    },
+    {
+        "name":"Services Provider"
+    }
+    ]
+}

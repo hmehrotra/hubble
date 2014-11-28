@@ -1,7 +1,7 @@
 package test;
 
 import com.hubble.serviceprovider.HubbleServiceProviderRegistration;
-import com.hubble.serviceprovider.SegmentServiceProvider;
+import com.hubble.hubbleservice.service.SegmentServiceProvider;
 import org.junit.Test;
 import java.util.List;
 import static org.junit.Assert.assertTrue;

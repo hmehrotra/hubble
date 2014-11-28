@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.hubble.hubbleservice.model.beanExtensions">
+    <class name="SicCodeSegmentMapping" table="MARKET_SEGMENTS_SIC">
+        <composite-id>
+            <key-property name="sicCode" column="SIC_CODE"></key-property>
+            <key-property name="segmentName" column="SEGMENT_NAME"></key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>
+

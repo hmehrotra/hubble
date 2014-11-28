@@ -1,0 +1,6 @@
+package com.hubble.hubbleservice.controller;
+
+
+public class HubbleController {
+
+}
