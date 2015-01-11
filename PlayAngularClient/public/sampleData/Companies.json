@@ -1,0 +1,13 @@
+{
+  "companies":   [
+    {
+        "name":"Apple Inc"
+    },
+    {
+        "name":"Google"
+    },
+    {
+        "name":"Facebook"
+    }
+    ]
+}
