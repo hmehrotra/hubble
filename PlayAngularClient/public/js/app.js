@@ -21,21 +21,68 @@
 // angular.module("hubble");
 
 require(['angular',
-        './segmentList/SegmentListController',
-        './companyList/CompanyListController',
-        'angular-route'],
-    function(angular, segmentListCtrl, companyListCtrl){
-        angular.module('hubble', ['ngRoute'])
-           .config(['$routeProvider' , function($routeProvider){
+         './libs/angular-ui-router',
+         './segmentList/SegmentListController',
+         'angular-route'],
+    function(angular, undefined, segmentListCtrl){
+        angular.module('hubble',['ui.router', 'ngRoute'])
+           .config(['$routeProvider', '$stateProvider', function($routeProvider, $stateProvider){
+
                 $routeProvider.when('/login', { templateUrl: 'views/loginPage.html'});
-                $routeProvider.when('/home', { templateUrl: 'views/homePage.html', controller: companyListCtrl});
                 $routeProvider.otherwise({redirectTo: '/home'});
-           }]);
+
+                $stateProvider
+                    .state('home', {
+                        views: {
+                            'homePage' : {
+                                templateUrl: 'views/homePage.html'
+                            }
+                        }
+                    })
+                    .state('home.details', {
+                        views: {
+                            'segmentListView' : {
+                                templateUrl: 'js/segmentList/SegmentListView.html',
+                                controller: function($scope, $http){
+                                    $http.get('../sampleData/EcosystemSegments.json')
+                                            .success(function(data) {
+                                                $scope.segments = data.segmentNames;
+                                            })
+                                            .error(function(data, status, headers, config){
+                                                console.log('Error occurred' + status);
+                                            });
+                                }
+                            },
+                            'companyListView' : {
+                                templateUrl: 'js/companyList/CompanyListView.html',
+                                controller: function($scope, $http){
+                                    $http.get('../sampleData/Companies.json')
+                                          .success(function(data) {
+                                             $scope.companies = data.companies;
+                                          })
+                                          .error(function(data, status, headers, config){
+                                             console.log('Error occurred' + status);
+                                          });
+                                }
+                            },
+                            'countryListView' : {
+                                templateUrl: 'js/countryList/CountryListView.html',
+                                controller: function($scope, $http){
+                                    $http.get('../sampleData/Countries.json')
+                                         .success(function(data) {
+                                             $scope.countries = data.countries;
+                                         })
+                                         .error(function(data, status, headers, config){
+                                             console.log('Error occurred' + status);
+                                         });
+                                }
+                            }
+                        }
+                    })
+           }])
+           .run(function($state){
+                $state.go('home.details');
+           });
 
         angular.bootstrap(document, ['hubble']);
 });
-
-/* define(function(require){
-    var alerter = require("alerter");
-    alerter("hello from the app");
-})*/

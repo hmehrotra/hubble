@@ -1,0 +1,9 @@
+<div class = "entity-holder-div company-list-holder">
+    <div class="entity-label">Company</div>
+    <input class = "search-box" type="search" name="SearchCompany" ng-model="queryCompany">
+    <ul class = "entity-holder-ul">
+        <li class = "entity-value" ng-repeat="company in companies | filter:queryCompany">
+            {{company.name}}
+        </li>
+    </ul>
+</div>

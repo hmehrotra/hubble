@@ -23,9 +23,10 @@
   <script src="@routes.Assets.at("jQueryResources/js/jquery.ui.menubar.js")" type="text/javascript"></script>
   <script src="@routes.Assets.at("jQueryResources/js/jquery.ui.tabs.js")" type="text/javascript"></script>
 
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
   @Html(org.webjars.play.RequireJS.setup("js/app"))
 </head>
 <body>
-    <div ng-view></div>
+    <div ui-view="homePage"></div>
 </body>
 </html>

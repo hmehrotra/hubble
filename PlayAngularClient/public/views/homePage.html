@@ -35,5 +35,7 @@
 </div>
 <div id="west-pane" class="ui-layout-west">
     <!-- Load template for west container -->
-    <ng-include src="'views/entityListView.html'"/>
+    <div ui-view="segmentListView"></div>
+    <div ui-view="companyListView"></div>
+    <div ui-view="countryListView"></div>
 </div>
