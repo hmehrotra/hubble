@@ -28,7 +28,8 @@ require(['angular',
                                 },
                                 resolve: {
                                     segments: ['$http', function($http){
-                                        return $http.get('../sampleData/EcosystemSegments.json').then(function(response){
+                                        return $http.get('http://echo.jsontest.com/conditions/frightful').then(function(response){
+                                            console.log(response.data.segmentNames);
                                             return response.data.segmentNames;
                                         })
                                     }]
