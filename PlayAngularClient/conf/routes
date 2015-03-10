@@ -2,11 +2,27 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
+# Configure REST end points for Ecosystem segment service
+GET        /hubble/segments                  controllers.Application.getAllSegments()
+
+# Configure REST end points for Participant service
+GET        /hubble/participant               controllers.Application.getAllCompanies()
+
+# Configure REST end points for Ecosystem segment service
+GET        /hubble/countries                 controllers.Application.getAllCountries()
+
 # Enable webjar based resources to be returned
 GET        /webjars/*file                    controllers.WebJarAssets.at(file)
+
+# Map the JS resource paths
+GET        /*file                            controllers.Assets.at(path="/public", file)
 
 # Home page
 GET        /                                 controllers.Application.index()
 
-# Map the JS resource paths
-GET        /*file                            controllers.Assets.at(path="/public", file)
+
+
+
+
+
+

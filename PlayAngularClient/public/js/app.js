@@ -1,41 +1,72 @@
 /* Run in strict mode to avoid debugging nightmares */
 'use strict';
 
-/* require(['angular', './controllers', './directives', './filters', './services', 'angular-route'],
-    function(angular, controllers) {
-
-        // Declare app level module which depends on filters, and services
-
-        /* Setter for module dependencies
-        angular.module('hubble', ['ngRoute']).
-            config(['$routeProvider' , function($routeProvider){
-            $routeProvider.when('/login', { templateUrl: 'views/loginPage.html', controller: controllers.LoginController });
-            $routeProvider.when('/home', { templateUrl: 'views/homePage.html', controller: controllers.HubbleController });
-            $routeProvider.otherwise({redirectTo: '/home'});
-        }]);
-
-        angular.bootstrap(document, ['hubble']);
-    }); */
-
-// Getter for module dependencies
-// angular.module("hubble");
-
 require(['angular',
-        './segmentList/SegmentListController',
-        './companyList/CompanyListController',
-        'angular-route'],
-    function(angular, segmentListCtrl, companyListCtrl){
-        angular.module('hubble', ['ngRoute'])
-           .config(['$routeProvider' , function($routeProvider){
+         './libs/angular-ui-router',
+         'angular-route'],
+    function(angular){
+        angular.module('hubble',['ui.router', 'ngRoute'])
+           .config(['$routeProvider', '$stateProvider', function($routeProvider, $stateProvider){
+
                 $routeProvider.when('/login', { templateUrl: 'views/loginPage.html'});
-                $routeProvider.when('/home', { templateUrl: 'views/homePage.html', controller: companyListCtrl});
                 $routeProvider.otherwise({redirectTo: '/home'});
-           }]);
+
+                $stateProvider
+                    .state('home', {
+                        views: {
+                            'homePage' : {
+                                templateUrl: 'views/homePage.html'
+                            }
+                        }
+                    })
+                    .state('home.details', {
+                        views: {
+                            'segmentListView' : {
+                                templateUrl: 'js/segmentList/SegmentListView.html',
+                                controller: function($scope, segments){
+                                    $scope.segments = segments;
+                                },
+                                resolve: {
+                                    segments: ['$http', function($http){
+                                        return $http.get('http://echo.jsontest.com/conditions/frightful').then(function(response){
+                                            console.log(response.data.segmentNames);
+                                            return response.data.segmentNames;
+                                        })
+                                    }]
+                                }
+                            },
+                            'companyListView' : {
+                                templateUrl: 'js/companyList/CompanyListView.html',
+                                controller: function($scope, companies){
+                                      $scope.companies = companies;
+                                },
+                                resolve: {
+                                      companies: ['$http', function($http){
+                                          return $http.get('../sampleData/Companies.json').then(function(response){
+                                              return response.data.companies;
+                                          })
+                                      }]
+                                }
+                            },
+                            'countryListView' : {
+                                templateUrl: 'js/countryList/CountryListView.html',
+                                controller: function($scope, countries){
+                                       $scope.countries = countries;
+                                },
+                                resolve: {
+                                       countries: ['$http', function($http){
+                                            return $http.get('../sampleData/Countries.json').then(function(response){
+                                                return response.data.countries;
+                                            })
+                                       }]
+                                }
+                            }
+                        }
+                    })
+           }])
+           .run(function($state){
+                $state.go('home.details');
+           });
 
         angular.bootstrap(document, ['hubble']);
 });
-
-/* define(function(require){
-    var alerter = require("alerter");
-    alerter("hello from the app");
-})*/
