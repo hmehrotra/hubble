@@ -5,8 +5,8 @@
 
 package controllers;
 
-import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
+import com.google.gson.JsonArray;
 import play.mvc.Action;
 import play.mvc.Controller;
 import play.mvc.Result;
@@ -41,6 +41,7 @@ public class Application extends Controller {
         result.add("segmentNames", jsonArray);
         System.out.println(result.toString());
         return ok(result.toString());
+        // return ok();
     }
 
     public static Result getAllCompanies(){

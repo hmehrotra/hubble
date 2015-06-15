@@ -3,14 +3,14 @@
     border:1px solid #CCC;
     min-height:30px;
     max-height:30px;
-    scroll:none;
+    overflow: hidden;
 }
 
 .ui-layout-south {
     background: white;
     border:1px solid #CCC;
-    min-height:40px;
-    max-height:40px;
+    min-height:30px;
+    max-height:30px;
 }
 
 .ui-layout-east {
@@ -32,28 +32,24 @@
 .ui-layout-center{
     background: white;
     border:1px solid #CCC;
+    z-index:100;
+    overflow: visible !important;
 }
 
-# Menu bar css
-#hubble-menu-bar{
-     list-style-type: none;
-     margin: 0px;
-     padding: 0px;
+# Nav Bar
+.navbar {min-height:20px !important;}
+
+.navbar-nav>li>a, .navbar>li>a {
+    padding-top:5px !important;
+    padding-bottom:5 !important;
+    height:30px;
 }
 
-li.ui-menubar-item {
-    display:inline;
-}
-
-/*  Menu Bar css */
-.ui-widget-header{
-    margin: 1px;
-    padding:0px;
-    border: 0px;
-    -webkit-border-radius: 10px;
-    border-radius: 5px;
-    -webkit-box-shadow:inset 0px 0px 1px #edf9ff;
-    box-shadow:inset 0px 0px 1px #edf9ff;
+.container-fluid, .navbar-collapse{
+    padding-left:0px;
+    padding-right:0px;
+    min-height: 30px;
+    max-height: 30px;
 }
 
 div.ui-layout-toggler.ui-layout-toggler-west.ui-layout-toggler-open.ui-layout-toggler-west-open{
@@ -65,10 +61,6 @@ div.ui-layout-toggler.ui-layout-toggler-west.ui-layout-toggler-open.ui-layout-to
     margin:0px;
     font-weight:normal;
     padding:0px;
-}
-
-.ui-helper-clearfix {
-    max-height:30px;
 }
 
 /* West Pane - Entity List View css */

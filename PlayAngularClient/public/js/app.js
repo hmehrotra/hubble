@@ -1,15 +1,39 @@
-/* Run in strict mode to avoid debugging nightmares */
-'use strict';
+/*
+    Run in strict mode to avoid debugging nightmares
+    This make Javascript engine use more stricter rules while evaluating code
+    In this app, global and all local execution contexts are executed in Strict Mode
+    Eg: In string mode a variable needs to be declared before it could be used.
+
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
+*/
+"use strict";
 
 require(['angular',
          './libs/angular-ui-router',
-         'angular-route'],
-    function(angular){
+         'angular-route',
+         './segmentList/SegmentListCtrl',
+         './companyList/CompanyListCtrl',
+         './countryList/CountryListCtrl'],
+
+    function(angular, angularUIRouter, angularRoute, SegmentListCtrl, CompanyListCtrl, CountryListCtrl){
+
         angular.module('hubble',['ui.router', 'ngRoute'])
            .config(['$routeProvider', '$stateProvider', function($routeProvider, $stateProvider){
 
-                $routeProvider.when('/login', { templateUrl: 'views/loginPage.html'});
-                $routeProvider.otherwise({redirectTo: '/home'});
+                // Route provider works by listening to "hash change events" in browser
+                // This event is fired when hash or fragment identifier on html page changes
+                // https://docs.angularjs.org/api/ngRoute/provider/$routeProvider
+                $routeProvider.when('/', {
+                                    templateUrl: 'views/loginPage.html'
+                                    //  TODO: specify the controller for login page
+                              })
+                              .when('/login', {
+                                    templateUrl: 'views/loginPage.html'
+                              })
+                              .when('/home', {
+                                    templateUrl: 'views/homePage.html'
+                              })
+                              .otherwise({redirectTo: '/login'});
 
                 $stateProvider
                     .state('home', {
@@ -19,47 +43,19 @@ require(['angular',
                             }
                         }
                     })
-                    .state('home.details', {
-                        views: {
+                    .state('home.details', {                    // Here home.details is nested inside home state
+                        views: {                                // When these states are activated, the templates get inserted into ui-view of the parent template
                             'segmentListView' : {
                                 templateUrl: 'js/segmentList/SegmentListView.html',
-                                controller: function($scope, segments){
-                                    $scope.segments = segments;
-                                },
-                                resolve: {
-                                    segments: ['$http', function($http){
-                                        return $http.get('http://echo.jsontest.com/conditions/frightful').then(function(response){
-                                            console.log(response.data.segmentNames);
-                                            return response.data.segmentNames;
-                                        })
-                                    }]
-                                }
+                                controller: SegmentListCtrl
                             },
                             'companyListView' : {
                                 templateUrl: 'js/companyList/CompanyListView.html',
-                                controller: function($scope, companies){
-                                      $scope.companies = companies;
-                                },
-                                resolve: {
-                                      companies: ['$http', function($http){
-                                          return $http.get('../sampleData/Companies.json').then(function(response){
-                                              return response.data.companies;
-                                          })
-                                      }]
-                                }
+                                controller: CompanyListCtrl
                             },
                             'countryListView' : {
                                 templateUrl: 'js/countryList/CountryListView.html',
-                                controller: function($scope, countries){
-                                       $scope.countries = countries;
-                                },
-                                resolve: {
-                                       countries: ['$http', function($http){
-                                            return $http.get('../sampleData/Countries.json').then(function(response){
-                                                return response.data.countries;
-                                            })
-                                       }]
-                                }
+                                controller: CountryListCtrl
                             }
                         }
                     })

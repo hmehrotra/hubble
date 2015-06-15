@@ -1,3 +1,6 @@
+// Please refer to the below link on Play dependency management
+// https://www.playframework.com/documentation/2.0.4/SBTDependencies
+
 // Comment to get more information during initialization
 logLevel := Level.Warn
 

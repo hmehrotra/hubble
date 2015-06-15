@@ -4,6 +4,25 @@
   <meta charset="utf-8">
   <title>Hubble: Explore a Business Ecosystem</title>
 
+  <!-- Mandatory jQuery Javascript -->
+  <script src="@routes.Assets.at("jQueryResources/js/jquery-1.10.2.js")" type="text/javascript"></script>
+  <script src="@routes.Assets.at("jQueryResources/js/jquery-ui-1.10.4.custom.js")" type="text/javascript"></script>
+
+  <!-- Widget specific Javascript -->
+  <script src="@routes.Assets.at("jQueryResources/js/jquery.layout-latest.js")" type="text/javascript"></script>
+
+  <!-- <script src="@routes.Assets.at("jQueryResources/js/jquery.ui.menubar.js")" type="text/javascript"></script> -->
+  <script src="@routes.Assets.at("jQueryResources/js/jquery.ui.tabs.js")" type="text/javascript"></script>
+
+  <!-- Import BootstrapCSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+  <!-- Import Bootstrap theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+  <!-- Import Bootstrap Javascript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
   <!-- Mandatory jQuery Stylesheets -->
   <link rel="stylesheet" media="screen" href="@routes.Assets.at("jQueryResources/css/smoothness/jquery-ui-1.10.4.custom.css")">
   <link rel="stylesheet" media="screen" href="@routes.Assets.at("jQueryResources/css/smoothness/jquery.ui.tabs.css")">
@@ -13,18 +32,10 @@
   <link rel="stylesheet" media="screen" href="@routes.Assets.at("css/hubbleMainPage.css")">
   <link rel="stylesheet" media="screen" href="@routes.Assets.at("css/loginPage.css")">
 
-  <!-- Mandatory jQuery Javascript -->
-  <script src="@routes.Assets.at("jQueryResources/js/jquery-1.10.2.js")" type="text/javascript"></script>
-  <script src="@routes.Assets.at("jQueryResources/js/jquery-ui-1.10.4.custom.js")" type="text/javascript"></script>
-
-  <!-- Widget specific Javascript -->
-  <script src="@routes.Assets.at("jQueryResources/js/jquery.layout-latest.js")" type="text/javascript"></script>
-
-  <script src="@routes.Assets.at("jQueryResources/js/jquery.ui.menubar.js")" type="text/javascript"></script>
-  <script src="@routes.Assets.at("jQueryResources/js/jquery.ui.tabs.js")" type="text/javascript"></script>
-
+  <!-- Import AngularJS -->
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
-  @Html(org.webjars.play.RequireJS.setup("js/app"))
+
+  @Html(org.webjars.play.RequireJS.setup("js/app")) <!-- js/app.js becomes the root of the app -->
 </head>
 <body>
     <div ui-view="homePage"></div>
