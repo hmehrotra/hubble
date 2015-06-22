@@ -7,6 +7,7 @@ Solr-4.8.0/example/multicore/alliance/data
 
 # Idea workspace
 workspace/*
+.idea/workspace.xml
 
 # Compiled source #
 ###################

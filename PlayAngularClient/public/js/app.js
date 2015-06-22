@@ -11,11 +11,14 @@
 require(['angular',
          './libs/angular-ui-router',
          'angular-route',
+         './segmentList/SegmentService',
+         './companyList/CompanyService',
+         './countryList/CountryService',
          './segmentList/SegmentListCtrl',
          './companyList/CompanyListCtrl',
          './countryList/CountryListCtrl'],
 
-    function(angular, angularUIRouter, angularRoute, SegmentListCtrl, CompanyListCtrl, CountryListCtrl){
+    function(angular, angularUIRouter, angularRoute, SegmentService, CompanyService, CountryService, SegmentListCtrl, CompanyListCtrl, CountryListCtrl){
 
         angular.module('hubble',['ui.router', 'ngRoute'])
            .config(['$routeProvider', '$stateProvider', function($routeProvider, $stateProvider){
@@ -60,6 +63,9 @@ require(['angular',
                         }
                     })
            }])
+           .factory('SegmentService', SegmentService)
+           .factory('CompanyService', CompanyService)
+           .factory('CountryService', CountryService)
            .run(function($state){
                 $state.go('home.details');
            });

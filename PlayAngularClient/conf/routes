@@ -6,7 +6,7 @@
 GET        /hubble/segments                  controllers.Application.getAllSegments()
 
 # Configure REST end points for Participant service
-GET        /hubble/participant               controllers.Application.getAllCompanies()
+GET        /hubble/companies               controllers.Application.getAllCompanies()
 
 # Configure REST end points for Ecosystem segment service
 GET        /hubble/countries                 controllers.Application.getAllCountries()
