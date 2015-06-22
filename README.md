@@ -2,34 +2,34 @@
 
 <b>Directory Structure</b>
 Hubble follows a standary directory structure for Angular projects higer level division is by functionality and lower level dicision is by component types. Here is the relevant directory structure <br><br>
-.
-├── segmentList
-│   ├── SegmentListView.html
-│   └── SegmentListCtrl.js
-├── login
-│   └── LoginController.js
-├── libs
-│   └── angular-ui-router.js
-├── jquery
-│   ├── jquery.ui.widget.js
-│   ├── jquery.ui.tabs.js
-│   ├── jquery.ui.position.js
-│   ├── jquery.ui.menubar.js
-│   ├── jquery.ui.menu.js
-│   ├── jquery.ui.core.js
-│   ├── jquery.ui.button.js
-│   ├── jquery.layout-latest.js
-│   ├── jquery-ui-1.10.4.custom.js
-│   ├── jquery-1.10.2.js
-│   └── jMenu.jquery.js
-├── countryList
-│   ├── CountryListView.html
-│   └── CountryListCtrl.js
-├── controllers.js
-├── companyList
-│   ├── CompanyListView.html
-│   └── CompanyListCtrl.js
-└── app.js
+.<br>
+├── segmentList<br>
+│   ├── SegmentListView.html<br>
+│   └── SegmentListCtrl.js<br>
+├── login<br>
+│   └── LoginController.js<br>
+├── libs<br>
+│   └── angular-ui-router.js<br>
+├── jquery<br>
+│   ├── jquery.ui.widget.js<br>
+│   ├── jquery.ui.tabs.js<br>
+│   ├── jquery.ui.position.js<br>
+│   ├── jquery.ui.menubar.js<br>
+│   ├── jquery.ui.menu.js<br>
+│   ├── jquery.ui.core.js<br>
+│   ├── jquery.ui.button.js<br>
+│   ├── jquery.layout-latest.js<br>
+│   ├── jquery-ui-1.10.4.custom.js<br>
+│   ├── jquery-1.10.2.js<br>
+│   └── jMenu.jquery.js<br>
+├── countryList<br>
+│   ├── CountryListView.html<br>
+│   └── CountryListCtrl.js<br>
+├── controllers.js<br>
+├── companyList<br>
+│   ├── CompanyListView.html<br>
+│   └── CompanyListCtrl.js<br>
+└── app.js<br>
 
 <br>
 
