@@ -1,9 +1,8 @@
+=\=\=\=\=\=\=
+<<<<<<<=HEAD
+>>>>>>>=feat/multipleParallelViews
 PROBLEMS_FILTERS_MIGRATE=true
 eclipse.preferences.version=1
-<<<<<<< HEAD
-platformState=1425628217676
-=======
-platformState=1425628218654
->>>>>>> feat/multipleParallelViews
+platformState=1425628218664
 quickStart=false
 tipsAndTricks=true

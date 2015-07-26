@@ -10,6 +10,11 @@ import com.google.gson.JsonArray;
 import play.mvc.Action;
 import play.mvc.Controller;
 import play.mvc.Result;
+import play.api.libs.ws.WS;
+// import play.api.libs.ws.Response;
+// import play.api.libs.ws.Promise;
+import play.libs.F.Function;
+import play.libs.F.Promise;
 import views.html.*;
 
 /*
@@ -23,7 +28,11 @@ public class Application extends Controller {
     }
 
     public static Result getAllSegments(){
-        JsonArray jsonArray = new JsonArray();
+        // Promise<Response> homePage = WS.url("http://musicbrainz.org/ws/2/artist?query=type:person&limit=100").get();
+
+        return null;
+
+        /* JsonArray jsonArray = new JsonArray();
 
         JsonObject jsonObject = new JsonObject();
         jsonObject.addProperty("name", "Network Provider");
@@ -48,7 +57,7 @@ public class Application extends Controller {
         JsonObject result = new JsonObject();
         result.add("segmentNames", jsonArray);
 
-        return ok(result.toString());
+        return ok(result.toString()); */
     }
 
     public static Result getAllCompanies(){

@@ -3,22 +3,22 @@
 # ~~~~
 
 # Configure REST end points for Ecosystem segment service
-GET        /hubble/segments                  controllers.Application.getAllSegments()
+GET        /hubble/segments                controllers.Application.getAllSegments()
 
 # Configure REST end points for Participant service
 GET        /hubble/companies               controllers.Application.getAllCompanies()
 
 # Configure REST end points for Ecosystem segment service
-GET        /hubble/countries                 controllers.Application.getAllCountries()
+GET        /hubble/countries               controllers.Application.getAllCountries()
 
 # Enable webjar based resources to be returned
-GET        /webjars/*file                    controllers.WebJarAssets.at(file)
+GET        /webjars/*file                  controllers.WebJarAssets.at(file)
 
 # Map the JS resource paths
-GET        /*file                            controllers.Assets.at(path="/public", file)
+GET        /vassets/*file                  controllers.Assets.versioned(path="/public", file: Asset)
 
 # Home page
-GET        /                                 controllers.Application.index()
+GET        /                               controllers.Application.index()
 
 
 

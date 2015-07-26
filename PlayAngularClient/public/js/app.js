@@ -9,7 +9,7 @@
 "use strict";
 
 require(['angular',
-         './libs/angular-ui-router',
+         'angular-ui-router',
          'angular-route',
          './segmentList/SegmentService',
          './companyList/CompanyService',
@@ -20,7 +20,7 @@ require(['angular',
 
     function(angular, angularUIRouter, angularRoute, SegmentService, CompanyService, CountryService, SegmentListCtrl, CompanyListCtrl, CountryListCtrl){
 
-        angular.module('hubble',['ui.router', 'ngRoute'])
+	angular.module('hubble',['ui.router', 'ngRoute'])
            .config(['$routeProvider', '$stateProvider', function($routeProvider, $stateProvider){
 
                 // Route provider works by listening to "hash change events" in browser
@@ -49,15 +49,15 @@ require(['angular',
                     .state('home.details', {                    // Here home.details is nested inside home state
                         views: {                                // When these states are activated, the templates get inserted into ui-view of the parent template
                             'segmentListView' : {
-                                templateUrl: 'js/segmentList/SegmentListView.html',
+                                templateUrl: './segmentList/SegmentListView.html',
                                 controller: SegmentListCtrl
                             },
                             'companyListView' : {
-                                templateUrl: 'js/companyList/CompanyListView.html',
+                                templateUrl: './companyList/CompanyListView.html',
                                 controller: CompanyListCtrl
                             },
                             'countryListView' : {
-                                templateUrl: 'js/countryList/CountryListView.html',
+                                templateUrl: './countryList/CountryListView.html',
                                 controller: CountryListCtrl
                             }
                         }
@@ -69,6 +69,8 @@ require(['angular',
            .run(function($state){
                 $state.go('home.details');
            });
-
-        angular.bootstrap(document, ['hubble']);
+	
+		angular.element(document).ready(function() {
+			angular.bootstrap(document, ['hubble']);
+		});
 });
