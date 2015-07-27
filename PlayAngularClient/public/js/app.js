@@ -16,10 +16,7 @@ require(['angular',
          'js/countryList/CountryService',
          'js/segmentList/SegmentListCtrl',
          'js/companyList/CompanyListCtrl',
-         'js/countryList/CountryListCtrl',
-         'jquery',
-         'jqueryui-layout',
-         'bootstrap'],
+         'js/countryList/CountryListCtrl'],
 
     function(angular,
     		 angularUIRouter, 
@@ -29,10 +26,7 @@ require(['angular',
     		 CountryService, 
     		 SegmentListCtrl, 
     		 CompanyListCtrl, 
-    		 CountryListCtrl,
-    		 $, 
-    		 jqueryUILayout, 
-    		 bootstrap){
+    		 CountryListCtrl){
 
 	angular.module('hubble',['ui.router', 'ngRoute'])
            .config(['$routeProvider', '$stateProvider', function($routeProvider, $stateProvider){

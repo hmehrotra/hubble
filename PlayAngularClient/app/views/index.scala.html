@@ -4,7 +4,13 @@
   <meta charset="utf-8">
   <title>Hubble: Explore a Business Ecosystem</title>
   
+  <!--  Download jQuery from CDN -->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-layout/1.4.3/jquery.layout.min.js"></script>
+  
+  <!--  Download Bootstrap from CDN -->  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   
   <!-- Custom CSS -->
   <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("css/main.css")">
@@ -25,7 +31,6 @@
 	  		"angular":{ exports : "angular" },
 	  		"angular-route" : {	deps:["angular"], exports:"angular_route"},
 	  		"angular-ui-router":{deps:["angular"],exports:"angular-ui-router"},
-	  		"bootstrap" : { deps :['jquery'], exports: 'bootstrap'}
 	  	}	
 	  });
 	}
