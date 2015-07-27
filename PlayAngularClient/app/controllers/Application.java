@@ -5,14 +5,13 @@
 
 package controllers;
 
+import javax.inject.Inject;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonArray;
 import play.mvc.Action;
 import play.mvc.Controller;
 import play.mvc.Result;
-import play.api.libs.ws.WS;
-// import play.api.libs.ws.Response;
-// import play.api.libs.ws.Promise;
+import play.libs.ws.*;
 import play.libs.F.Function;
 import play.libs.F.Promise;
 import views.html.*;
@@ -22,17 +21,21 @@ TODO - Design using good REST controller design principles
 Hubble Controller
  */
 public class Application extends Controller {
-
+	
+	@Inject static WSClient ws;
+	
     public static Result index() {
         return ok(index.render());
     }
 
     public static Result getAllSegments(){
-        // Promise<Response> homePage = WS.url("http://musicbrainz.org/ws/2/artist?query=type:person&limit=100").get();
+    	    	
+        Promise<WSResponse> response = ws.url("http://musicbrainz.org/ws/2/artist?query=type:person&limit=100").get();
+        System.out.println(response);
 
-        return null;
+        // return null;
 
-        /* JsonArray jsonArray = new JsonArray();
+        JsonArray jsonArray = new JsonArray();
 
         JsonObject jsonObject = new JsonObject();
         jsonObject.addProperty("name", "Network Provider");
@@ -57,7 +60,7 @@ public class Application extends Controller {
         JsonObject result = new JsonObject();
         result.add("segmentNames", jsonArray);
 
-        return ok(result.toString()); */
+        return ok(result.toString()); 
     }
 
     public static Result getAllCompanies(){

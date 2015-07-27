@@ -11,14 +11,28 @@
 require(['angular',
          'angular-ui-router',
          'angular-route',
-         './segmentList/SegmentService',
-         './companyList/CompanyService',
-         './countryList/CountryService',
-         './segmentList/SegmentListCtrl',
-         './companyList/CompanyListCtrl',
-         './countryList/CountryListCtrl'],
+         'js/segmentList/SegmentService',
+         'js/companyList/CompanyService',
+         'js/countryList/CountryService',
+         'js/segmentList/SegmentListCtrl',
+         'js/companyList/CompanyListCtrl',
+         'js/countryList/CountryListCtrl',
+         'jquery',
+         'jqueryui-layout',
+         'bootstrap'],
 
-    function(angular, angularUIRouter, angularRoute, SegmentService, CompanyService, CountryService, SegmentListCtrl, CompanyListCtrl, CountryListCtrl){
+    function(angular,
+    		 angularUIRouter, 
+    		 angularRoute, 
+    		 SegmentService, 
+    		 CompanyService, 
+    		 CountryService, 
+    		 SegmentListCtrl, 
+    		 CompanyListCtrl, 
+    		 CountryListCtrl,
+    		 $, 
+    		 jqueryUILayout, 
+    		 bootstrap){
 
 	angular.module('hubble',['ui.router', 'ngRoute'])
            .config(['$routeProvider', '$stateProvider', function($routeProvider, $stateProvider){
@@ -27,14 +41,14 @@ require(['angular',
                 // This event is fired when hash or fragment identifier on html page changes
                 // https://docs.angularjs.org/api/ngRoute/provider/$routeProvider
                 $routeProvider.when('/', {
-                                    templateUrl: 'views/loginPage.html'
+                                    templateUrl: 'vassets/views/loginPage.html'
                                     //  TODO: specify the controller for login page
                               })
                               .when('/login', {
-                                    templateUrl: 'views/loginPage.html'
+                                    templateUrl: 'vassets/views/loginPage.html'
                               })
                               .when('/home', {
-                                    templateUrl: 'views/homePage.html'
+                                    templateUrl: 'vassets/views/homePage.html'
                               })
                               .otherwise({redirectTo: '/login'});
 
@@ -42,22 +56,22 @@ require(['angular',
                     .state('home', {
                         views: {
                             'homePage' : {
-                                templateUrl: 'views/homePage.html'
+                                templateUrl: 'vassets/views/homePage.html'
                             }
                         }
                     })
                     .state('home.details', {                    // Here home.details is nested inside home state
                         views: {                                // When these states are activated, the templates get inserted into ui-view of the parent template
                             'segmentListView' : {
-                                templateUrl: './segmentList/SegmentListView.html',
+                                templateUrl: 'vassets/js/segmentList/SegmentListView.html',
                                 controller: SegmentListCtrl
                             },
                             'companyListView' : {
-                                templateUrl: './companyList/CompanyListView.html',
+                                templateUrl: 'vassets/js/companyList/CompanyListView.html',
                                 controller: CompanyListCtrl
                             },
                             'countryListView' : {
-                                templateUrl: './countryList/CountryListView.html',
+                                templateUrl: 'vassets/js/countryList/CountryListView.html',
                                 controller: CountryListCtrl
                             }
                         }

@@ -8,7 +8,9 @@ version := "1.0-SNAPSHOT"
 libraryDependencies ++= Seq(
   "org.webjars" %% "webjars-play" % "2.4.0-1",
   "org.webjars" % "webjars-locator" % "0.6",
-  "org.webjars" % "bootstrap" % "3.1.1-2",
+  "org.webjars.bower" % "jquery" % "2.1.4",
+  "org.webjars.bower" % "bootstrap" % "3.3.5",
+  "org.webjars" % "jqueryui-layout" % "1.4.0",
   "org.webjars" % "requirejs" % "2.1.10",
   "com.google.code.gson" % "gson" % "2.3.1", 
   "org.webjars.bower" % "angular" % "1.4.3",
