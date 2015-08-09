@@ -1,35 +1,40 @@
-<script type="text/javascript">
-     $(document).ready(function () {
-         $('body').layout({
-             applyDefaultStyles: false,
-             center__paneSelector: "#center-pane",
-             west__paneSelector: "#west-pane",
-             /* south__paneSelector: "#south-pane", // Hiding the south pane */
-             north__paneSelector: "#north-pane",
-             east__paneSelector: "#east-pane",
-	         spacing_open: 1,
-	         spacing_closed: 1
-	     });
-    });
+<script>
 
+	$(function(){
+      $("#browse-view").load("vassets/js/browse/browseView.html");
+      $("#path-view").load("vassets/js/path/pathView.html");
+      $("#periscope-view").load("vassets/js/periscope/periscopeView.html");
+      $("#timeline-view").load("vassets/js/timeline/timelineView.html");
+      $("#geography-view").load("vassets/js/geography/geographyView.html");
+      $("#search-view").load("vassets/js/search/searchView.html");       
+    });
+	
 </script>
 
-<div id="center-pane" class="ui-layout-center">
-    <ng-include src="'vassets/views/viewsContainer.html'"/>
-</div>
-<div id="north-pane" class="ui-layout-north">
-    <!-- Load template for North Container -->
-    <ng-include src="'vassets/views/menuBar.html'"/>
-</div>
-<div id="south-pane" class="ui-layout-south">
-     <!-- Load template for south container -->
-</div>
-<div id="east-pane" class="ui-layout-east">
-    <!-- Load template for east container -->
-</div>
-<div id="west-pane" class="ui-layout-west">
-    <!-- Load template for west container -->
-    <div ui-view="segmentListView"></div>
-    <div ui-view="companyListView"></div>
-    <div ui-view="countryListView"></div>
+<div>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#browse-view" aria-controls="browse-view" role="tab" data-toggle="tab">Browse</a></li>
+    <li role="presentation"><a href="#path-view" aria-controls="path-view" role="tab" data-toggle="tab">Path</a></li>
+    <li role="presentation"><a href="#periscope-view" aria-controls="periscope-view" role="tab" data-toggle="tab">Periscope</a></li>
+    <li role="presentation"><a href="#timeline-view" aria-controls="timeline-view" role="tab" data-toggle="tab">Timeline</a></li>
+    <li role="presentation"><a href="#geography-view" aria-controls="geography-view" role="tab" data-toggle="tab">Geography</a></li>
+    <li role="presentation"><a href="#search-view" aria-controls="search-view" role="tab" data-toggle="tab">Search</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="browse-view">
+    </div>
+    <div role="tabpanel" class="tab-pane" id="path-view">
+    </div>
+    <div role="tabpanel" class="tab-pane" id="periscope-view">
+    </div>
+    <div role="tabpanel" class="tab-pane" id="timeline-view">
+    </div>
+    <div role="tabpanel" class="tab-pane" id="geography-view">
+    </div>
+    <div role="tabpanel" class="tab-pane" id="search-view">
+    </div>
+  </div>
 </div>

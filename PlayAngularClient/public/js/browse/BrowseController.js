@@ -12,14 +12,14 @@
 
 define(function(){ // Function to execute when all dependencies have loaded
 
-      function segmentListCtrl($scope, $http, $log, SegmentService){
+      function browseController($scope, $http, $log, BrowseService){
 
-            SegmentService.allSegments().success(function(data){
-                $scope.allSegments = data.segmentNames;
+    	  BrowseService.allCompanies().success(function(data){
+                $scope.companyNames = data.companyNames;
             })
        }
 
-       segmentListCtrl.$inject=['$scope', '$http', '$log', 'SegmentService'];
+      browseController.$inject=['$scope', '$http', '$log', 'BrowseService'];
 
-       return segmentListCtrl;
+       return browseController;
 });

@@ -1,9 +1,0 @@
-<div class = "entity-holder-div country-list-holder">
-    <div class="entity-label">Country</div>
-    <input class = "search-box" type="search" name="SearchCountry" ng-model="queryCountry">
-    <ul class = "entity-holder-ul">
-        <li class = "entity-value" ng-repeat="country in countryNames | filter:queryCountry" >
-            {{country.name}}
-        </li>
-    </ul>
-</div>
