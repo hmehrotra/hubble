@@ -32,12 +32,11 @@ require(['angular',
                 // https://docs.angularjs.org/api/ngRoute/provider/$routeProvider
                 $routeProvider.when('/', {
                 	templateUrl: 'vassets/js/login/loginPage.html'
-                        //  TODO: specify the controller for login page
                   })
                   .when('/login', {
                         templateUrl: 'vassets/js/login/loginPage.html'
                   })
-                  .when('/home', {
+                  .when('/hubble/home', {
                         templateUrl: 'vassets/views/homePage.html'
                   })
                   .otherwise({redirectTo: '/login'});                                    
