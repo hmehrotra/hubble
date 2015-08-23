@@ -2,6 +2,13 @@
 <html lang="en" >
 <head>
   <meta charset="utf-8">
+  
+  <meta name="google-signin-scope" content="profile email">
+  <meta name="google-signin-client_id" content="837390794463-sanu82uu7ou9j3bsnfe6kqgjfpfju08b.apps.googleusercontent.com">
+  
+  <!--  Script for Google sing in  -->
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  
   <title>Hubble: Explore a Business Ecosystem</title>
   
   <!--  Download jQuery from CDN -->
@@ -14,7 +21,7 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("css/main.css")">
   <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("css/hubbleMainPage.css")">
-  <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("css/loginPage.css")"> 
+  <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("css/loginPage.css")">
   
   <script>
   var require = {
@@ -35,7 +42,24 @@
 	}
   };
   </script>
- 
+  
+  <script>
+	function onSignIn(googleUser) {
+		// Useful data for your client-side scripts:
+		var profile = googleUser.getBasicProfile();
+		console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+		console.log("Name: " + profile.getName());
+		console.log("Image URL: " + profile.getImageUrl());
+		console.log("Email: " + profile.getEmail());
+									
+		// The ID token you need to pass to your backend:
+		var id_token = googleUser.getAuthResponse().id_token;
+		console.log("ID Token: " + id_token);
+		
+		window.location = "http://localhost:9000/#/hubble/home";
+	}										      
+  </script>
+  
   <script data-main="@routes.Assets.versioned("js/app")" src="@routes.WebJarAssets.at(WebJarAssets.locate("require.min.js"))"></script>
   
 </head>
