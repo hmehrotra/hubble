@@ -7,7 +7,7 @@
   <meta name="google-signin-client_id" content="837390794463-sanu82uu7ou9j3bsnfe6kqgjfpfju08b.apps.googleusercontent.com">
   
   <!--  Script for Google sing in  -->
-  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src="https://apis.google.com/js/platform.js?onload=onload" async defer></script>
   
   <title>Hubble: Explore a Business Ecosystem</title>
   
@@ -24,26 +24,25 @@
   <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("css/loginPage.css")">
   
   <script>
-  var require = {
-    callback: function() {
-      // default requirejs configs
-      @for(webJarJson <- org.webjars.RequireJS.getSetupJson(routes.WebJarAssets.at("").url).values()) {
-        requirejs.config(@Html(webJarJson.toString));
-      }
+	var require = {
+	    callback: function() {
+	      // default requirejs configs
+	      @for(webJarJson <- org.webjars.RequireJS.getSetupJson(routes.WebJarAssets.at("").url).values()) {
+	        requirejs.config(@Html(webJarJson.toString));
+	      }
+	
+		  requirejs.config({
+		    baseUrl:'vassets/',
+		  	shim:{
+		  		"angular":{ exports : "angular" },
+		  		"angular-route" : {	deps:["angular"], exports:"angular_route"},
+		  		"angular-ui-router":{deps:["angular"],exports:"angular-ui-router"},
+		  	}	
+		  });
+		}
+	};
 
-	  requirejs.config({
-	    baseUrl:'vassets/',
-	  	shim:{
-	  		"angular":{ exports : "angular" },
-	  		"angular-route" : {	deps:["angular"], exports:"angular_route"},
-	  		"angular-ui-router":{deps:["angular"],exports:"angular-ui-router"},
-	  	}	
-	  });
-	}
-  };
-  </script>
-  
-  <script>
+	// Handles user sign in into app
 	function onSignIn(googleUser) {
 		// Useful data for your client-side scripts:
 		var profile = googleUser.getBasicProfile();
@@ -56,8 +55,24 @@
 		var id_token = googleUser.getAuthResponse().id_token;
 		console.log("ID Token: " + id_token);
 		
-		window.location = "http://localhost:9000/#/hubble/home";
-	}										      
+		window.location = window.location.origin + "/#/hubble/home";
+	}
+	
+	// Handles user sign out from app
+	function signOut() {
+	    var auth2 = gapi.auth2.getAuthInstance();
+	    auth2.signOut().then(function () {
+	      console.log('User signed out.');
+	      window.location = window.location.origin + "/#/login";
+	    });
+	}
+	
+	function onLoad() {
+      gapi.load('auth2', function() {
+        gapi.auth2.init();
+      });
+    }	  
+									      
   </script>
   
   <script data-main="@routes.Assets.versioned("js/app")" src="@routes.WebJarAssets.at(WebJarAssets.locate("require.min.js"))"></script>
