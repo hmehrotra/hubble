@@ -136,3 +136,9 @@ li.entity-value{
     height:25px;
 }
 
+.logout-button {
+	margin-top:10px;
+	margin-right:5px;
+	float:right;
+}
+

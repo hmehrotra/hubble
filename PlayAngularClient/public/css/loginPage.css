@@ -1,47 +1,24 @@
-.center-div{
-    width:600px;
-    height:500px;
-    padding:10px;
-    position:absolute;
-    margin-top:-400px;
-    margin-left:-250px;
-    top:50%;
-    left:50%;
+/* CSS used here will be applied after bootstrap.css */
+
+.login-container { 
+ background: url('/vassets/img/music-visualization.png') no-repeat center center fixed; 
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+ position: fixed;
+ width: 100%;
+ height: 100%;
+ left: 0;
+ top: 0;
+ z-index: 10;
 }
 
-.login-page-hubble-image{
-    width:100%;
-    height:250px;
-    margin-left:0px;
-    margin-right:0px;
-    border:0px;
+.panel-default {
+ opacity: 0.9;
+ margin-top:30px;
 }
-
-.input {
-    width: 200px;
-    height:20px;
-    margin-left:0px;
+.form-group.last {
+ margin-bottom:0px;
 }
-
-.button-row{
-    margin-top:10px;
-    margin-bottom:5px;
-}
-
-.login-table{
-    margin-top:10px;
-}
-
-.login-form{
-    border-radius: 5px;
-    border:1px solid #ccc;
-    background-color:#f7f7f7;
-}
-
-.login-message {
-    color:Red;
-    font-weight:bold;
-    font-size:15px;
-}
-
 

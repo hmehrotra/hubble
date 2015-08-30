@@ -2,11 +2,17 @@
 <html lang="en" >
 <head>
   <meta charset="utf-8">
-  <title>Hubble: Explore a Business Ecosystem</title>
+  
+  <meta name="google-signin-scope" content="profile email">
+  <meta name="google-signin-client_id" content="837390794463-sanu82uu7ou9j3bsnfe6kqgjfpfju08b.apps.googleusercontent.com">
+  
+  <!--  Script for Google sing in  -->
+  <script src="https://apis.google.com/js/platform.js?onload=onload" async defer></script>
+  
+  <title>Hubble: Explore a Music Ecosystem</title>
   
   <!--  Download jQuery from CDN -->
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-layout/1.4.3/jquery.layout.min.js"></script>
   
   <!--  Download Bootstrap from CDN -->  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -15,32 +21,64 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("css/main.css")">
   <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("css/hubbleMainPage.css")">
-  <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("css/loginPage.css")"> 
+  <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("css/loginPage.css")">
   
   <script>
-  var require = {
-    callback: function() {
-      // default requirejs configs
-      @for(webJarJson <- org.webjars.RequireJS.getSetupJson(routes.WebJarAssets.at("").url).values()) {
-        requirejs.config(@Html(webJarJson.toString));
-      }
+	var require = {
+	    callback: function() {
+	      // default requirejs configs
+	      @for(webJarJson <- org.webjars.RequireJS.getSetupJson(routes.WebJarAssets.at("").url).values()) {
+	        requirejs.config(@Html(webJarJson.toString));
+	      }
+	
+		  requirejs.config({
+		    baseUrl:'vassets/',
+		  	shim:{
+		  		"angular":{ exports : "angular" },
+		  		"angular-route" : {	deps:["angular"], exports:"angular_route"},
+		  		"angular-ui-router":{deps:["angular"],exports:"angular-ui-router"},
+		  	}	
+		  });
+		}
+	};
 
-	  requirejs.config({
-	    baseUrl:'vassets/',
-	  	shim:{
-	  		"angular":{ exports : "angular" },
-	  		"angular-route" : {	deps:["angular"], exports:"angular_route"},
-	  		"angular-ui-router":{deps:["angular"],exports:"angular-ui-router"},
-	  	}	
-	  });
+	// Handles user sign in into app
+	function onSignIn(googleUser) {
+		// Useful data for your client-side scripts:
+		var profile = googleUser.getBasicProfile();
+		console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+		console.log("Name: " + profile.getName());
+		console.log("Image URL: " + profile.getImageUrl());
+		console.log("Email: " + profile.getEmail());
+									
+		// The ID token you need to pass to your backend:
+		var id_token = googleUser.getAuthResponse().id_token;
+		console.log("ID Token: " + id_token);
+		
+		window.location = window.location.origin + "/#/hubble/home";
 	}
-  };
+	
+	// Handles user sign out from app
+	function signOut() {
+	    var auth2 = gapi.auth2.getAuthInstance();
+	    auth2.signOut().then(function () {
+	      console.log('User signed out.');
+	      window.location = window.location.origin + "/#/login";
+	    });
+	}
+	
+	function onLoad() {
+      gapi.load('auth2', function() {
+        gapi.auth2.init();
+      });
+    }	  
+									      
   </script>
- 
-  <script data-main="@routes.Assets.versioned("js/app")" src="@routes.WebJarAssets.at(WebJarAssets.locate("require.min.js"))"></script>  
+  
+  <script data-main="@routes.Assets.versioned("js/app")" src="@routes.WebJarAssets.at(WebJarAssets.locate("require.min.js"))"></script>
   
 </head>
 <body>
-    <div ui-view="homePage"></div>
+    <div ng-view></div>
 </body>
 </html>

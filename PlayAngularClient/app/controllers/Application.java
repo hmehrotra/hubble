@@ -6,6 +6,7 @@
 package controllers;
 
 import javax.inject.Inject;
+import com.fasterxml.jackson.databind.JsonNode;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonArray;
 import play.mvc.Action;
@@ -28,39 +29,14 @@ public class Application extends Controller {
         return ok(index.render());
     }
 
-    public static Result getAllSegments(){
-    	    	
-        Promise<WSResponse> response = ws.url("http://musicbrainz.org/ws/2/artist?query=type:person&limit=100").get();
-        System.out.println(response);
-
-        // return null;
-
-        JsonArray jsonArray = new JsonArray();
-
-        JsonObject jsonObject = new JsonObject();
-        jsonObject.addProperty("name", "Network Provider");
-        jsonArray.add(jsonObject);
-
-        jsonObject = new JsonObject();
-        jsonObject.addProperty("name", "Infrastructure Provider");
-        jsonArray.add(jsonObject);
-
-        jsonObject = new JsonObject();
-        jsonObject.addProperty("name", "Internet Provier");
-        jsonArray.add(jsonObject);
-
-        jsonObject = new JsonObject();
-        jsonObject.addProperty("name", "Services Provider");
-        jsonArray.add(jsonObject);
-
-        jsonObject = new JsonObject();
-        jsonObject.addProperty("name", "Test Provider");
-        jsonArray.add(jsonObject);
-
-        JsonObject result = new JsonObject();
-        result.add("segmentNames", jsonArray);
-
-        return ok(result.toString()); 
+    // Play has inbuilt support for asynchronous controller actions
+    // So instead of returning a Result, we are returning a Promise for Result since some of these web services can take 
+    // a few seconds to return
+    public static Promise <Result> getAllSegments() throws InterruptedException{
+    	WSRequest request = WS.url("http://musicbrainz.org/ws/2/artist?query=type:person&limit=100&fmt=json").setFollowRedirects(true);
+    	return request.get().map(response -> 
+    		ok(response.asJson())
+    	);
     }
 
     public static Result getAllCompanies(){

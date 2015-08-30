@@ -1,6 +1,0 @@
-INDEX VERSION 1.3+/Users/harshitmehrotra/Codes/HubbleGitRepo/eclipseWorkspace/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
-4263744989.index
-711554279.index
-1789157384.index
-652794221.index
-570390930.index

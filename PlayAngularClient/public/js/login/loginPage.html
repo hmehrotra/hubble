@@ -1,0 +1,37 @@
+<div class="login-container">
+	<div class="container">
+	    <div class="row">
+	        <div class="col-md-4 col-md-offset-4">
+	            <div class="panel panel-default">
+	                <div class="panel-heading"> <strong class="">Login</strong>
+	
+	                </div>
+	                <div class="panel-body">
+	                    <form class="form-horizontal" role="form">
+	                        <div class="form-group last">
+	                            <div class="col-sm-offset-3 col-sm-10">
+	                                <!--  <button type="submit" class="btn btn-success btn-sm">Sign in</button> -->
+	                               	<span id="google-sign-in-button"></span>
+	                                <script>
+										gapi.signin2.render('google-sign-in-button', 
+											{ 
+												'scope': 'email',
+												'width': 170,
+												'height': 30,
+												'longtitle': true,
+												'theme': 'dark',
+												'display':'inline-block',
+												'onsuccess': onSignIn
+											}
+										);
+									</script>
+	                            </div>
+	                        </div>
+	                    </form>
+	                </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+</div>
