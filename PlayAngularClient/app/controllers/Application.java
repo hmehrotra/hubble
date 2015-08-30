@@ -29,11 +29,13 @@ public class Application extends Controller {
         return ok(index.render());
     }
 
+    // Play has inbuilt support for asynchronous controller actions
+    // So instead of returning a Result, we are returning a Promise for Result since some of these web services can take 
+    // a few seconds to return
     public static Promise <Result> getAllSegments() throws InterruptedException{
-    	
     	WSRequest request = WS.url("http://musicbrainz.org/ws/2/artist?query=type:person&limit=100&fmt=json").setFollowRedirects(true);
     	return request.get().map(response -> 
-    		ok(response.asJson().findPath("artists").asText())
+    		ok(response.asJson())
     	);
     }
 
