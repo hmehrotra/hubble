@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 7, 2015 5:12:36 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.hubble.hubblebackend.postgressql.model.WorkRatingRaw" table="work_rating_raw">
+        <composite-id name="id" class="com.hubble.hubblebackend.postgressql.model.WorkRatingRawId">
+            <key-property name="work" type="int">
+                <column name="work" />
+            </key-property>
+            <key-property name="editor" type="int">
+                <column name="editor" />
+            </key-property>
+        </composite-id>
+        <property name="rating" type="short">
+            <column name="rating" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

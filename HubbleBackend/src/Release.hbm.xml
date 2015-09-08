@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 7, 2015 5:12:36 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.hubble.hubblebackend.postgressql.model.Release" table="release">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="gid" type="serializable">
+            <column name="gid" not-null="true" unique="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" not-null="true" />
+        </property>
+        <property name="artistCredit" type="int">
+            <column name="artist_credit" not-null="true" />
+        </property>
+        <property name="releaseGroup" type="int">
+            <column name="release_group" not-null="true" />
+        </property>
+        <property name="status" type="java.lang.Integer">
+            <column name="status" />
+        </property>
+        <property name="packaging" type="java.lang.Integer">
+            <column name="packaging" />
+        </property>
+        <property name="language" type="java.lang.Integer">
+            <column name="language" />
+        </property>
+        <property name="script" type="java.lang.Integer">
+            <column name="script" />
+        </property>
+        <property name="barcode" type="string">
+            <column name="barcode" />
+        </property>
+        <property name="comment" type="string">
+            <column name="comment" not-null="true" />
+        </property>
+        <property name="editsPending" type="int">
+            <column name="edits_pending" not-null="true" />
+        </property>
+        <property name="quality" type="short">
+            <column name="quality" not-null="true" />
+        </property>
+        <property name="lastUpdated" type="timestamp">
+            <column name="last_updated" length="35" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 7, 2015 5:12:36 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.hubble.hubblebackend.postgressql.model.Vote" table="vote">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="editor" type="int">
+            <column name="editor" not-null="true" />
+        </property>
+        <property name="edit" type="int">
+            <column name="edit" not-null="true" />
+        </property>
+        <property name="vote" type="short">
+            <column name="vote" not-null="true" />
+        </property>
+        <property name="voteTime" type="timestamp">
+            <column name="vote_time" length="35" />
+        </property>
+        <property name="superseded" type="boolean">
+            <column name="superseded" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 7, 2015 5:12:36 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.hubble.hubblebackend.postgressql.model.DbmirrorPendingdata" table="dbmirror_pendingdata">
+        <composite-id name="id" class="com.hubble.hubblebackend.postgressql.model.DbmirrorPendingdataId">
+            <key-property name="seqid" type="int">
+                <column name="seqid" />
+            </key-property>
+            <key-property name="iskey" type="boolean">
+                <column name="iskey" />
+            </key-property>
+        </composite-id>
+        <many-to-one name="dbmirrorPending" class="com.hubble.hubblebackend.postgressql.model.DbmirrorPending" update="false" insert="false" fetch="select">
+            <column name="seqid" not-null="true" />
+        </many-to-one>
+        <property name="data" type="string">
+            <column name="data" />
+        </property>
+    </class>
+</hibernate-mapping>

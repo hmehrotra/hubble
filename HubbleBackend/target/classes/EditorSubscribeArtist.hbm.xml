@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 7, 2015 5:12:36 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.hubble.hubblebackend.postgressql.model.EditorSubscribeArtist" table="editor_subscribe_artist">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="editor" type="int">
+            <column name="editor" not-null="true" />
+        </property>
+        <property name="artist" type="int">
+            <column name="artist" not-null="true" />
+        </property>
+        <property name="lastEditSent" type="int">
+            <column name="last_edit_sent" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

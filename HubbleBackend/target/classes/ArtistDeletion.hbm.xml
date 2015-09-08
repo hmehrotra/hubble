@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 7, 2015 5:12:36 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.hubble.hubblebackend.postgressql.model.ArtistDeletion" table="artist_deletion">
+        <id name="gid" type="serializable">
+            <column name="gid" />
+            <generator class="assigned" />
+        </id>
+        <property name="lastKnownName" type="string">
+            <column name="last_known_name" not-null="true" />
+        </property>
+        <property name="lastKnownComment" type="string">
+            <column name="last_known_comment" not-null="true" />
+        </property>
+        <property name="deletedAt" type="timestamp">
+            <column name="deleted_at" length="35" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 7, 2015 5:12:36 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.hubble.hubblebackend.postgressql.model.LabelTag" table="label_tag">
+        <composite-id name="id" class="com.hubble.hubblebackend.postgressql.model.LabelTagId">
+            <key-property name="label" type="int">
+                <column name="label" />
+            </key-property>
+            <key-property name="tag" type="int">
+                <column name="tag" />
+            </key-property>
+        </composite-id>
+        <property name="count" type="int">
+            <column name="count" not-null="true" />
+        </property>
+        <property name="lastUpdated" type="timestamp">
+            <column name="last_updated" length="35" />
+        </property>
+    </class>
+</hibernate-mapping>

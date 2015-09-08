@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 7, 2015 5:12:36 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.hubble.hubblebackend.postgressql.model.EditorWatchPreferences" table="editor_watch_preferences">
+        <id name="editor" type="int">
+            <column name="editor" />
+            <generator class="assigned" />
+        </id>
+        <property name="notifyViaEmail" type="boolean">
+            <column name="notify_via_email" not-null="true" />
+        </property>
+        <property name="notificationTimeframe" type="serializable">
+            <column name="notification_timeframe" not-null="true" />
+        </property>
+        <property name="lastChecked" type="timestamp">
+            <column name="last_checked" length="35" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

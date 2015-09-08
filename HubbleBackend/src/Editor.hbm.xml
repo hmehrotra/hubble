@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 7, 2015 5:12:36 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.hubble.hubblebackend.postgressql.model.Editor" table="editor">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" length="64" not-null="true" />
+        </property>
+        <property name="privs" type="java.lang.Integer">
+            <column name="privs" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="64" />
+        </property>
+        <property name="website" type="string">
+            <column name="website" />
+        </property>
+        <property name="bio" type="string">
+            <column name="bio" />
+        </property>
+        <property name="memberSince" type="timestamp">
+            <column name="member_since" length="35" />
+        </property>
+        <property name="emailConfirmDate" type="timestamp">
+            <column name="email_confirm_date" length="35" />
+        </property>
+        <property name="lastLoginDate" type="timestamp">
+            <column name="last_login_date" length="35" />
+        </property>
+        <property name="editsAccepted" type="java.lang.Integer">
+            <column name="edits_accepted" />
+        </property>
+        <property name="editsRejected" type="java.lang.Integer">
+            <column name="edits_rejected" />
+        </property>
+        <property name="autoEditsAccepted" type="java.lang.Integer">
+            <column name="auto_edits_accepted" />
+        </property>
+        <property name="editsFailed" type="java.lang.Integer">
+            <column name="edits_failed" />
+        </property>
+        <property name="lastUpdated" type="timestamp">
+            <column name="last_updated" length="35" />
+        </property>
+        <property name="birthDate" type="date">
+            <column name="birth_date" length="13" />
+        </property>
+        <property name="gender" type="java.lang.Integer">
+            <column name="gender" />
+        </property>
+        <property name="area" type="java.lang.Integer">
+            <column name="area" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" length="128" not-null="true" />
+        </property>
+        <property name="ha1" type="string">
+            <column name="ha1" length="32" not-null="true" />
+        </property>
+        <property name="deleted" type="boolean">
+            <column name="deleted" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 7, 2015 5:12:36 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.hubble.hubblebackend.postgressql.model.Track" table="track">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="gid" type="serializable">
+            <column name="gid" not-null="true" unique="true" />
+        </property>
+        <property name="recording" type="int">
+            <column name="recording" not-null="true" />
+        </property>
+        <property name="medium" type="int">
+            <column name="medium" not-null="true" />
+        </property>
+        <property name="position" type="int">
+            <column name="position" not-null="true" />
+        </property>
+        <property name="number" type="string">
+            <column name="number" not-null="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" not-null="true" />
+        </property>
+        <property name="artistCredit" type="int">
+            <column name="artist_credit" not-null="true" />
+        </property>
+        <property name="length" type="java.lang.Integer">
+            <column name="length" />
+        </property>
+        <property name="editsPending" type="int">
+            <column name="edits_pending" not-null="true" />
+        </property>
+        <property name="lastUpdated" type="timestamp">
+            <column name="last_updated" length="35" />
+        </property>
+        <property name="isDataTrack" type="boolean">
+            <column name="is_data_track" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

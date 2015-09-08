@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 7, 2015 5:12:36 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.hubble.hubblebackend.postgressql.model.ReleaseTagRaw" table="release_tag_raw">
+        <composite-id name="id" class="com.hubble.hubblebackend.postgressql.model.ReleaseTagRawId">
+            <key-property name="release" type="int">
+                <column name="release" />
+            </key-property>
+            <key-property name="editor" type="int">
+                <column name="editor" />
+            </key-property>
+            <key-property name="tag" type="int">
+                <column name="tag" />
+            </key-property>
+        </composite-id>
+        <property name="isUpvote" type="boolean">
+            <column name="is_upvote" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

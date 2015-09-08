@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 7, 2015 5:12:36 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.hubble.hubblebackend.postgressql.model.ReleaseCountry" table="release_country">
+        <composite-id name="id" class="com.hubble.hubblebackend.postgressql.model.ReleaseCountryId">
+            <key-property name="release" type="int">
+                <column name="release" />
+            </key-property>
+            <key-property name="country" type="int">
+                <column name="country" />
+            </key-property>
+        </composite-id>
+        <property name="dateYear" type="java.lang.Short">
+            <column name="date_year" />
+        </property>
+        <property name="dateMonth" type="java.lang.Short">
+            <column name="date_month" />
+        </property>
+        <property name="dateDay" type="java.lang.Short">
+            <column name="date_day" />
+        </property>
+    </class>
+</hibernate-mapping>

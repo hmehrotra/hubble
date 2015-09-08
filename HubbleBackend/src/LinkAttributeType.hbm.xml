@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 7, 2015 5:12:36 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.hubble.hubblebackend.postgressql.model.LinkAttributeType" table="link_attribute_type">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="parent" type="java.lang.Integer">
+            <column name="parent" />
+        </property>
+        <property name="root" type="int">
+            <column name="root" not-null="true" />
+        </property>
+        <property name="childOrder" type="int">
+            <column name="child_order" not-null="true" />
+        </property>
+        <property name="gid" type="serializable">
+            <column name="gid" not-null="true" unique="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" not-null="true" />
+        </property>
+        <property name="description" type="string">
+            <column name="description" />
+        </property>
+        <property name="lastUpdated" type="timestamp">
+            <column name="last_updated" length="35" />
+        </property>
+    </class>
+</hibernate-mapping>

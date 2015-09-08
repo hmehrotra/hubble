@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 7, 2015 5:12:36 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.hubble.hubblebackend.postgressql.model.ReleaseMeta" table="release_meta">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="dateAdded" type="timestamp">
+            <column name="date_added" length="35" />
+        </property>
+        <property name="infoUrl" type="string">
+            <column name="info_url" />
+        </property>
+        <property name="amazonAsin" type="string">
+            <column name="amazon_asin" length="10" />
+        </property>
+        <property name="amazonStore" type="string">
+            <column name="amazon_store" length="20" />
+        </property>
+        <property name="coverArtPresence" type="serializable">
+            <column name="cover_art_presence" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

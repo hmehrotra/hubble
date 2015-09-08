@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 7, 2015 5:12:36 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.hubble.hubblebackend.postgressql.model.AutoeditorElection" table="autoeditor_election">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="candidate" type="int">
+            <column name="candidate" not-null="true" />
+        </property>
+        <property name="proposer" type="int">
+            <column name="proposer" not-null="true" />
+        </property>
+        <property name="seconder1" type="java.lang.Integer">
+            <column name="seconder_1" />
+        </property>
+        <property name="seconder2" type="java.lang.Integer">
+            <column name="seconder_2" />
+        </property>
+        <property name="status" type="int">
+            <column name="status" not-null="true" />
+        </property>
+        <property name="yesVotes" type="int">
+            <column name="yes_votes" not-null="true" />
+        </property>
+        <property name="noVotes" type="int">
+            <column name="no_votes" not-null="true" />
+        </property>
+        <property name="proposeTime" type="timestamp">
+            <column name="propose_time" length="35" not-null="true" />
+        </property>
+        <property name="openTime" type="timestamp">
+            <column name="open_time" length="35" />
+        </property>
+        <property name="closeTime" type="timestamp">
+            <column name="close_time" length="35" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 7, 2015 5:12:36 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.hubble.hubblebackend.postgressql.model.ArtistCreditName" table="artist_credit_name">
+        <composite-id name="id" class="com.hubble.hubblebackend.postgressql.model.ArtistCreditNameId">
+            <key-property name="artistCredit" type="int">
+                <column name="artist_credit" />
+            </key-property>
+            <key-property name="position" type="short">
+                <column name="position" />
+            </key-property>
+        </composite-id>
+        <property name="artist" type="int">
+            <column name="artist" not-null="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" not-null="true" />
+        </property>
+        <property name="joinPhrase" type="string">
+            <column name="join_phrase" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

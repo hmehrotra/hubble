@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 7, 2015 5:12:36 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.hubble.hubblebackend.postgressql.model.LinkType" table="link_type">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="parent" type="java.lang.Integer">
+            <column name="parent" />
+        </property>
+        <property name="childOrder" type="int">
+            <column name="child_order" not-null="true" />
+        </property>
+        <property name="gid" type="serializable">
+            <column name="gid" not-null="true" unique="true" />
+        </property>
+        <property name="entityType0" type="string">
+            <column name="entity_type0" length="50" not-null="true" />
+        </property>
+        <property name="entityType1" type="string">
+            <column name="entity_type1" length="50" not-null="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" not-null="true" />
+        </property>
+        <property name="description" type="string">
+            <column name="description" />
+        </property>
+        <property name="linkPhrase" type="string">
+            <column name="link_phrase" not-null="true" />
+        </property>
+        <property name="reverseLinkPhrase" type="string">
+            <column name="reverse_link_phrase" not-null="true" />
+        </property>
+        <property name="longLinkPhrase" type="string">
+            <column name="long_link_phrase" not-null="true" />
+        </property>
+        <property name="priority" type="int">
+            <column name="priority" not-null="true" />
+        </property>
+        <property name="lastUpdated" type="timestamp">
+            <column name="last_updated" length="35" />
+        </property>
+        <property name="isDeprecated" type="boolean">
+            <column name="is_deprecated" not-null="true" />
+        </property>
+        <property name="hasDates" type="boolean">
+            <column name="has_dates" not-null="true" />
+        </property>
+        <property name="entity0Cardinality" type="int">
+            <column name="entity0_cardinality" not-null="true" />
+        </property>
+        <property name="entity1Cardinality" type="int">
+            <column name="entity1_cardinality" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

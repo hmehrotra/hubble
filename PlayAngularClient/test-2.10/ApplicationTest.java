@@ -44,7 +44,7 @@ public class ApplicationTest extends WithApplication {
 	}
 
 	@Test
-	public void entityBrowseTest() throws InterruptedException, JsonParseException, JsonMappingException, IOException {
+	public void testBrowseEntitiesReturnsData() throws InterruptedException, JsonParseException, JsonMappingException, IOException {
 		Promise<Result> promise = Application.getAllSegments();
 		
 		// Wait for result

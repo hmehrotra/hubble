@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 7, 2015 5:12:36 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.hubble.hubblebackend.postgressql.model.EditLabel" table="edit_label">
+        <composite-id name="id" class="com.hubble.hubblebackend.postgressql.model.EditLabelId">
+            <key-property name="edit" type="int">
+                <column name="edit" />
+            </key-property>
+            <key-property name="label" type="int">
+                <column name="label" />
+            </key-property>
+        </composite-id>
+        <property name="status" type="short">
+            <column name="status" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
