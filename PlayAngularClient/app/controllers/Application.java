@@ -38,7 +38,7 @@ public class Application extends Controller {
     		ok(response.asJson())
     	);
     }
-
+    
     public static Result getAllCompanies(){
         JsonArray jsonArray = new JsonArray();
 

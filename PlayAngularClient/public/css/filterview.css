@@ -1,0 +1,13 @@
+.no-ui-slider-custom{
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-left:20px;
+	max-width:50%;	
+}
+
+#filter-bar-top-component{
+	background:#E3E3E3;
+	height:70px;
+	padding-top:4px;
+}
+
