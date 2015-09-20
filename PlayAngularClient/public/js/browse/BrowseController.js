@@ -12,14 +12,14 @@
 
 define(function(){ // Function to execute when all dependencies have loaded
 
-      function browseController($scope, $http, $log, BrowseService){
-
-    	  BrowseService.allCompanies().success(function(data){
-                $scope.companyNames = data.companyNames;
-            })
+      function BrowseCtrl($scope, $http, $log, browseService){
+    	  browseService.browseEntity().success(function(data){
+    		  debugger;
+    		  $scope.entityName = data.companyNames;
+          }) 
        }
 
-      browseController.$inject=['$scope', '$http', '$log', 'BrowseService'];
+       BrowseCtrl.$inject=['$scope', '$http', '$log', 'browseService'];
 
-       return browseController;
+       return BrowseCtrl;
 });

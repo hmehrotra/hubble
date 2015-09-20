@@ -1,14 +1,3 @@
-<script>
-	$(function(){
-      $("#browse-view").load("vassets/js/browse/browseView.html");
-      $("#path-view").load("vassets/js/path/pathView.html");
-      $("#periscope-view").load("vassets/js/periscope/periscopeView.html");
-      $("#timeline-view").load("vassets/js/timeline/timelineView.html");
-      $("#geography-view").load("vassets/js/geography/geographyView.html");
-      $("#search-view").load("vassets/js/search/searchView.html");       
-    });	
-</script>
-
 <div>
   <!-- Nav tabs -->
   <ul class="nav nav-tabs" role="tablist">
@@ -26,16 +15,28 @@
   <!-- Tab panes -->
   <div class="tab-content">
     <div role="tabpanel" class="tab-pane active" id="browse-view">
+    	<div ng-include src="'vassets/js/browse/browseView.html'"/>
     </div>
+   
     <div role="tabpanel" class="tab-pane" id="path-view">
+    	<div ng-include src="'vassets/js/path/pathView.html'"/>
     </div>
+    
     <div role="tabpanel" class="tab-pane" id="periscope-view">
+    	<div ng-include src="'vassets/js/periscope/periscopeView.html'"/>
     </div>
+    
     <div role="tabpanel" class="tab-pane" id="timeline-view">
+    	<div ng-include src="'vassets/js/timeline/timelineView.html'"/>
     </div>
+    
     <div role="tabpanel" class="tab-pane" id="geography-view">
+    	<div ng-include src="'vassets/js/geography/geographyView.html'"/>
     </div>
+    
     <div role="tabpanel" class="tab-pane" id="search-view">
+    	<div ng-include src="'vassets/js/search/searchView.html'"/>
     </div>
+    
   </div>
 </div>

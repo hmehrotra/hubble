@@ -11,18 +11,14 @@
 require(['angular',
          'angular-ui-router',
          'angular-route',
-         'js/companyList/CompanyService',
-         'js/companyList/CompanyListCtrl'],
+         'js/browse/BrowseService',
+         'js/browse/BrowseController'],
 
     function(angular,
     		 angularUIRouter, 
     		 angularRoute, 
-    		 SegmentService, 
-    		 CompanyService, 
-    		 CountryService, 
-    		 SegmentListCtrl, 
-    		 CompanyListCtrl, 
-    		 CountryListCtrl){
+    		 browseService,  
+    		 BrowseCtrl){
 
 	angular.module('hubble',['ui.router', 'ngRoute'])
            .config(['$routeProvider', '$stateProvider', function($routeProvider, $stateProvider){
@@ -41,7 +37,11 @@ require(['angular',
                   })
                   .otherwise({redirectTo: '/login'});                                    
            }])
-           .factory('CompanyService', CompanyService)
+           // Register services
+           .factory('browseService', ['$http', browseService ])
+           
+           // Register Controllers
+           .controller('BrowseCtrl', ['$scope', '$http', '$log', 'browseService', BrowseCtrl]);
 	
 		angular.element(document).ready(function() {
 			angular.bootstrap(document, ['hubble']);

@@ -33,6 +33,7 @@ public class Application extends Controller {
     // So instead of returning a Result, we are returning a Promise for Result since some of these web services can take 
     // a few seconds to return
     public static Promise <Result> getAllSegments() throws InterruptedException{
+    	System.out.println("HERE");
     	WSRequest request = WS.url("http://musicbrainz.org/ws/2/artist?query=type:person&limit=100&fmt=json").setFollowRedirects(true);
     	return request.get().map(response -> 
     		ok(response.asJson())

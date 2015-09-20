@@ -1,9 +1,6 @@
-<script>
-	$(function(){
-      $("#filter-view").load("vassets/js/filter/filterView.html");      
-    });	
-</script>
-
 <div>
-	<div id="filter-view">
+	<div ng-include src="'vassets/js/filter/filterView.html'"/>
+	<div ng-controller="BrowseCtrl">
+		{{ entityName }}
+	</div>
 </div>
