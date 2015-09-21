@@ -13,9 +13,9 @@
 define(function(){ // Function to execute when all dependencies have loaded
 
       function BrowseCtrl($scope, $http, $log, browseService){
-    	  browseService.browseEntity().success(function(data){
-    		  debugger;
-    		  $scope.entityName = data.companyNames;
+    	  browseService.browseEntity().success(function(data, status, headers, config){
+    		  
+    		  $scope.entityName = data.artists;
           }) 
        }
 
